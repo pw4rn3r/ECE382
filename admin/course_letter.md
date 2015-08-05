@@ -7,16 +7,13 @@ title = 'Course Letter'
 ### Instructors
 
 **Capt Virginia Trimble (CD)**  
-Office: 2E46B    
+Office: 2F46C    
 E-mail: virginia.trimble@usafa.edu  
 
-**Dr. George York**  
-Office: 2E46E  
-E-mail: george.york@usafa.edu  
+**Capt Jeff Falkinburg**  
+Office: 2E46C  
+E-mail: jeffrey.falkinburg@usafa.edu  
 
-**Dr. Chris Coulston**  
-Office: 6G149
-E-mail: christopher.coulston@usafa.edu 
 
 ### Course Objectives
 
@@ -42,8 +39,8 @@ CompSci 110 and ECE 281
 | | Prog | Final |
 | :-: | :-: | :-: |
 | GRs | 40% (1) | 30% (2) |
-| Labs | 45% (2) | 35% (8) |
-| HW / Quizzes / Skills Review / CompEx | 15% | 10% |
+| Labs | 35% (2) | 35% (8) |
+| HW / Quizzes / Skills Review / CompEx | 25% | 10% |
 | Final | | 25% |
 | TOTAL | 100% | 100% |
 
@@ -71,7 +68,7 @@ If problems arise with graded assignments, see your instructor in advance.  Assi
 ### Course Materials
 
 - **Course Text** - MSP430 Microcontroller Basics - John H. Davies (optional, but encouraged)
-- **Course URL** - http://www.ece382.com
+- **Course URL** - http://ece.ninja/382
 
 ### Extra Instruction (EI) Policy
 
@@ -91,7 +88,7 @@ Reading assignments are provided at the top of the lesson notes and should be ac
 
 ### Labs / Lab Notebooks
 
-Labs will be turned in and graded via GitHub.  
+Labs will be turned in and graded via Bitbucket.  
 
 ### Exams
 
