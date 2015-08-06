@@ -201,7 +201,7 @@ Objectives:
 <br>
 <br>
 <br>
-<li>(5pts) Draw a schematic circuit that will generate the following equation.  You may use only the following gates: AND, OR, and NOT.  **No simplification is allowed**.
+<li>(5pts) Draw a schematic for a circuit that will generate the following equation.  You may use only the following gates: AND, OR, and NOT.  **No simplification is allowed**.
 
 F = X'Y' + YZ' +X'Y'Z</li>
 </ol>
