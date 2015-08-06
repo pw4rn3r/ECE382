@@ -60,9 +60,9 @@ If problems arise with graded assignments, see your instructor in advance.  Assi
 
 | How Late? | Penalty |
 | :-: | :-: |
-| 0 - 24 Hours | 10% |
-| 24 - 48 Hours | 30% |
-| 48 - 72 Hours | 60% |
+| 0 - 24 Hours | 25% |
+| 24 - 48 Hours | 50% |
+| 48 - 72 Hours | 75% |
 | > 72 Hours | 100% |
 
 ### Course Materials
