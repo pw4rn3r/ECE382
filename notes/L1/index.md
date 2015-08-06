@@ -21,7 +21,6 @@ title = 'Course Introduction. Computer Structure.  Architecture vs Microarchitec
 - RISC vs CISC
 
 ## Course Intro
-*[Take roll - use icebreaker questions from sheet.]*
 
 Welcome to ECE382, Embedded Systems I.  First things first - what have you heard about this class?!
 
@@ -89,7 +88,7 @@ We're going to get very hands-on and expect you to build things that actually wo
             - to test your assumptions
 - Skills Review!
     - Due L3
-- Git and GitHub
+- Git and Bitbucket
 	- Commit often!  Don't forget descriptive comments on each commit.  A great time to commit might be as soon as you get a piece a code working.
 	- Ensure your readme looks professional.  A Markdown refresher can be found [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet).
 
@@ -131,7 +130,8 @@ Now, let's see where we are in the overall hierarchy of ECE - and talk about CPU
 [Instruction Set Architecture (ISA)](https://en.wikipedia.org/wiki/Instruction_set)  
 The ISA is the programmer's view of the processor.  Processors with the same ISA share the same data types, assembly language instructions, registers, addressing modes, memory architecture, interrupts, IO, etc.  This is the API into the processor for the programmer - the tools the programmer has access to to accomplish what they want.
 
-Are all processors that implement an ISA the same?  Are the Intel and AMD chips that implement x86 the same (Pentium, Athlon)?  **Pause - wait for answer**.  NO - different microarchitectures.
+Are all processors that implement an ISA the same?  Are the Intel and AMD chips that implement x86 the same (Pentium, Athlon)?  
+*NO - different microarchitectures.*
 
 [Microarchitecture](http://en.wikipedia.org/wiki/Microarchitecture)  
 The microarchitecture is the hardware implementation of a given ISA.  An ISA can be implemented with different microarchitectures.  This allows programmers to write software that functions on chips made by different manufacturers.
@@ -149,14 +149,11 @@ Can anyone name any more instruction set architectures (ISA)?
 - Itanium
 - SPARC
 - ARM
-- 68S12 - used in this course last semester
+- 68S12 - used in this course in previous years
 - MSP430 - ISA we'll use in this course
-- PRISM - what you learned in ECE281
+- MIPS - what you learned in ECE281
 
-Aside from maybe PRISM, these aren't toy architectures - they're used in all sorts of devices we use everyday.
-
-In fact, the router I use at home runs MIPS and embedded Linux.  
-*[DEMO SSH into router, show processor that it's running]*
+These aren't toy architectures - they're used in all sorts of devices we use everyday.
 
 The architecture we'll use in this course is the MSP430 - it specializes in extremely low power applications.  We'll learn more about it next lesson.
 
@@ -182,15 +179,12 @@ But RISC never really made it mainstream.  That's probably due to the large amou
 x86 is still pretty dominant on PCs, but RISC has found a home in [low-end mobile systems and high-end supercomputing](https://en.wikipedia.org/wiki/Reduced_instruction_set_computing#RISC:_from_cell_phones_to_supercomputers).
 
 In the past, we worked with the Motorola 68S12, which used a CISC architecture.  
-*[Show old S12 reference book as example of volume of instructions]*
 
 This semester, we'll be working with the MSP430.  It uses a RISC architecture.  It has a grand total of 27 instructions.
 
 *[Show Launchpad kit]*
 
 ## Notecards
-
-(If there's time).
 
 - Name
 - Hometown
@@ -199,4 +193,3 @@ This semester, we'll be working with the MSP430.  It uses a RISC architecture.  
 - Issues / Concerns about this course?
 - Anything else I should know?
 
-**Remainder of class, they can get moving on the Skills Review.**
