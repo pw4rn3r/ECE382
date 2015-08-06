@@ -21,7 +21,7 @@ First, we need to install Code Composer Studio.
 
 **This step will be completed as a portion of the Skills Review.**
 
-ECE382 uses the free version of Code Composer Studio, v5.4.x.  [It's available here](http://processors.wiki.ti.com/index.php/Download_CCS).
+ECE382 uses the free version of Code Composer Studio, v6.0.x.  [It's available here](http://processors.wiki.ti.com/index.php/Download_CCS).
 
 Download the Windows version of the latest CCS.  You'll have to create an account and fill out some information - it's pretty straightforward.  You'll be approved to receive the software, so download it!
 
