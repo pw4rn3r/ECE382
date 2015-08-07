@@ -5,6 +5,7 @@ title = 'Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Langua
 ## Readings
 <a href="http://en.wikipedia.org/wiki/Assembler_(computing)#Assembler">Assembler</a>  
 <a href="https://en.wikipedia.org/wiki/Linker_(computing)">Linker</a>
+<br>
 [ppt](Lsn2.pptx)
 
 ## Lesson Outline
@@ -14,24 +15,25 @@ title = 'Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Langua
 
 ## Admin
 
-- Everyone getting my emails?
 - Skills Review due next time!
 
 ## Intro to the MSP430
 
 What's the family of MCUs we'll be using this semester?
 
-The family of microcontrollers we'll be working with for the remainder of the semester is TI's MSP430 - it's the first semester we've ever used it.  *[Show Launchpad kit]* For the past many years, we've used Motorola's 68S12 as our platform - but it had become less relevant and the tools we used were no longer being supported.  *[Show S12]* Last year, I went out looking for a platform that would be easy to learn, but still relevant.  The MSP430 is an industry leader in low-cost, low-power consumption embedded applications - and it uses a RISC architecture with just 27 instructions.
+The family of microcontrollers we'll be working with for the remainder of the semester is TI's MSP430.  *[Show Launchpad kit]* 
+
+The MSP430 is an industry leader in low-cost, low-power consumption embedded applications - and it uses a RISC architecture with just 27 instructions.
 
 [Products in the Wild Using MSP430](http://www.43oh.com/2012/03/winner-products-using-the-msp430/)
 
 Suffice to say, this chip is used by engineers to create real-world products that you've probably interacted with before.  Cool!
 
-The other cool thing - they're cheap!  The MSP430 Launchpad development kit costs only $5 including shipping, so you can definitely get your own if you want to experiment with this beyond the semester.  We can also get replacement chips cheaply for when you inevitably burn them out.
+The other cool thing - they're cheap!  The MSP430 Launchpad development kit costs around $10 including shipping, so you can definitely get your own if you want to experiment with this beyond the semester.  We can also get replacement chips cheaply for when you inevitably burn them out.
 
 **Issue Launchpad Kits**
 
-For the rest of the semester, you'll be using these kits along with CodeComposer to learn about the msp430 and build things with it.
+For the rest of the semester, you'll be using these kits along with CodeComposer to learn about the MSP430 and build things with it.
 
 ## Architecture
 Ok, back to the dirty details about computer architecture.
