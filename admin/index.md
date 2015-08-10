@@ -1,6 +1,6 @@
 # Admin
 
-- [Syllabus](/)
+- [Syllabus](/382/)
 - [Course Letter](course_letter.html)
 - [Lab Notebooks](labs.html)
 - [GR 1 Resources](gr1_resources/)

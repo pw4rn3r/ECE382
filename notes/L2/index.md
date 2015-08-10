@@ -25,7 +25,7 @@ The family of microcontrollers we'll be working with for the remainder of the se
 
 The MSP430 is an industry leader in low-cost, low-power consumption embedded applications - and it uses a RISC architecture with just 27 instructions.
 
-[Products in the Wild Using MSP430](http://www.43oh.com/2012/03/winner-products-using-the-msp430/)
+[Products in the Wild Using MSP430](http://forum.43oh.com/topic/3231-products-using-msp430/)
 
 Suffice to say, this chip is used by engineers to create real-world products that you've probably interacted with before.  Cool!
 
@@ -131,7 +131,7 @@ We'll be working with the **msp430g2553** variant.
     - Little Endian means the least significant byte of a chunk of data is stored at the lowest memory address.
         - The MSP430 and your computer, presuming you run an x86_64 processor, use this.
     - Big Endian means the most significant byte of a chunk of data is stored at the lowest memory address.
-        - The 68S12 we used last semester used this
+        - The 68S12 we used in previous years used this
 
 For instance, if I executed the instruction `MOV.W  #0xdfec, &0x0200`, how would that word be stored in memory?  Remember, each location (cubby hole) in memory stores one byte.
 
@@ -242,8 +242,3 @@ From this disassembly, how can we tell if this is big-endian or little-endian?
 
 In years past, we've spent the entire semester working directly with assembly.  A lot of people complained that it's irrelevant - could not be farther from the truth.  Every single program that runs on your computer followed this process.  It doesn't matter what language you start in.  Every single program becomes assembly code.  They all then are converted to machine code.
 
-*[Demo - disassemble 'ls' command and show x86_64 assembly]*
-
-`objdump -d /usr/bin/ls`
-
-This can be used by computer security folks to analyze malware.  Or for hackers to analyzer software for vulnerabilities.  There are people out there looking through lines and lines and lines of assembly code all day to do just this.
