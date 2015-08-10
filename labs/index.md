@@ -2,15 +2,15 @@ title = 'Labs'
 
 # Labs / Computer Exercises
 
-- [CompEx1 - Intro to the MSP430 and Code Composer Studio](/labs/compex1/index.html)
-- [Lab 1 - Assembly Language - "A Simple Calculator"](/labs/lab1/index.html)
-- [Lab 2 - Subroutines - "Cryptography"](/labs/lab2/index.html)
-- [Lab 3 - SPI - "I/O"](/labs/lab3/index.html)
-- [Lab 4 - C - "An LCD Device Driver"](/labs/lab4/index.html)
-- [Lab 5 - Interrupts - "A Simple Game"](/labs/lab5/index.html)
-- [Lab 6 - PWM - "Robot Motion"](/labs/lab6/index.html)
-- [Lab 7 - A/D Conversion - "Robot Sensing"](/labs/lab7/index.html)
-- [Lab 8 - Robot Maze Competition](/labs/lab8/index.html)
+- [CompEx1 - Intro to the MSP430 and Code Composer Studio](/382/labs/compex1/index.html)
+- [Lab 1 - Assembly Language - "A Simple Calculator"](/382labs/lab1/index.html)
+- [Lab 2 - Subroutines - "Cryptography"](/382/labs/lab2/index.html)
+- [Lab 3 - SPI - "I/O"](/382/labs/lab3/index.html)
+- [Lab 4 - C - "An LCD Device Driver"](/382/labs/lab4/index.html)
+- [Lab 5 - Interrupts - "A Simple Game"](/382/labs/lab5/index.html)
+- [Lab 6 - PWM - "Robot Motion"](/382/labs/lab6/index.html)
+- [Lab 7 - A/D Conversion - "Robot Sensing"](/382/labs/lab7/index.html)
+- [Lab 8 - Robot Maze Competition](/382/labs/lab8/index.html)
 
 ## Demos
 
@@ -20,5 +20,5 @@ If you can't find an instructor, send them an e-mail with the features you were 
 
 ## Lab Notebook Standards
 
-See the [Labs](/admin/labs.html) link on the Admin page.
+See the [Labs](/382/admin/labs.html) link on the Admin page.
 
