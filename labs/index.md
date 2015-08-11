@@ -22,3 +22,7 @@ If you can't find an instructor, send them an e-mail with the features you were 
 
 See the [Labs](/382/admin/labs.html) link on the Admin page.
 
+## Lab notebook instructor access
+
+Do not forget to add your instructor to your Bitbucket repository for each lab.  (Settings --> Access Management --> Users) 
+
