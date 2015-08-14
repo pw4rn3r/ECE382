@@ -3,7 +3,7 @@ title = 'Addressing Modes.  CompEx 1 Intro.'
 # Lesson 4 Notes
 
 ## Readings
-[MSP430 Family Users Guide pp47-55](/datasheets/msp430_msp430x2xx_family_users_guide.pdf)  
+[MSP430 Family Users Guide pp47-55](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)  
 Davies 5.2 (pp125 - pp131)  
 [MSP430 Addressing Modes](http://mspgcc.sourceforge.net/manual/x147.html)
 
