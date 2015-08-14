@@ -45,15 +45,15 @@ Luckily, the MSP430 has only 4 different addressing modes to cover.  The old S12
 
 **[On side board, mark first two as available two both, bottom two as available only to destination - circle last bit for dest]**
 
-| Code | Addressing Mode | Description | Example | Given r5=0x0200, 0x0200: 0x1234, 0x0202: 0x5678 |
+| As/Ad | Addressing Mode | Description | Example | Given r5=0x0200, 0x0200: 0x1234, 0x0202: 0x5678 |
 | :-: | :-: | :-: | :-: | :-: |
-| 00 | Rn	| Register direct | `mov r5, r6` | r6 = 0x0200 |
-| 01 | offset(Rn) | Register indexed | `mov 2(r5), r6` | r6 = 0x5678 |
-| 10 | @Rn	| Register indirect | `mov @r5, r6` | r6 = 0x1234 |
-| 11 | @Rn+	| Register indirect with post-increment | `mov @r5+, r6` | r6 = 0x1234, r5 = 0x0202 |
-| | #XXXX | Immediate | `mov #0x2006, r6` | r6 = 0x2006 |
-| | label | PC Relative | `mov label, r6` | (becomes mov.w xxxx(PC), r6) |
-| | &label | Absolute | `mov &0x0200, r6` | r6 = 0x0200 | 
+| 00/0 | Rn	| Register direct | `mov r5, r6` | r6 = 0x0200 |
+| 01/1 | offset(Rn) | Register indexed | `mov 2(r5), r6` | r6 = 0x5678 |
+| 10/- | @Rn	| Register indirect | `mov @r5, r6` | r6 = 0x1234 |
+| 11/- | @Rn+	| Register indirect with post-increment | `mov @r5+, r6` | r6 = 0x1234, r5 = 0x0202 |
+|11/- | #XXXX | Immediate | `mov #0x2006, r6` | r6 = 0x2006 |
+|01/1 | label | PC Relative | `mov label, r6` | (becomes mov.w xxxx(PC), r6) |
+|01/1 | &label | Absolute | `mov &0x0200, r6` | r6 = 0x0200 | 
 
 Let's start with a quick sample program.  *Use this program to illustrate addressing modes.*
 
@@ -283,7 +283,7 @@ The designers of the MSP430 realized that some of our registers don't make sense
 
 **drawn on back board**
 
-| Code | Register | Addressing Mode | Description |
+| As | Register | Addressing Mode | Description |
 | :-: | :-: | :-: |
 | 00 | 0010 | r2 | Normal access |
 | 01 | 0010 | &< location> | Absolute addressing. The extension word is used as the address directly. The leading & is TI's way of indicating that the usual PC-relative addressing should not be used. |

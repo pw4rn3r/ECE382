@@ -8,7 +8,7 @@ Documentation:
 
 **All answers should be in little-endian, hex format.**
 
-1. For each of the following instructions, identify the addressing modes being used.
+1. For each of the following instructions, identify the addressing modes being used.  For the indicated instructions, write the hand-assembled machine code that corresponds to that instruction.
 ```
 swpb    r7
 ```
@@ -18,6 +18,11 @@ source:
 <br>
 <br>
 destination:
+<br>
+<br>
+<br>
+hand-assembled machine code:
+<br>
 <br>
 <br>
 <br>
@@ -54,6 +59,11 @@ source:
 <br>
 <br>
 destination:
+<br>
+<br>
+<br>
+hand-assembly of `mov @r12, r6`:
+<br>
 <br>
 <br>
 <br>
