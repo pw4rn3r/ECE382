@@ -8,6 +8,7 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 - Davies pp123-124
 - [Control Flow](http://en.wikipedia.org/wiki/Control_flow)
 - [Overflow Flag](http://en.wikipedia.org/wiki/Overflow_flag)
+- [Status Register](https://en.wikipedia.org/wiki/Status_register)
 - [ppt](Lsn6.pptx)
 
 ## Assignment

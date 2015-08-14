@@ -186,7 +186,7 @@ These are all PC-relative jumps, adding twice the sign-extended offset to the PC
 | 000 | JNE/JNZ | Jump if Z==0 (if `!=`) |
 | 001 | JEQ/Z | Jump if Z==1 (if `==`) |
 | 010 | JNC/JLO | Jump if C==0 (if unsigned `<`) |
-| 011 | JC/JHS | Jump if C==1 (if unsigned `>`) |
+| 011 | JC/JHS | Jump if C==1 (if unsigned `>=`) |
 | 100 | JN | Jump if N==1 - Note there is no jump if N==0 |
 | 101 | JGE | Jump if N==V (if signed `>=`) |
 | 110 | JL | Jump if N!=V (if signed `<`) |
