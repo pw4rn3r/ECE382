@@ -116,7 +116,7 @@ inv.w   r8
 dec.w   r8
 ```
 
-**Show the contents of `r8` after the execution of each instrution.**
+**Show the contents of `r8` after the execution of each instruction.**
 <br>
 <br>
 <br>
