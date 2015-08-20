@@ -4,7 +4,7 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 
 ## Readings
 
-- [MSP430 Family Users Guide pp121](/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
+- [MSP430 Family Users Guide pp121](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 - Davies pp123-124
 - [Control Flow](http://en.wikipedia.org/wiki/Control_flow)
 - [Overflow Flag](http://en.wikipedia.org/wiki/Overflow_flag)
@@ -240,4 +240,4 @@ This instruction is simply a MOV to the PC.  So, with `BR` we have access to the
 
 ## Final Notes
 
-No HW tonight!  But Lab 1 is coming (and will align with Parents Weekend), so it would be in your best interest to take a look and get a head start on it if you can.
+No HW tonight!  But Lab 1 is coming so it would be in your best interest to take a look and get a head start on it if you can.
