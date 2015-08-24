@@ -99,6 +99,8 @@ Read the [guidance on Labs / Lab Notebooks / Coding standards](/admin/labs.html)
 
 ## Test Cases!
 
+In addition to using the test cases I have provided, create at least two test cases of your own.  Explain why your test cases provide added value in testing your program.  Be sure to include the expected results.
+
 [Test Cases](test_cases.html)
 
 ## Grading

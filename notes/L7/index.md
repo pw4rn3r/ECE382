@@ -4,7 +4,7 @@ title = 'Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer.'
 
 ## Readings
 - [Watchdog Timer](http://en.wikipedia.org/wiki/Watchdog_timer)
-- [MSP430 Family Users Guide pp341-348](/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
+- [MSP430 Family Users Guide pp341-348](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 - [ppt](Lsn7.pptx)
 
 ## Assignment
@@ -16,6 +16,7 @@ title = 'Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer.'
 - Logic Instructions
 - Shift / Rotate Instructions
 - Watchdog Timer
+- Instruction Execution Time
 
 ## Admin
 
@@ -28,13 +29,7 @@ title = 'Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer.'
     - You'll reference these all the time - they have information about every feature and subsytem on the chip.
     - Look at Family Users Guide
         - Has info common to all chips in MSP430x2xx family
-        - Show:
-            - Memory map
-            - Addressing modes
-            - Registers, status register
-            - Instruction set
     - Look at chip-specific datasheet
-        - Show pinout
 
 [Link to all code](all_code.html)
 
@@ -303,6 +298,69 @@ Here's some code that disables the watchdog:
     bis     #WDTHOLD, r10       ;next, we need to bis the password with the bit that tells the timer to hold, not count
     mov     r10, &WDTCTL        ;next, we need to write that value to the WDTCTL - this is a static address in memory (not relative to our code), so we need 
 ```
+
+## Instruction Execution Time
+
+Anyone remember how fast I said the clock on the MSP430 is?  Roughly 1MHz.  It varies from chip to chip, depending on the results of the fabrication process.  The chips are actually factory calibrated - in a future lesson, we'll learn how to access that data off the chip and tune our clocks to precise known frequencies.
+
+If I have a 1MHz clock, what is the length of a single clock cycle?  1 / 1E6 = 1 microsecond.
+
+So how long does this block of code take to execute?
+
+```
+        mov     #0x0200, r5
+        mov     #0xbeef, 0(r5)
+forever jmp     forever    
+```
+
+We need more information - how many clock cycles different instructions take to execute!
+
+It's in the datasheet - (not enough time to show in class, just inform them it's in there).
+
+### Single Operand Instruction - Cycles and Lengths
+
+![Single Operand Instruction Cycles and Lengths Table](single_operand_cycles.jpg)
+
+### Two Operand Instruction - Cycles and Lengths
+
+![Two Operand Instruction Cycles and Lengths Table](two_operand_cycles.jpg)
+
+### Jump Instruction - Cycles and Lengths
+
+![Jump Instruction Cycles and Lengths Table](jmp_cycles.jpg)
+
+**Ok, back to our program!**
+
+```
+        mov     #0x0200, r5
+        mov     #0xbeef, 0(r5)
+forever jmp     forever    
+```
+
+How many cycles?
+
+Ok, let's check out that first instruction.  What type of instruction?  What addressing modes is it using?
+
+Source - immediate
+Destination - register direct
+
+Number of cycles? 2!
+
+Second instruction.  What type of instruction?  What addressing modes is it using?
+
+Source - immediate
+Destination - register indexed
+
+Number of cycles? 5!
+
+Final instruction.  What type of instruction?  Does it have an addressing mode?
+
+Number of cycles? 2!
+
+Total cycles in the program?  9 - so this would take 9 microseconds to execute.
+
+Any questions about this?  This is just an intro - it will mean more to you in the future when we start to talk about software delays, etc.
+
 
 ## Wrap Up
 

@@ -266,7 +266,7 @@ Section:
 <br>
 <br>
 <br>
-7. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words starting at 0 and counting upward by 2.
+7. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words starting at 0 and counting upward by 2.  Use CCS to verify that it works, and explain your verification process.
 <br>
 <br>
 <br>

@@ -10,7 +10,7 @@ title = 'Directives.  Assembly Process.  Structured Design and Test.  Debugging.
 
 ## Assignment
 
-- [Lab 1](/labs/lab1/index.html) Prelab
+- [Lab 1](/382/labs/lab1/index.html) Prelab
 
 ## Lesson Outline
 - Instruction Execution Time
@@ -49,69 +49,8 @@ What else did we talk about?  Watchdog timer!  What does that do?  What's its pu
 
 Any questions about stuff from last time?
 
-OK, today is kind of a hodge-podge lesson.  We'll talk a little about instruction execution time in terms of clock cycles.  We'll go into a little more depth about the assembly process.  Then, I'll give you some tools that you'll need for this and future labs: assembly directives, structured design and test, and lab guidance.  Finally, I'll introduce Lab 1 and give you some pointers.  If there's time, I'll let you get going on it.
+OK, today is kind of a hodge-podge lesson.  We'll go into a little more depth about the assembly process.  Then, I'll give you some tools that you'll need for this and future labs: assembly directives, structured design and test, and lab guidance.  Finally, I'll introduce Lab 1 and give you some pointers.  If there's time, I'll let you get going on it.
 
-## Instruction Execution Time
-
-Anyone remember how fast I said the clock on the MSP430 is?  Roughly 1MHz.  It varies from chip to chip, depending on the results of the fabrication process.  The chips are actually factory calibrated - in a future lesson, we'll learn how to access that data off the chip and tune our clocks to precise known frequencies.
-
-If I have a 1MHz clock, what is the length of a single clock cycle?  1 / 1E6 = 1 microsecond.
-
-So how long does this block of code take to execute?
-
-```
-        mov     #0x0200, r5
-        mov     #0xbeef, 0(r5)
-forever jmp     forever    
-```
-
-We need more information - how many clock cycles different instructions take to execute!
-
-It's in the datasheet - (not enough time to show in class, just inform them it's in there).
-
-### Single Operand Instruction - Cycles and Lengths
-
-![Single Operand Instruction Cycles and Lengths Table](single_operand_cycles.jpg)
-
-### Two Operand Instruction - Cycles and Lengths
-
-![Two Operand Instruction Cycles and Lengths Table](two_operand_cycles.jpg)
-
-### Jump Instruction - Cycles and Lengths
-
-![Jump Instruction Cycles and Lengths Table](jmp_cycles.jpg)
-
-**Ok, back to our program!**
-
-```
-        mov     #0x0200, r5
-        mov     #0xbeef, 0(r5)
-forever jmp     forever    
-```
-
-How many cycles?
-
-Ok, let's check out that first instruction.  What type of instruction?  What addressing modes is it using?
-
-Source - immediate
-Destination - register direct
-
-Number of cycles? 2!
-
-Second instruction.  What type of instruction?  What addressing modes is it using?
-
-Source - immediate
-Destination - register indexed
-
-Number of cycles? 5!
-
-Final instruction.  What type of instruction?  Does it have an addressing mode?
-
-Number of cycles? 2!
-
-Total cycles in the program?  9 - so this would take 9 microseconds to execute.
-
-Any questions about this?  This is just an intro - it will mean more to you in the future when we start to talk about software delays, etc.
 
 ## More Assembly Process
 
@@ -133,7 +72,7 @@ How does the linker know where to put your code?  It executes a linker script!  
 
 ### Sections
 
-This begs the question of what sections actually are.  They are groupings of code that you define using assembler directives!
+What are sections?  They are groupings of code that you define using assembler directives!
 
 ```
 .text                   ;put code in the text section - maps to FLASH (ROM)
@@ -309,7 +248,7 @@ The goal of this lab is to implement a simple calculator using assembly language
 
 *[Put lab on board, walk through calculator instructions in each program]*
 
-[Lab 1](/labs/lab1/index.html)
+[Lab 1](/382/labs/lab1/index.html)
 
 Questions?
 
