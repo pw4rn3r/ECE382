@@ -207,7 +207,7 @@ But the larger your project becomes, the more difficult it is to fit the entire 
 
 **Guiding Principle: should have all the info a competent engineer would need to recreate the process you took to achieve a solution**
 
-[Lab Noteboook Standards](/admin/labs.html)
+[Lab Noteboook Standards](/382/admin/labs.html)
 
 Things people usually mess up:
 
@@ -219,7 +219,7 @@ Things people usually mess up:
 
 ### Assembly Code Style Guidelines
 
-[Coding Standards](/admin/labs.html)
+[Coding Standards](/382/admin/labs.html)
 
 Items of emphasis:
 
