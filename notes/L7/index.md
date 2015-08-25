@@ -4,7 +4,7 @@ title = 'Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer.'
 
 ## Readings
 - [Watchdog Timer](http://en.wikipedia.org/wiki/Watchdog_timer)
-- Davies pp 276-280
+- Davies pp 33-36, 276-280
 - [MSP430 Family Users Guide pp341-348](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 - [ppt](Lsn7.pptx)
 
