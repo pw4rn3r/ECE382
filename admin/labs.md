@@ -12,6 +12,7 @@ Lab notebooks are heavily emphasized in this course and constitute a large porti
 
 - Descriptive title
 - Objectives or purpose
+- Prelab
 - Preliminary design
 - Software flow chart / algorithms
 - Hardware schematic
