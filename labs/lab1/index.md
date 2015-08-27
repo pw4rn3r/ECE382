@@ -63,7 +63,7 @@ The MSP430G2553 that you're using does not have a hardware multiplier, so you'll
 
 There are a couple of ways to implement multiply - **strive for the fastest possible implementation**.  Solutions that multiply in O(n) time will receive half points.  Only solutions that multiply in O(log n) time will receive full points.
 
-O(n) means that the time it takes to reach a solution varies with the size of the input.  O(log n) means that time to solvevaries with the log of the size of the input.
+O(n) means that the time it takes to reach a solution varies with the size of the input.  O(log n) means that time to solve varies with the log of the size of the input.
 
 ## Prelab
 
@@ -75,7 +75,7 @@ Think about how you'll implement your calculator.  Draw a flowchart of how it wi
 
 ## Notes
 
-Read the [guidance on Labs / Lab Notebooks / Coding standards](/admin/labs.html) thoroughly and follow it.
+Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.
 
 - Comments
     - Assume the reader is a competent assembly language programmer
@@ -105,15 +105,17 @@ In addition to using the test cases I have provided, create at least two test ca
 
 ## Grading
 
+Do not forget to give your instructor access to your repository!
+
 Name:<br>
 Documentation:<br>
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
 | Prelab | **On-Time:** | | 5 | | BOC L9 |
-| Required Functionality | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L10 |
-| B Functionality | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L10 |
-| A Functionality - O(n) | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| A Functionality - O(log n) | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L11 |
+| Required Functionality | **On-Time** --------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L10 |
+| B Functionality | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L10 |
+| A Functionality - O(n) | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
+| A Functionality - O(log n) | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
+| Lab Notebook | **On-Time:** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L11 |
 | **Total** | | | **100** | | |
