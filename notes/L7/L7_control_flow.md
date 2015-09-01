@@ -1,7 +1,7 @@
 # L7 Assignment - Control Flow
-Name:
-Section:
-Documentation:
+Name: <br>
+Section: <br>
+Documentation: <br>
 
 ## The Program
 
@@ -27,7 +27,7 @@ Write a program that reads an **unsigned** word from `0x0216`.
 
 ## Questions
 
-Run the following starting values through your program and record the results.
+Run the following starting values through your program and record the results.  Be sure to list the expected answer, the answer you received, and address that answer was written to.
 
 `0x1235`:
 <br>
@@ -57,16 +57,16 @@ Run the following starting values through your program and record the results.
 
 In the MSP430G2553 detailed Tech Doc (75 pages): <br>
 a)	What is the range of recommended operating voltages for the MSP430G2553? <br> <br> <br> <br>
-b)	What is the absolute maximum and minimum voltage that should be applied to any pin? <br> <br> <br> <br>
-c)	Running at 3.5v, what is the operating current of the MSP430G2553 at <br>
-i)	Fdco = 16Mhz <br> <br>
-ii)	 Fdco = 12Mhz <br> <br>
-iii)	  Fdco = 8Mhz <br> <br> 
-iv)	 Fdco = 1Mhz <br> <br>
+b)	What are the absolute maximum and minimum voltages that should be applied to any pin? <br> <br> <br> <br>
+c)	Running at 3.5 V, what is the operating current of the MSP430G2553 at <br>
+i)	Fdco = 16 MHz <br> <br>
+ii)	 Fdco = 12 MHz <br> <br>
+iii)	  Fdco = 8 MHz <br> <br> 
+iv)	 Fdco = 1 MHz <br> <br>
 <br>	
 For the following question consult page 25.<br>
-a) Assume your MSP430 is operating at room temperature and 3v supply.  You need to draw a large amount of current from an MSP430 I/O pin while not allowing the output voltage to fall below Vcc = 2.5v at high-level output voltage and rise above Vss = 0.5v at low-level output voltage.  How much current can you draw from the I/O pin in each case? <br> <br> <br> <br> <br> <br>
-b) Pin P1.0 can be functionally multiplexed between digital output (I/O function) and an analog to digital converter input (A function).  Describe the settings of P1DIR.0, P1SEL.0, and P1SEL2.0 required to make this happen for these two situations.  Hint, consult page 43. <br> <br> <br> <br> <br> <br> <br> <br>
+a) Assume your MSP430 is operating at room temperature and 3 V supply.  You need to draw a large amount of current from an MSP430 I/O pin while not allowing the output voltage to fall below Vcc = 2.5 V at high-level output voltage and rise above Vss = 0.5 V at low-level output voltage.  How much current can you draw from the I/O pin in each case? <br> <br> <br> <br> <br> <br>
+b) Pin P1.0 can be functionally multiplexed between an I/O signal and an analog-to-digital converter (ADC) signal (represented by AX, where X is the pin number).  In order to select the proper multiplexed signal, one must ensure certain bits are set or cleared in certain registers.  Describe what values need to be written to P1DIR, P1SEL, and P1SEL2 in order to select a) digital output and b) ADC input for P1.0.  Hint, consult page 43. <br> <br> <br> <br> <br> <br> <br> <br>
 
 ## Turn-in Requirements
 

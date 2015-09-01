@@ -5,7 +5,11 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 ## Readings
 - <a href="http://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Stacks</a>  
 - [Stack Overflow](http://en.wikipedia.org/wiki/Stack_overflow)
+- Subroutines (Davies pp138-139, 178-185)
 - [ppt](Lsn10.pptx)
+
+## Assignment
+[Stacks](stack_hw.html)
 
 ## Lesson Outline
 - Admin
@@ -25,8 +29,6 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 There's one special function register that I've alluded to a couple of times, but we haven't covered yet - the Stack Pointer (SP), r1.  The SP holds the address of the top of the stack.  To figure out what that means, we've got to learn a little more about what stacks are.
 
 A stack is a Last In First Out (LIFO) queue.  Push and Pop are our two operations for dealing with the stack.  The last item you **pushed** onto the stack is the first item you'll **pop** off of it.
-
-*[Draw picture of a stack, add a few items, then show how they're popped off]*
 
 As you push more items onto the stack, the more space in memory it occupies - it grows.  As you pop items off of the stack, it shrinks.  The core purpose of stacks is to allow for the temporary storage of values at runtime for later retrieval.
 
@@ -125,8 +127,8 @@ There's a good chance we'd never be able to return to our main program!  I bet w
 
 ```
 main:
-    mov.w   #2, r10
-    mov.w   #4, r11
+    mov.w   #2, r12
+    mov.w   #4, r13
     call    #addition
     nop
     nop
@@ -134,7 +136,7 @@ main:
     nop
 
 addition:
-    add.w   r10, r11 
+    add.w   r12, r13 
     ret
 ```
 
@@ -150,13 +152,13 @@ A subroutine must specify which registers it expects arguments to passed in and 
 ;Subroutine Name: Addition
 ;Author: Capt Todd Branchflower, USAF
 ;Function: Adds two numbers
-;Inputs: operand1 in r10, operand2 in r11
-;Outputs: result in r11
-;Registers destroyed: r11
+;Inputs: operand1 in r12, operand2 in r13
+;Outputs: result in r13
+;Registers destroyed: r13
 ;---------------------------------------------------
 
 addition:
-    add.w   r10, r11 
+    add.w   r12, r13
     ret
 ```
 
@@ -178,7 +180,7 @@ mySubroutine:
 
 There are two methods of passing arguments to a subroutine - the first is pass-by-value, whereby we pass the actual values of the arguments to a subroutine.  That's what we used in the addition example.  The actual values we wanted to add were passed in the relevant registers.
 
-In our example, we passed in the value 2 in r10 and the value 4 in r11, then returned the result in r11.
+In our example, we passed in the value 2 in r12 and the value 4 in r13, then returned the result in r13.
 
 ### Pass-by-Reference
 
@@ -191,21 +193,21 @@ Let's modify our addition subroutine to take arguments in memory locations.
 ;Subroutine Name: Addition
 ;Authoer: Capt Todd Branchflower, USAF
 ;Function: Adds two numbers, returns the result
-;Inputs: address of operand1 in r10, address of operand2 in r11
-;Outputs: result in r11
-;Registers destroyed: r11
+;Inputs: address of operand1 in r12, address of operand2 in r13
+;Outputs: result in r13
+;Registers destroyed: r13
 ;---------------------------------------------------
 
 addition:
-    push.w  r12
-    mov.w   @r11, r12
-    add.w   @r10, r12 
-    mov.w   r12, r11
-    pop     r12
+    push.w  r14
+    mov.w   @r13, r14
+    add.w   @r12, r14 
+    mov.w   r14, r13
+    pop     r14
     ret
 ```
 
-I had to do a bit of work to preserve r12.  It would have been easier to just pass the result out in r12, but I want to be true to the subroutine header.
+I had to do a bit of work to preserve r14.  It would have been easier to just pass the result out in r14, but I want to be true to the subroutine header.
 
 ### Key Subroutine Rules
 
@@ -225,12 +227,14 @@ So split your problems into parts that logically belong together and could be re
 
 Even modern operating systems must obey the convention of specifying which registers are used for arguments passed in to a subroutine and which are used to pass back results.  This convention is known as the Application Binary Interface (ABI).
 
+When using subroutines with the MSP430, use r12, r13, r14, and r15 to pass arguments to your subroutine.  If you have more than four arguments, use the stack for the remainder.  Failure to adhere to this convention could prevent some subroutines from working, especially when you integrate assembly with a C program.
+
 
 ## Lab 2 Introduction
 
-For Lab 2, you're going to use your new knowledge of subroutines to decrypt some encrypted messages with keys of different lengths.  This is the first semester this lab has ever been done!
+For Lab 2, you're going to use your new knowledge of subroutines to decrypt some encrypted messages with keys of different lengths.  This lab has been one of the favorites in semesters past.
 
-[Lab 2](/labs/lab2/index.html)
+[Lab 2](/382/labs/lab2/index.html)
 
 - Basics of `XOR` encryption
     - `XOR` message with key to encrypt
@@ -243,9 +247,8 @@ For Lab 2, you're going to use your new knowledge of subroutines to decrypt some
     - It encodes each character in a single byte
 - Functionality
     - Required: byte length key
-    - B: word length key
-    - A: arbitrary length key
-    - Bonus: crack message without knowledge of key
+    - B: arbitrary length key
+    - A: crack message without knowledge of key
 - Restrictions on program
     - decrypt_message routine is pass-by-reference
     - decrypt_character routine is pass-by-value
