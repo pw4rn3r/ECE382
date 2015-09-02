@@ -3,7 +3,7 @@ title = 'Labs'
 # Labs / Computer Exercises
 
 - [CompEx1 - Intro to the MSP430 and Code Composer Studio](/382/labs/compex1/index.html)
-- [Lab 1 - Assembly Language - "A Simple Calculator"](/382labs/lab1/index.html)
+- [Lab 1 - Assembly Language - "A Simple Calculator"](/382/labs/lab1/index.html)
 - [Lab 2 - Subroutines - "Cryptography"](/382/labs/lab2/index.html)
 - [Lab 3 - SPI - "I/O"](/382/labs/lab3/index.html)
 - [Lab 4 - C - "An LCD Device Driver"](/382/labs/lab4/index.html)
