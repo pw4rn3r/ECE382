@@ -9,7 +9,7 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 - [ppt](Lsn10.pptx)
 
 ## Assignment
-[Stacks](stack_hw.html)
+[Stacks](stack_hw.htm)
 
 ## Lesson Outline
 - Admin
