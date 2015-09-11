@@ -4,6 +4,8 @@ title = 'Peripherals, Ports, GPIO, Multiplexing'
 
 ## Readings
 - [Memory-mapped IO](http://en.wikipedia.org/wiki/Memory-mapped_I/O)
+- [MSP 430 peripherals](https://en.wikipedia.org/wiki/TI_MSP430#Peripherals)
+- Davies p32-33
 - [ppt](Lsn13.pptx)
 
 ## Lesson Outline
@@ -25,7 +27,7 @@ title = 'Peripherals, Ports, GPIO, Multiplexing'
             - think about how you break your program into subroutines
             - just because it works doesn't mean your code is good
     - Bonus and weaknesses
-        - Weakness: knowing that the last character is `#` and that key is two bytes
+        - Weakness: knowing that key is two bytes
         - Techniques
             - Weakness combined with guess and check
             - Frequency analysis
@@ -36,17 +38,12 @@ title = 'Peripherals, Ports, GPIO, Multiplexing'
                     - Multiply for lab 1
                         - O(n) technique
                         - O(log n) technqiue
-    - Changes for next year
-        - Required functionality is same
-        - A functionality is B functionality
-        - Bonus is A functionality
-        - No # at the end of each  message - have to count bytes
+
 
 So through that lab, we showed that the CPU on the MSP430 can be used to accomplish any type of general purpose programming task via its instruction set architecture (ISA).
 
 But the power of an MCU isn't in its ability to accomplish general-purpose computing. It's meant to be embedded in the real world, interacting with peripherals without human intervention - and MCU design is finely tuned for those functions. In that regard, there's a ton of built-in hardware support to make common embedded functions fast and easy for the programmer.
 
-Look at schedule.  Talk about upcoming lab - writing your first device drivers for LCD, push button.  Show black box.
 
 ## Peripherals
 
