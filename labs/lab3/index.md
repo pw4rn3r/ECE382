@@ -3,184 +3,154 @@ title = 'Lab 3 - SPI - "I/O"'
 
 # Lab 3 - SPI - "I/O"
 
+## Given code
+- color.h - lists some of the colors at your disposal on the LCD
+- lab3_given.asm
+
 ##  Mega Prelab
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
-### Nokia1202  LCD BoosterPack v4-5
-Look at the schematic for the Nokia1202 LCD BoosterPack. Complete the following table.  The pin number should be the pin number that signal connects to on the MSP 430.  You may need to examine page 3 of the MSP430 Data Sheet. The type is from the perspective of the MSP430 and is one of the following: input, output, or power .  For example, the RST' line should  be listed as having an output type because it is an output from the  MSP430 (to an input on the Nokia 1202).  For input and output types (do nothing further with power), list their bit settings in the three registers listed (see pages 328 and 329 of the MSP430g2553 User's Guide). <br>
 
-| Name | Pin # | Type | PxDIR| PxREN | PxOUT |
-|:-: | :-: | :-: | :-: | :-: | :-: |
-|GND | | | | |  |
-| RST |   |   |   |   |   |
-| P1.4 |   |   |   |   |   |   
-| MOSI|  |   |   |   |   |   
-| SCLK |   |   |   |   |   |   
-| VCC |   |   |   |   |   |  
-| S1 |   |   |   |   |   | 
-| S2 |   |   |   |   |   | 
-| S3 |   |   |   |   |   | 
-| S4 || | | | | 
+### Delay Subroutine
+In lab3_given.asm, you have the header for a subroutine, but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.
+
+### ILI9341 LCD BoosterPack 
+
+Look at the schematic for the LCD BoosterPack. Complete the following table.  The pin number (1 - 20) should be the pin number that signal connects to on the MSP 430. Describe the bit settings for each button in the three registers listed (see pages 328 and 329 of the MSP430g2553 User's Guide). <br>
+
+| Name | Pin # | 
+|:-: | :-: | 
+| S1 |   |   
+| S2 |   |   
+| S3 |   |   
+| S4 |	| 
+| S5 |	| 
+
+Hex values for
+	- PxDIR:
+	- PxREN:
+	- PxOUT:
 
 
 ### Configure the MSP430
-The following is a portion of the code that initalizes the directions of the pins connecting the MSP430 to the Nokia 1202 display. Use the information from the previous question to identify the names of the registers missing in the following code (identified by the letters A - D).  Put the register names in the table below.
 
+Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock.
+| Name | Pin # | Function|
+|:-: | :-: |:-: |
+| SCLK |   |   |
+| CS |   |   |
+| MOSI |   |   |
+| DC |	| |
+
+Below the pin configuration code are some lines of code from the lab3_given.asm file to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
-mov.b	#LCD1202_CS_PIN|LCD1202_BACKLIGHT_PIN|LCD1202_SCLK_PIN|LCD1202_MOSI_PIN, & A
-mov.b	#LCD1202_CS_PIN|LCD1202_BACKLIGHT_PIN|LCD1202_SCLK_PIN|LCD1202_MOSI_PIN, & B
-mov.b	#LCD1202_RESET_PIN, & C
-mov.b	#LCD1202_RESET_PIN, & D
+1:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
+2:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+3:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
+4:		bis 	#UCSSEL_2, &UCB0CTL1
+5:		bis 	#BIT0, &UCB0BR0
+6:		clr	&UCB0BR1
+7:		bic	#UCSWRST, &UCB0CTL1
 ```
-| Mystery Label | Register|
-|:-: |:-: |
-| A|  |
-| B |  |
-| C |  |
-| D |  |
+Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
+| Pin name | Function |
+| :-:|:-:|
+| P1.5| |
+| P1.7| |
+| P1.6| |
 
+Next, describe what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example.
+Line 3:<br>
+Line 4: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode.
+Line 5: <br>
+Line 6: <br>
+Line 7: <br>
 
-The following initializes the SPI subsystem of the MSP430.  For each of the bits listed in the table below, identify how the code-snippet configures that pin and what function is realized by that setting.  For example, setting the UCMSB bit of the UCB0CTL0 register forces the SPI subsystem to output the bits starting from the MSB.  Also, list the bit position that each occupies in its associated register.
-```
-	bis.b	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
-	bis.b	#UCSSEL_2, &UCB0CTL1
-	bic.b	#UCSWRST, &UCB0CTL1
-```
+### Communicate with the LCD
+The following code sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
 
-| ID | Bit | Function as set in the code |
-|:-:|:-:|:-:|
-| UCCKPH | | |
-| UCMSB | | |
-| UCMST | | |
-| UCSYNCH| | |
-| UCSSEL_2|  | |
-| UCSWRST| | |
-
-### Communicate to the Nokia1202 display
-The following code communicates one byte to the Nokia 1202 display using its 9-bit protocol.  Use this code to draw a timing diagram of the expected behavior of LCD1202_CS_PIN, LCD1202_SCLK_PIN, LCD1202_MOSI_PINs from the begining of this subroutine to the end.  Make sure that you clearly show the relationship of the edges in the clk and data waveforms.
 ```
 ;-------------------------------------------------------------------------------
-;	Name:		writeNokiaByte
-;	Inputs:		R12 selects between (1) Data or (0) Command string
-;				R13 the data or command byte
-;	Outputs:	none
-;	Purpose:	Write a command or data byte to the display using 9-bit format
+;	Name: writeCommand
+;	Inputs: command in r12
+;	Outputs: none
+;	Purpose: send a command to the LCD
+;	Registers: r12 preserved
 ;-------------------------------------------------------------------------------
-writeNokiaByte:
+writeCommand:
+	push	r12
+	bic 	#LCD_CS_PIN, &P1OUT
+	bic		#LCD_DC_PIN, &P1OUT
+	mov.b	 r12, &UCB0TXBUF
 
-	push	R12
-	push	R13
+pollC:
+	bit		#UCBUSY, &UCB0STAT	;while UCBxSTAT & UCBUSY
+	jnz		pollC
 
-	bic.b	#LCD1202_CS_PIN, &P1OUT				; LCD1202_SELECT
-	bic.b	#LCD1202_SCLK_PIN | LCD1202_MOSI_PIN, &P1SEL	; Enable I/O function by clearing
-	bic.b	#LCD1202_SCLK_PIN | LCD1202_MOSI_PIN, &P1SEL2	; LCD1202_DISABLE_HARDWARE_SPI
+	bis		#LCD_CS_PIN, &P1OUT
+	pop		r12
+	ret
 
-	bit.b	#01h, R12
-	jeq	cmd
+;-------------------------------------------------------------------------------
+;	Name: writeData
+;	Inputs: data to be written in r12
+;	Outputs: none
+;	Purpose: send data to the LCD
+;	Registers: r12 preserved
+;-------------------------------------------------------------------------------
+writeData:
+	push	r12
+	bic 	#LCD_CS_PIN, &P1OUT
+	bis	#LCD_DC_PIN, &P1OUT
+	mov.b 	r12, &UCBxTXBUF
 
-	bis.b	#LCD1202_MOSI_PIN, &P1OUT			; LCD1202_MOSI_LO
-	jmp	clock
+pollD:
+	bit	#UCBUSY, &UCBxSTAT	;while UCBxSTAT & UCBUSY
+	jnz	pollD
 
-cmd:
-	bic.b	#LCD1202_MOSI_PIN, &P1OUT			; LCD1202_MOSI_HIGH
-
-clock:
-	bis.b	#LCD1202_SCLK_PIN, &P1OUT			; LCD1202_CLOCK positive edge
-	nop
-	bic.b	#LCD1202_SCLK_PIN, &P1OUT			; negative edge
-
-	bis.b	#LCD1202_SCLK_PIN | LCD1202_MOSI_PIN, &P1SEL	; LCD1202_ENABLE_HARDWARE_SPI;
-	bis.b	#LCD1202_SCLK_PIN | LCD1202_MOSI_PIN, &P1SEL2	;
-
-	mov.b	R13, UCB0TXBUF
-
-pollSPI:
-	bit.b	#UCBUSY, &UCB0STAT
-	jz		pollSPI					; while (UCB0STAT & UCBUSY);
-
-	bis.b	#LCD1202_CS_PIN, &P1OUT				; LCD1202_DESELECT
-
-	pop		R13
-	pop		R12
-
+	bis	#LCD_CS_PIN, &P1OUT
+	pop	r12
 	ret
 ```
-### Configure the Nokia1202 display
-The following code configures the Nokia 1202 display to display pixels.  The code consists of two main areas.  The first section holds the reset line low and then high for a specific length of time.  You will measure the duration of the reset pulse later in the lab. <br> <br>
-The second section sends a sequence of commands to the Nokia 1202 display.  Your task is to use the the information on page 42 (and beyond) of the STE2007 technical document to decode the symbolic constants moved into register R13 on the lines marked with "DECODE HERE".
 
+Use this code to draw two timing diagrams (one for each subroutine) of the expected behavior of LCD_CS_PIN, LCD_DC_PIN, LCD_SCLK_PIN, and UCBxTXBUF from the begining of these subroutines to the end.  Make sure that you clearly show the relationship of the edges in the clk and data waveforms. 
+
+
+### Draw a pixel
+The following code draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
+
+|Subroutine| Purpose|
+|:-:|:-:|
+|setArea| |
+|splitColor| |
+|writeData| |
+|writeData| |
 ```
 ;-------------------------------------------------------------------------------
-;	Name:		initNokia		68(rows)x92(columns)
-;	Inputs:		none
-;	Outputs:	none
-;	Purpose:	Reset and initialize the Nokia Display
+;	Name: drawPixel
+;	Inputs: x in r12, y in r13
+;	Outputs: none
+;	Purpose: draws a pixel in a particular spot
+;	Registers: r12, 13, 14, 15 preserved
 ;-------------------------------------------------------------------------------
-initNokia:
-
-	push	R12
-	push	R13
-
-	bis.b	#LCD1202_CS_PIN, &P1OUT
-
-	;-------------------------------------------------------------------------------
-	; Measure the time that the RESET_PIN is held low by the delayNokiaResetLow loop
-	bic.b	#LCD1202_RESET_PIN, &P2OUT
-	mov	#0FFFFh, R12
-delayNokiaResetLow:
-	dec	R12
-	jne	delayNokiaResetLow
-	bis.b	#LCD1202_RESET_PIN, &P2OUT
-	;-------------------------------------------------------------------------------
-
-	mov	#0FFFFh, R12
-delayNokiaResetHigh:
-	dec	R12
-	jne	delayNokiaResetHigh
-	bic.b	#LCD1202_CS_PIN, &P1OUT
-
-	; First write seems to come out a bit garbled - not sure cause
-	; but it can't hurt to write a reset command twice
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_RESET, R13					; DECODE HERE
-	call	#writeNokiaByte
-
-
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_RESET, R13
-	call	#writeNokiaByte
-
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_DISPLAYALLPOINTSOFF, R13			; DECODE HERE
-	call	#writeNokiaByte
-
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_POWERCONTROL | STE2007_POWERCTRL_ALL_ON, R13	; DECODE HERE
-	call	#writeNokiaByte
-
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_DISPLAYNORMAL, R13				; DECODE HERE
-	call	#writeNokiaByte
-
-	mov	#NOKIA_CMD, R12
-	mov	#STE2007_DISPLAYON, R13					; DECODE HERE
-	call	#writeNokiaByte
-
-	pop	R13
-	pop	R12
-
+drawPixel:
+	push	r12
+	push	r13
+	push	r14
+	push	r15
+	mov.b	r12, r14
+	mov.b	r13, r15
+	call	#setArea
+	mov		#COLOR1, r12
+	call	#splitColor
+	call	#writeData
+	mov		r13, r12
+	call	#writeData
+	pop		r15
+	pop		r14
+	pop		r13
+	pop		r12
 	ret
 ```
-Complete the table below.  To answer this question you will have to use some common sense in decoding the meaning of the symbolic constants.
-
-
-| Symbolic Constant | Hex | Function |
-| :-: | :-: | :-: |
-|#STE2007_RESET| | |
-|#STE2007_DISPLAYALLPOINTSOFF| | |
-|#STE2007_POWERCONTROL| | | 
-|#STE2007_POWERCTRL_ALL_ON | | |
-|#STE2007_DISPLAYNORMAL | | |
-|#STE2007_DISPLAYON | | |
 
 (This marks the end of the Mega Prelab.)
 ---------------------------------------------------------------
@@ -221,9 +191,9 @@ The native write operation to the Nokia 1202 will overwrite any information that
 Import the following image into a paint program and show the result of the operation between the two bits maps combined using the logic operator specified.
 ![xor picture](bitblock.bmp)
 ## Functionality
-Required functionality: Create a block on the LCD that is 8x8 pixels.  The location of the block must be passed into the subroutine via r12 and r13.
-A functionality: Move the 8-pixel block one block in the direction of the pressed button (up, down, left, right).
-(Under construction)
+**Required functionality**: Create a block on the LCD that is 10x10 pixels.  <br>
+**A functionality**: Move the 10-pixel block one block in the direction of the pressed button (up, down, left, right).  Do not allow the shadow to remain.
+
 
 ## Grading
 
