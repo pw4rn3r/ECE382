@@ -27,14 +27,15 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | MOSI| | | 
 | CS | | |
 | DC | | |
-| MISO| | |
+| MISO| | ||
 
 What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be ORed or ANDed with each register to achieve these ends.   
 
 |PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
+|:-:|:-:|:-:|:-:|:-:|
 |S1| | | | |
 |MOSI|||||
-|CS| | | | |
+|CS| | | | ||
 
 
 
@@ -47,7 +48,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | SCLK |   |   |
 | CS |   |   |
 | MOSI |   |   |
-| DC |	| | 
+| DC |	| | |
 
 Below the pin configuration code are some lines of code from the lab3_given.asm file to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
@@ -65,7 +66,7 @@ Fill in the chart below with the function that is enabled by the first two lines
 |:-:|:-:|
 | P1.5| |
 | P1.7| |
-| P1.6| |
+| P1.6| ||
 
 Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example. <br>
 
@@ -133,7 +134,8 @@ The following code draws a pixel of a predetermined color at the coordinate (R12
 |setArea| |
 |splitColor| |
 |writeData| |
-|writeData| |
+|writeData| ||
+
 ```
 ;-------------------------------------------------------------------------------
 ;	Name: drawPixel
@@ -189,7 +191,7 @@ Configure the logic analyzer to capture the waveform generated when the S1 butto
 |||||
 |||||
 |||||
-|||||
+||||||
 
 Be sure to label your signals on the logic analyzer and include screenshots of each analyzed signal.
 
