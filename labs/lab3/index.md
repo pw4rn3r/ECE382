@@ -4,8 +4,8 @@ title = 'Lab 3 - SPI - "I/O"'
 # Lab 3 - SPI - "I/O"
 
 ## Given code
-- color.h - lists some of the colors at your disposal on the LCD
-- lab3_given.asm
+- [color.h](color.h) - lists some of the colors at your disposal on the LCD
+- [lab3_given.asm](lab3_given.asm)
 
 ##  Mega Prelab
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
