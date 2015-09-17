@@ -11,7 +11,7 @@ title = 'Lab 3 - SPI - "I/O"'
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine (line 560), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
+In lab3_given.asm, you have the header for a subroutine (line 566), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
 ### ILI9341 LCD BoosterPack 
 
@@ -50,7 +50,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | MOSI |   |   |
 | DC |	| | |
 
-Below the pin configuration code are some lines of code from the lab3_given.asm file to properly configure the SPI subsystem.  Use this code to answer the next two questions.
+Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 132 - 138) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
 1:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
 2:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
@@ -77,7 +77,7 @@ Line 6: <br>
 Line 7: <br>
 
 ### Communicate with the LCD
-The following code sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
+The following code (lines 290 - 330) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
 
 ```
 ;-------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ Use this code to draw two timing diagrams (one for each subroutine) of the expec
 
 
 ### Draw a pixel
-The following code draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
+The following code (lines 538 - 562) draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
 
 |Subroutine| Purpose|
 |:-:|:-:|
@@ -175,9 +175,9 @@ Create a project around the lab3_given.asm file.  Be sure to include your Delay1
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
 <br>
-When S1 is detected as being pressed and released (Lines 101-103 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. Find the three calls to writeCommand and eight calls to writeData that generate these packets. In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
+When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. Find the three calls to writeCommand and eight calls to writeData that generate these packets. In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
 
-Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the data values and what and where the pixels are drawn. The "Line" column refers to the line of code from which the call to write something to the LCD originated.
+Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the values sent and what and where the pixels are drawn. Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
 |Line|Command/Data|8-bit packet|Meaning of packet|
 |:-:|:-:|:-:|
@@ -193,7 +193,7 @@ Configure the logic analyzer to capture the waveform generated when the S1 butto
 |||||
 ||||||
 
-Be sure to label your signals on the logic analyzer and include screenshots (which can be saved to your external hard drive) of each analyzed signal.
+Be sure to label your signals on the logic analyzer and include screenshots (which can be saved to your external hard drive, for eventual posting in your lab notebook) of each analyzed signal.
 
 ###Writing modes
 The native write operation to our LCD will not overwrite any information that is on the display unless it is within the region defined in setArea.  However, that may not be the best course of action in your application.  The new bits being added to the image may be merged using the AND, OR, XOR operators.  To do this treat a black pixel as a logic 1 and a white pixel as a logic 0.  The pixel values from the same locations are combined using a logical operator and placed at the corresponding location in the destination imaged.

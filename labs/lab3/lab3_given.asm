@@ -1,5 +1,11 @@
 ;-------------------------------------------------------------------------------
 ; MSP430 Assembler Code Template for use with TI Code Composer Studio
+;		Virginia Trimble
+;		Fall 2015, ECE 382
+;		MSP430G2553
+;		This code draws a horizontal bar on the LI9341 LCD every time S1 is pressed.
+;
+;		This code was created using RobG's example LCD program, then modified for our particular function.
 ;
 ;
 ;-------------------------------------------------------------------------------
