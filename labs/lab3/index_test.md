@@ -15,31 +15,37 @@ In lab3_given.asm, you have the header for a subroutine, but there is no code.  
 
 ### ILI9341 LCD BoosterPack 
 
-Look at the schematic for the LCD BoosterPack. Complete the following table.  The pin number (1 - 20) should be the pin number that signal connects to on the MSP 430. Describe the bit settings for each button in the three registers listed (see pages 328 and 329 of the MSP430g2553 User's Guide). <br>
+Look at the schematic for the LCD BoosterPack. Complete the following table.  The pin number (1 - 20) should be the pin number that signal connects to on the MSP 430, and the PX.X should be the pin and port it connects to (e.g. P1.0). <br>
 
-| Name | Pin # | 
-|:-: | :-: | 
-| S1 |   |   
-| S2 |   |   
-| S3 |   |   
-| S4 |	| 
+| Name | Pin # | PX.X|
+|:-: | :-: |:-: |
+| S1 |   |   |
+| S2 |   |   |
+| S3 |   |   |
+| S4 |	| |
 | S5 |	| |
+| MOSI| | | 
+| CS | | |
+| DC | | |
+| MISO| | |
 
-What are the hex values that need to be ORed with the below registers for these buttons to be properly configured?
-	- PxDIR: <br>
-	- PxREN: <br>
-	- PxOUT: <br>
+What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be ORed or ANDed with each register to achieve these ends.   
+|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
+|S1| | | | |
+|MOSI|||||
+|CS| | | | |
+
 
 
 ### Configure the MSP430
 
-Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock.
+Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock. <br>
 | Name | Pin # | Function |
 |:-:|:-:|:-:|
 | SCLK |   |   |
 | CS |   |   |
 | MOSI |   |   |
-| DC |	| | |
+| DC |	| | 
 
 Below the pin configuration code are some lines of code from the lab3_given.asm file to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
@@ -51,12 +57,12 @@ Below the pin configuration code are some lines of code from the lab3_given.asm 
 6:		clr	&UCB0BR1
 7:		bic	#UCSWRST, &UCB0CTL1
 ```
-Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
+Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help. <br>
 | Pin name | Function |
 |:-:|:-:|
 | P1.5| |
 | P1.7| |
-| P1.6| ||
+| P1.6| |
 
 Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example.
 Line 3:<br>
