@@ -11,7 +11,7 @@ title = 'Lab 3 - SPI - "I/O"'
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine, but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.
+In lab3_given.asm, you have the header for a subroutine, but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
 ### ILI9341 LCD BoosterPack 
 
@@ -30,6 +30,7 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | MISO| | |
 
 What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be ORed or ANDed with each register to achieve these ends.   
+
 |PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
 |S1| | | | |
 |MOSI|||||
@@ -39,7 +40,8 @@ What are the hex values that need to be combined with the below registers for th
 
 ### Configure the MSP430
 
-Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock. <br>
+Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock. 
+
 | Name | Pin # | Function |
 |:-:|:-:|:-:|
 | SCLK |   |   |
@@ -57,15 +59,17 @@ Below the pin configuration code are some lines of code from the lab3_given.asm 
 6:		clr	&UCB0BR1
 7:		bic	#UCSWRST, &UCB0CTL1
 ```
-Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help. <br>
-| Pin name | Function |
+Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
+
+| Pin name | Function | 
 |:-:|:-:|
 | P1.5| |
 | P1.7| |
 | P1.6| |
 
-Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example.
-Line 3:<br>
+Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example. <br>
+
+Line 3:
 Line 4: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode.
 Line 5: <br>
 Line 6: <br>
@@ -169,12 +173,13 @@ Create a project around the lab3_given.asm file.  Be sure to include your Delay1
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
 <br>
-When S1 is detected as being pressed and released (Lines 101-103 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. Find the two calls to writeCommand and eight calls to writeData that generate these packets. In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
+When S1 is detected as being pressed and released (Lines 101-103 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. Find the three calls to writeCommand and eight calls to writeData that generate these packets. In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
 
-Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the data values and what and where the pixels are drawn.
+Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the data values and what and where the pixels are drawn. The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
 |Line|Command/Data|8-bit packet|Meaning of packet|
 |:-:|:-:|:-:|
+|||||
 |||||
 |||||
 |||||
@@ -200,6 +205,7 @@ Import the following image into a paint program and show the result of the opera
 
 **Required functionality**: Create a block on the LCD that is 10x10 pixels.  <br>
 **A functionality**: Move the 10-pixel block one block (10 pixels) in the direction of the pressed button (up, down, left, right).  
+**Bonus functionality**: Write your name or nickname of at least 5 characters to the screen on a solid background when the S1 button is pushed.
 
 
 ## Grading
@@ -210,6 +216,7 @@ Import the following image into a paint program and show the result of the opera
 | Required Logic Analyzer | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L19 |
 | Required Functionality | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 20 | | COB L19 |
 | A Functionality | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
+| Bonus Functionality | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L19 |
 | Lab Notebook | **On-Time** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
 | **Total** | | | **100** | | ||
 
