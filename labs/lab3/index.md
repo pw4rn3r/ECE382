@@ -11,7 +11,7 @@ title = 'Lab 3 - SPI - "I/O"'
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine, but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
+In lab3_given.asm, you have the header for a subroutine (line 560), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
 ### ILI9341 LCD BoosterPack 
 
@@ -29,13 +29,13 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | DC | | |
 | MISO| | ||
 
-What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be ORed or ANDed with each register to achieve these ends.   
+What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.   
 
-|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
-|:-:|:-:|:-:|:-:|:-:|
-|S1| | | | |
-|MOSI|||||
-|CS| | | | ||
+|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|bis/bic|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|S1| | | | ||
+|MOSI||||||
+|CS| | | | |||
 
 
 
@@ -45,7 +45,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 
 | Name | Pin # | Function |
 |:-:|:-:|:-:|
-| SCLK |   |   |
+| SCLK |   | serial clock  |
 | CS |   |   |
 | MOSI |   |   |
 | DC |	| | |
@@ -70,8 +70,8 @@ Fill in the chart below with the function that is enabled by the first two lines
 
 Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example. <br>
 
-Line 3:
-Line 4: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode.
+Line 3: <br>
+Line 4: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode. <br>
 Line 5: <br>
 Line 6: <br>
 Line 7: <br>
@@ -167,7 +167,7 @@ drawPixel:
 (This marks the end of the Mega Prelab.)
 ---------------------------------------------------------------
 ## Logic Analyzer
-The answers to the logic analyzer section will be posted to Bitbucket along with the functionality code.
+The answers to the logic analyzer section will be posted to Bitbucket in the lab writeup.
 ###Physical communication
 Connect the LCD Booster Pack to your TI Launch Pad.  Make sure that the buttons on the Booster Pack are aligned with the buttons on the MSP430.  The pin numbers on the Boosterpack should match the pin numbers of the MSP430.
 <br>
@@ -193,7 +193,7 @@ Configure the logic analyzer to capture the waveform generated when the S1 butto
 |||||
 ||||||
 
-Be sure to label your signals on the logic analyzer and include screenshots of each analyzed signal.
+Be sure to label your signals on the logic analyzer and include screenshots (which can be saved to your external hard drive) of each analyzed signal.
 
 ###Writing modes
 The native write operation to our LCD will not overwrite any information that is on the display unless it is within the region defined in setArea.  However, that may not be the best course of action in your application.  The new bits being added to the image may be merged using the AND, OR, XOR operators.  To do this treat a black pixel as a logic 1 and a white pixel as a logic 0.  The pixel values from the same locations are combined using a logical operator and placed at the corresponding location in the destination imaged.
