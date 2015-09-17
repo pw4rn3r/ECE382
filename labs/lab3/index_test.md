@@ -23,7 +23,7 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | S2 |   |   
 | S3 |   |   
 | S4 |	| 
-| S5 |	| 
+| S5 |	| |
 
 What are the hex values that need to be ORed with the below registers for these buttons to be properly configured?
 	- PxDIR: <br>
@@ -34,12 +34,12 @@ What are the hex values that need to be ORed with the below registers for these 
 ### Configure the MSP430
 
 Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock.
-| Name | Pin # | Function|
-|:-: | :-: |:-: |
+| Name | Pin # | Function |
+|:-:|:-:|:-:|
 | SCLK |   |   |
 | CS |   |   |
 | MOSI |   |   |
-| DC |	| |
+| DC |	| | |
 
 Below the pin configuration code are some lines of code from the lab3_given.asm file to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
@@ -53,10 +53,10 @@ Below the pin configuration code are some lines of code from the lab3_given.asm 
 ```
 Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
 | Pin name | Function |
-| :-:|:-:|
+|:-:|:-:|
 | P1.5| |
 | P1.7| |
-| P1.6| |
+| P1.6| ||
 
 Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example.
 Line 3:<br>
@@ -159,7 +159,7 @@ The answers to the logic analyzer section will be posted to Bitbucket along with
 ###Physical communication
 Connect the LCD Booster Pack to your TI Launch Pad.  Make sure that the buttons on the Booster Pack are aligned with the buttons on the MSP430.  The pin numbers on the Boosterpack should match the pin numbers of the MSP430.
 <br>
-Create a project around the lab3_given.asm file.  Before you can run the pgroam, you will need to create a 160ms delay subroutine.  The header has been provided on line 635 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.  Be sure to include your time analysis of this subroutine in your lab notebook write-up.  
+Create a project around the lab3_given.asm file.  Be sure to include your Delay160ms subroutine.
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
 <br>
@@ -169,17 +169,18 @@ Configure the logic analyzer to capture the waveform generated when the S1 butto
 
 |Line|Command/Data|8-bit packet|Meaning of packet|
 |:-:|:-:|:-:|
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
-||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
+|||||
 |||||
 
+Be sure to label your signals on the logic analyzer and include screenshots of each analyzed signal.
 
 ###Writing modes
 The native write operation to our LCD will not overwrite any information that is on the display unless it is within the region defined in setArea.  However, that may not be the best course of action in your application.  The new bits being added to the image may be merged using the AND, OR, XOR operators.  To do this treat a black pixel as a logic 1 and a white pixel as a logic 0.  The pixel values from the same locations are combined using a logical operator and placed at the corresponding location in the destination imaged.
