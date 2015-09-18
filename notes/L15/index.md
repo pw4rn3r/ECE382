@@ -4,30 +4,30 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 
 ## Readings
 
+- [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
 - [Serial Peripheral Interface (SPI)](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
-- [Lab 3](/labs/lab3/index.html)
+- [Lab 3](/382/labs/lab3/index.html)
 - [ppt](Lsn15.pptx)
 
 ## Assignment
-- [Lab 3](/labs/lab3/index.html) Prelab
+- [Lab 3](/382/labs/lab3/index.html) Prelab
 
 ## Lesson Outline
 - Serial Comm Fundamentals
 - Serial Peripheral Interface (SPI)
 - SPI on the MSP430
-- [Lab 3](/labs/lab3/index.html) Introduction
+- [Lab 3](/382/labs/lab3/index.html) Introduction
 - Logic Analyzer Demo
 
 ## Admin
 
 - Class in Lab again!
 - Collect HW, then talk about it.
-- (M4) - talk about timing error in software delay from last class.
 - Talk about bonus overclocking stuff from L14?
 
-*[Syllabus on big screen.]*  Three full lessons for [Lab 3](/labs/lab3/index.html)!  This doesn't mean that you've got some time to relax - this means that [Lab 3](/labs/lab3/index.html) is a lot of work.  I'll discuss it more at the end of the lesson, but you'll be interfacing with external hardware for the first time in this lab.  To interface with the LCD, you need to use a protocol call SPI - the Serial Peripheral Interface.  That's what we'll talk about today.
+Two full lessons for Lab 3!  This doesn't mean that you've got some time to relax - this means that Lab 3 is a lot of work.  I'll discuss it more at the end of the lesson, but you'll be interfacing with external hardware for the first time in this lab.  To interface with the LCD, you need to use a protocol call SPI - the Serial Peripheral Interface.  That's what we'll talk about today.
 
-Everything we do today will prepare you for [Lab 3](/labs/lab3/index.html).
+Everything we do today will prepare you for Lab 3.
 
 ## Serial Comm Fundamentals
 
@@ -46,13 +46,11 @@ Can anyone name any serial protocols?
 
 Our MSP430 is very pin-limited.  A serial protocol is beneficial in this circumstance because it uses less pins that could be devoted to other purposes.  Attempting to drive a parallel interface would use up almost all of our available pins.
 
-*[Show parallel interface for the LCD (actually pull LCD out of black box)]*
-
 How many pins would we have left over for other stuff if we wanted to drive this LCD?  Not many!  So we've got to do something different.
 
 ## Serial Peripheral Interface (SPI)
 
-In Lab 3, we're going to drive our LCD using the Serial Peripheral Interface (SPI).  On the black box, there is a chip that accepts SPI and outputs in parallel to drive the LCD.  We can use this to save pins!
+In Lab 3, we're going to drive our LCD using the Serial Peripheral Interface (SPI).  
 
 SPI is probably the simplest peripheral interface there is.  It involves chaining shift registers on two devices together along with a clock.  With each clock cycle, a single bit transferred from the MSB of one shift register to the LSB of the other.  After 8 clock cycles, an entire byte has been transferred between the chips.
 
@@ -85,9 +83,7 @@ For some reason, TI names these signals differently:
 - MISO = SOMI
 - CLK = CLK
 
-TI's SPI subsystem also provides a Slave Transmit Enable (STE) bit - this reverses the typical functionality of SS.  STE allows a slave to select from amongst multiple masters.  **Extra credit to the cadet who figures out the common use case for this.**
-
-In the lab, we'll want standard SS functionality - so we'll configure SPI in a 3-pin mode and provide the SS via GPIO.
+TI's SPI subsystem also provides a Slave Transmit Enable (STE) bit - this reverses the typical functionality of SS.  STE allows a slave to select from amongst multiple masters.  
 
 Hardware support for SPI on MCUs is usually very flexible.  There are configuration bits in the SPI control registers that can control all of these characteristics.  This is because peripherals use a wide range of SPI configurations - it's critical that you read the datasheet for the SPI component you're trying to interface with and match its expectations. 
 
@@ -219,17 +215,15 @@ The buffers you write to for transmission (TXBUF) are copied into the shift regi
 
 The buffers you receive from (RXBUF) are copied from the shift register when a full byte has been received.  This indicates that the full byte has been transmitted and received.
 
-Their status can be monitored using flags TXIFG and RXIFG, both in IFG2.  If you're trying to wait until the entire byte has been transmitted, you want to monitor the RXIFG flags, depending on the USCI you're using.  If you don't care and just need to fill the TX buffer whenever it's ready for my data, you should monitor the TXIFG.  The `SPISEND` subroutine in Lab 3 demonstrates this.
+Their status can be monitored using flags TXIFG and RXIFG, both in IFG2.  If you're trying to wait until the entire byte has been transmitted, you want to monitor the RXIFG flags, depending on the USCI you're using.  If you don't care and just need to fill the TX buffer whenever it's ready for my data, you should monitor the TXIFG.  
 
-## [Lab 3](/labs/lab3/index.html) Introduction
+## Lab 3 Introduction
 
-[Lab 3](/labs/lab3/index.html) is your first opportunity to interface the MSP430 with external hardware - we'll be using pushbuttons and an LCD.  **It's a long lab**.  You'll need all the time, so make sure you don't fall behind.
+Lab 3 is your first opportunity to interface the MSP430 with external hardware - we'll be using pushbuttons and an LCD.  **It's a long lab**.  You'll need all the time, so make sure you don't fall behind.
 
 You're going to be using push buttons to write a block to the LCD and move it around.
 
 There is a lot of information on the lab handout and in the links included in the lab handout - **you'll need it**.  Follow it closely.
-
-I've given you template code - **USE IT**.  It will make your life much, much easier.
 
 Datasheets you'll need are on the course website.
 
@@ -239,15 +233,13 @@ Describe A functionality.
 
 ## Logic Analyzer Demo
 
-Let's walk through the majority of your prelab right now by doing Step 1 of [Lab 3](/labs/lab3/index.html).  Here's what it says:
-
-> **Step 1**: The Subsystem Master Clock (SMCLK) is the same speed as the Master Clock (MCLK) that runs your CPU.  Measure its period via logic analyzer - you'll want to screen capture / print this for your lab notebook.  There will be a table on the board for all students to record their CPU speed - record yours there.  **Never forget to ground your logic analyzer**.
+**Never forget to ground your logic analyzer**.
 
 If you know what to do, you don't have to listen and can work at your own pace.
 
 Remember, the pins on our MSP430 are multiplexed because we don't have many.  We need to write some code to make it available on one of our pins so we can measure it.  Here's the MSP430G2553 pinout:
 
-![MSP430G2553 DIP20 Pinout](/notes/L13/msp430g2553_dip20_pinout.jpg)
+![MSP430G2553 DIP20 Pinout](/382/notes/L13/msp430g2553_dip20_pinout.jpg)
 
 Looks like the SMCLK is available on P1.4 if I set the P1DIR, P1SEL, and P1SEL2 registers properly.  To the Users Guide!
 
@@ -277,4 +269,4 @@ Now, I can see the shape and period of the SMCLK signal.  I'll drag my markers t
 
 Your clock speed will most likely be slightly different from mine because there is variability across MSP430 chips - so you'll have to perform this process yourself and record your results.  You'll also have to use this process to measure the length of your delays to ensure they satisfy the Lab requirements.
 
-More information on using the [Logic Analyzer is available here](/labs/lab3/logic_analyzer.html).
+More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).
