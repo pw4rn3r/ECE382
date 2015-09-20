@@ -31,11 +31,11 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 
 What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.   
 
-|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|bis/bic|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|S1| | | | ||
-|MOSI||||||
-|CS| | | | |||
+|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
+|:-:|:-:|:-:|:-:|:-:|
+|S1| | | | |
+|MOSI|||||
+|CS| | | | ||
 
 
 
