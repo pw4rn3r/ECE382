@@ -29,7 +29,7 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | DC | | |
 | MISO| | ||
 
-What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.   
+What are the hex values that need to be combined with the below registers for these buttons to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.  If the register is not affected for that signal, simply say N/A. 
 
 |Signal|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
 |:-:|:-:|:-:|:-:|:-:|:-:|
