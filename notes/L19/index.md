@@ -14,10 +14,7 @@ title = 'Compilers. Introduction to C.'
 - Introduction to C
 
 ## Admin
-- Video
-    - Conan furloughing employees
 - Talk about GRs
-    - Everyone hasn't taken it yet, will be returned next class
     - Overall, pretty rough
         - Some of that is on me
             - GR was a bit long
@@ -28,7 +25,7 @@ title = 'Compilers. Introduction to C.'
             - I have high expectations for you and that's not going to change
 - Give me some time on the Labs
 
-Ok, so we're through the first big block.  In previous years, assembly was all we did during this class.  But this year we're expecting you to learn even more and move even faster.  These next 5 lessons used to be the first 5 lessons of ECE383. 
+Ok, so we're through the first big block.  In previous years, assembly was all we did during this class.  But this year we're expecting you to learn even more and move even faster.  These next 4 lessons used to be the first 5 lessons of ECE383. 
 
 We've learned about the MSP430 and its instruction set.  We've learned some assembly programming constructs and implemented a few programs.  We've learned about some of the subsystems on our chip and used SPI.
 
@@ -103,8 +100,6 @@ The HLL we'll use for the remainder of the course is C.  C is one of the most wi
 Great programmers use C very precisely to generate the exact assembly they want to perform a given task - so it's important to understand how the C constructs we'll learn about map to assembly.  I'll save that for a later lesson.
 
 The reason it's still used in many modern applications is that it gives you a lot of control over the generated assembly - making it FAST and MEMORY EFFICIENT.
-
-*[Open up vim and code in front of the class]*
 
 ### Comments
 ```
