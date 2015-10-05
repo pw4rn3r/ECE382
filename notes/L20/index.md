@@ -5,9 +5,10 @@ title = 'C Programming - Structs, Functions, and Headers.'
 ## Readings
 - <a href="http://en.wikipedia.org/wiki/Struct_(C_programming_language)">structs</a>
 - [MOTIVATIONAL: Self-assembling Robots](http://web.mit.edu/newsoffice/2013/simple-scheme-for-self-assembling-robots-1004.html)
+- [ppt](Lsn20.pptx)
 
 ## Assignment
-- [Assignment - Pong!](/notes/L20/L20_pong.html)
+- [Assignment - Pong!](/382/notes/L20/L20_pong.html)
 
 ## Lesson Outline
 - Structs
@@ -17,18 +18,12 @@ title = 'C Programming - Structs, Functions, and Headers.'
 
 ## Admin
 
-- Show Color LCD, Educational Booster Pack
 - Show motivational video - self-assembling robots!
-- Talk about TALOS
-    - If interested in a 499, talk to me after class
-- GRs graded
-    - Stop me with 10 mins left and I'll go over them
 - Talk about compiler optimization issues with HW
 - Look at two assignments:
     - [Student Example 1](student_example_1.html)
     - [Student Example 2](student_example_2.html)
     - [Student Example 3](student_example_3.html)
-
 
 ## Structs
 
@@ -37,8 +32,6 @@ Remember objects from Java and other High Level Languages?  C has a rough equiva
 - Collection of multiple variables
 - Can be of different types
 - Similar to an Object Oriented Programming (OOP) object, but only contains data (no methods)
-
-*[Open up VIM, code to demo this]*
 
 General case:
 ```
