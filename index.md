@@ -24,8 +24,8 @@ title = 'Intro to Embedded Systems with the MSP430'
 | L16 | [Lab 3](labs/lab3/index.html) - Polling and SPI. | [Lab 3](labs/lab3/index.html) | [Lab 3](labs/lab3/index.html) Mega Prelab (EOC) |
 | L17 | [Lab 3](labs/lab3/index.html) - Polling and SPI. | ||
 | L18 | [GR #1](admin/gr1_resources) | | |
-| [L19](notes/L19/index.html) | Compilers.  Introduction to C.  | [Assignment 6](notes/L20/L20_C_basics.html)| [Lab 3](labs/lab3/index.html) Functionality, Logic Analyzer, and Notebook |
-| [L20](notes/L20/index.html) | C Programming - Structs, Functions, and Headers. | [Assignment 7](notes/L21/L21_pong.html)| [Assignment 6](notes/L20/L20_C_basics.html) |
+| [L19](notes/L19/index.html) | Compilers.  Introduction to C.  | [Assignment 6](notes/L19/L19_C_basics.html)| [Lab 3](labs/lab3/index.html) Functionality, Logic Analyzer, and Notebook |
+| [L20](notes/L20/index.html) | C Programming - Structs, Functions, and Headers. | [Assignment 7](notes/L21/L21_pong.html)| [Assignment 6](notes/L19/L19_C_basics.html) |
 | [L21](notes/L21/index.html) | C Programming - Pointers and Arrays | [Assignment 8](notes/L22/L22_moving_average.html) | [Assignment 7](notes/L21/L21_pong.html) |
 | [L22](notes/L22/index.html) | C Programming - Writing Clean Code.  Revision Control. Mapping C to Assembly. | [Lab 4](labs/lab4/index.html) Prelab| [Assignment 8](notes/L22/L22_moving_average.html) |
 | [L23](notes/L23/index.html) | [Lab 4](labs/lab4/index.html) Introduction. Polling and SPI in C.  |  | [Lab 4](labs/lab4/index.html) Prelab |
