@@ -4,6 +4,7 @@ title = 'C Programming - Structs, Functions, and Headers.'
 
 ## Readings
 - <a href="http://en.wikipedia.org/wiki/Struct_(C_programming_language)">structs</a>
+- [What belongs in a header file?](http://embeddedgurus.com/barr-code/2010/11/what-belongs-in-a-c-h-header-file/)
 - [MOTIVATIONAL: Self-assembling Robots](http://web.mit.edu/newsoffice/2013/simple-scheme-for-self-assembling-robots-1004.html)
 - [ppt](Lsn20.pptx)
 
