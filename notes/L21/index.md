@@ -6,6 +6,7 @@ title = 'C Programming - Pointers and Arrays'
 - [Everything You Need to Know About Pointers in C](http://boredzo.org/pointers/)
 - [Short, Funny Pointer Video](http://www.youtube.com/watch?v=UvoHwFvAvQE)
     - NOTE: `new` is a C++ keyword - we don't use it in C
+- [ppt](Lsn21.pptx)
 
 ## Assignment
 - [Assignment](/notes/L21/L21_moving_average.html)
@@ -25,8 +26,6 @@ title = 'C Programming - Pointers and Arrays'
         - L21 HW
             - Talk about process for initializing structs with variables in CCS compiler
         - L22 Assignment
-        - Install Git
-            - You must do this because we're using it in class next time!
         - Optional KSplice Pointer Challenge
             - Tests your knowledge of pointers
             - Good practice
