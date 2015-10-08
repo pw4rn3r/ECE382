@@ -24,7 +24,6 @@ title = 'C Programming - Pointers and Arrays'
 - HW
     - If you didn't turn in L21 HW, you've got a bunch of stuff to do
         - L21 HW
-            - Talk about process for initializing structs with variables in CCS compiler
         - L22 Assignment
         - Optional KSplice Pointer Challenge
             - Tests your knowledge of pointers
@@ -97,7 +96,7 @@ x = *xPtr + 1; // x = ?
 ```
 y = yPtr + *yPtr;
 ```
-**Answer:** y = 0x2235, yPtr unchanged
+**Answer:** y = 0x1035, yPtr unchanged
 
 ## Arrays
 
@@ -202,7 +201,11 @@ y[2] = *(letter_ptr + 1);       // Assume Part B
 
 **Answers**
 A - x = 0x89
+
 B - letter_ptr = 0x0800
+
 C - letter_ptr = 0x0801
+
 D - x = 0x89
+
 E - y[2] = 0x23
