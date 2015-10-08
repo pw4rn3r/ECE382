@@ -10,7 +10,7 @@ You've spent the last few lessons transitioning from programming in assembly lan
 
 ## Given Code
 - [lab4.c](lab4.c)
-- [LCD_given.asm](LCD.asm)
+- [LCD_given.asm](LCD_given.asm)
 - [simpleLab4.c](simpleLab4.c)
 
 ## Prelab
