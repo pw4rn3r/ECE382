@@ -4,6 +4,7 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 
 ## Readings
 - [Revision Control](https://en.wikipedia.org/wiki/Revision_control)
+- Mixing C and Assembly (/382/datasheets/mixing_c_and_assembly.pdf)
 
 ## Assignment
 
@@ -15,9 +16,7 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 
 ## Admin
 
-- Graded labs, available in Lab
 - Prog grades are in - CAMIS should be (mostly) up to date
-- I'll extend turn-in deadline on pong / moving average to COB for this class
 
 ## Review
 
@@ -27,8 +26,6 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 ## Writing Clean Code
 
 ### Meaningful Names
-
-*[Write code in vim]*
 
 **[Bad Code](badCode.html)**
 
@@ -163,8 +160,6 @@ Here are some common shell commands that will prove useful:
 
 [Github](http://www.github.com) is the most popular open source code repository site in the world.  It's a web-based hosting service for projects that use Git.  It is required for this class.
 
-*[Go to website, give brief tour]*
-
 A sampling of real-world projects hosted there:
 
 - [Linux](https://github.com/torvalds/linux)
@@ -176,7 +171,7 @@ A sampling of real-world projects hosted there:
 
 Github is a great place to get access to the source code for some of the world's most popular open source projects.  It's a great way to keep track of programmers whose work you're interested in.  It's also a great way to get involved in the coding community, maybe work on an open source project or release some code of your own.
 
-To incentivize you to explore and use Github more, my solutions to the L21 and L22 assignments are posted there:
+To incentivize you to explore and use Github more, a solution to the L20 and L21 assignments are posted there:
 
 - [pong](https://github.com/toddbranch/pong)
 - [moving_average](https://github.com/toddbranch/moving-average)
