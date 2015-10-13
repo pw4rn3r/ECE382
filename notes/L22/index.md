@@ -4,7 +4,8 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 
 ## Readings
 - [Revision Control](https://en.wikipedia.org/wiki/Revision_control)
-- Mixing C and Assembly (/382/datasheets/mixing_c_and_assembly.pdf)
+- [Mixing C and Assembly] (/382/datasheets/mixing_c_and_assembly.pdf)
+- [ppt](Lsn22.pptx)
 
 ## Assignment
 
