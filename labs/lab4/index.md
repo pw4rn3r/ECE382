@@ -145,7 +145,7 @@ Mind your code style!
 As you are writing your lab notebook (DURING the coding process; not after it is over), be sure to include discussion of the various algorithms you use for each program and bonus functionality.
 
 
-## Grading -- Lab 3
+## Grading -- Lab 4
 
 Name:
 
