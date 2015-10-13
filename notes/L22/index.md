@@ -4,7 +4,6 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 
 ## Readings
 - [Revision Control](https://en.wikipedia.org/wiki/Revision_control)
-- [Mixing C and Assembly] (/382/datasheets/mixing_c_and_assembly.pdf)
 - [ppt](Lsn22.pptx)
 
 ## Assignment
@@ -18,6 +17,21 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 ## Admin
 
 - Prog grades are in - CAMIS should be (mostly) up to date
+
+## Mixing C and assembly
+
+Our compiler follows a certain convention while calling an assembly function from C that involves passing parameters.  
+- First input: r12
+- Second input: r13
+- Third input: r14
+- Fourth input: r15
+- Fifth and beyond: the stack
+- returned value: r12
+
+## Lab 4
+
+The basic idea of this lab is using C to call your assembly drawBox subroutine.  This lab should be fun!  Feel free to see what sorts of crazy ideas you can implement in your games.  
+
 
 ## Review
 
@@ -88,8 +102,6 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
     - Too much information
     - Don't comment bad code - rewrite it.
 
-*[Let's fix my code!](pong_c.html)*
-
 - Add comments to functions
 
 ## Revision Control
@@ -134,11 +146,8 @@ Here are some common shell commands that will prove useful:
 
 *[Demo these commands, get them to open shell and practice them]*
 
-**If you want to learn more, [a tutorial is available on the datasheets page.](/datasheets)**
+**If you want to learn more, [a tutorial is available on the datasheets page.](/382/datasheets)**
 
-### [Git Tutorial](/datasheets/git_tutorial.html)
-
-*[Give demo following this in class]*
 
 ### Common Git Commands
 
@@ -171,8 +180,3 @@ A sampling of real-world projects hosted there:
     - Popular framework for serverside javascript
 
 Github is a great place to get access to the source code for some of the world's most popular open source projects.  It's a great way to keep track of programmers whose work you're interested in.  It's also a great way to get involved in the coding community, maybe work on an open source project or release some code of your own.
-
-To incentivize you to explore and use Github more, a solution to the L20 and L21 assignments are posted there:
-
-- [pong](https://github.com/toddbranch/pong)
-- [moving_average](https://github.com/toddbranch/moving-average)

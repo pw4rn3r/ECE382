@@ -25,7 +25,10 @@ void main() {
 	drawBox(x, y);
 
 	while(1) {
-
+		if (UP_BUTTON == 0){
+			y = y - 10;
+			drawBlock(x, y);
+		}
 		//the bulk of your code goes here
 
 
