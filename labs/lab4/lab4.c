@@ -3,7 +3,7 @@
 extern void initMSP();
 extern void initLCD();
 extern void clearScreen();
-extern void drawBox(unsigned char col, unsigned char row);
+extern void drawBox(unsigned int col, unsigned int row);
 
 #define		TRUE			1
 #define		FALSE			0
@@ -11,7 +11,7 @@ extern void drawBox(unsigned char col, unsigned char row);
 
 void main() {
 
-	unsigned char	x, y, button_press;
+	unsigned int	x, y, button_press;
 
 	// === Initialize system ================================================
 	IFG1=0; /* clear interrupt flag1 */
@@ -27,7 +27,7 @@ void main() {
 	while(1) {
 		if (UP_BUTTON == 0){
 			y = y - 10;
-			drawBlock(x, y);
+			drawBox(x, y);
 		}
 		//the bulk of your code goes here
 
