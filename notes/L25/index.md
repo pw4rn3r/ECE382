@@ -3,8 +3,9 @@ title = 'Timer A (Interval Timing)'
 # Lesson 25 Notes
 
 ## Readings
-- [Family Users Guide](/datasheets) pp355-373 - Timer_A
+- [Family Users Guide](/382/datasheets) pp355-373 - Timer_A
 - Davies pp287-291
+- [ppt](Lsn25.pptx)
 
 ## Lesson Outline
 
