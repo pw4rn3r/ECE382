@@ -11,8 +11,8 @@ Modify your lab4 code to either: <br>
 
 - Source code files 
 - Answers to the following questions:
-    - (If you chose the timer interrupt option) How long of a delay are you using?  Explain why you chose the settings you did.
-	- (For either option) How did you test your program to verify that it still worked?  Be specific.
+    - How long of a delay are you using?  Explain why you chose the settings you did.
+	- How did you test your program to verify that it still worked?  Be specific.  Describing the various tests you used will get you off to a great start.
 
 
 

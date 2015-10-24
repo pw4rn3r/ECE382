@@ -5,9 +5,10 @@ title = 'More timers.  Interrupts and ISRs.  MSP430 Interrupt System.'
 ## Readings
 - [Interrupts](http://en.wikipedia.org/wiki/Interrupt)
 - [Interrupt Handler](http://en.wikipedia.org/wiki/Interrupt_handler)
+- Davies pp 186-198
 
 ## Assignment
-- [Assignment](/notes/L26/L26_timer_interrupt_lab4.html)
+- [Assignment](/382/notes/L26/L26_timer_interrupt_lab4.html)
 
 ## Lesson Outline
 - Admin
@@ -18,7 +19,7 @@ title = 'More timers.  Interrupts and ISRs.  MSP430 Interrupt System.'
 
 **Policy on Sharing Code**
 
-I encourage you to use Github to browse code for ideas and assistance - this is consistent with the cooperative ethos of engineering.  That does not mean you're free to copy the code of your classmates.  **I expect you to document any assistance you get.  I expect any code you turn in to be your own, unless I explicitly allow you to use the libraries of others.**  Any questions? 
+I encourage you to browse code for ideas and assistance - this is consistent with the cooperative ethos of engineering.  That does not mean you're free to copy the code of your classmates.  **I expect you to document any assistance you get.  I expect any code you turn in to be your own, unless I explicitly allow you to use the libraries of others.**  Any questions? 
 
 There are only two lessons between now and Lab 5, which covers interrupts.  
 
@@ -82,7 +83,7 @@ That's why it was a big problem if you accidentally deleted some of the boilerpl
 
 There are a whole bunch more interrupt vectors we have access to!  Back to our memory map:
 
-![MSP430 Memory Map](/notes/L2/memory_map.jpg)
+![MSP430 Memory Map](memory_map.jpg)
 
 At the highest addresses, there is a block reserved for the Interrupt Vector Table.
 
