@@ -3,11 +3,14 @@ title = 'Interrupts and ISRs.  MSP430 Interrupt System.'
 # Lesson 27 Notes
 
 ## Readings
-- [Low Power Operation - Family Users Guide pp38-41](/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
+- [Low Power Operation - Family Users Guide pp38-41](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
+- Davies pp 198-205
 
 ## Lesson Outline
 - Review Interrupts
 - Low Power Modes
+- [practice code](lec26.c)
+- [lec27.c](lec27.c)
 
 ## Review Interrupts
 
@@ -28,9 +31,15 @@ Is there another, better way?
 
 What if I changed the nature of my interrupt inside my ISR?  So once I detect a high-to-low edge transition, I change the interrupt to sense low-to-high edge transitions.  Then I can detect a release and debounce appropriately!  Sweet!
 
-Just a reminder to be creative about how you use the tools are your disposal to suit your needs.
+Just a reminder to be creative about how you use the tools at your disposal to suit your needs.
 
+#### Practice on your own:  
 
+- Create a project around the given practice code.  Modify it to generate a one second pulse when the button is pressed.
+
+- Modify the original practice code again, this time to sample a push button and debounce it.  In order to verify that the button is not bouncing, sample the button value.  When you get eight consecutive 1s that are sampled, consider the button released.  When you get eight consecutive 0s in your sampling, consider the button to be pressed.
+
+- Create a project around lec27.c.  Modify the program so that is toggles the LED if the button press is less than 65 ms long.
 
 ## Low Power Modes
 
@@ -70,7 +79,7 @@ Your header file provides some macros for entering / exiting these modes:
 #define LPM4_EXIT _BIC_SR_IRQ(LPM4_bits) /* Exit Low Power Mode 4 */
 ```
 
-I just think this information is important to know given that I've been talking about the low-power capabilities of the MSP430 all semester.
+
 
 More detailed info is in the reading from today.
 
