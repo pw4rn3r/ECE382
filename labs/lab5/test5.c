@@ -20,6 +20,7 @@ void main(void) {
 	int16 time1[SAMPLE_SIZE], time0[SAMPLE_SIZE];
 	int8  i;
 
+	
 	initMSP430();				// Set up MSP to process IR and buttons
 
     while (1)  {
