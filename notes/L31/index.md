@@ -20,12 +20,6 @@ title = 'Timer_A: Capture / Compare, Pulse Width Modulation.  Lab 6 Introduction
 ## Admin
 
 - Video
-- One day extension on Lab 5 functionality
-- Documentation / notebooks (to get functionality checkoffs) due COB today
-- GR next time
-	- Any questions about the GR?
-	- Go over Lab 5 interrupt code once more
-		- Have received a bunch of questions on it, which makes me think many people don't understand
 - L33 we start on the robot!
 
 ## Lab 6 Introduction
@@ -84,7 +78,7 @@ Ok, back to the technical stuff.
 In addition to what we talked about last time, Timer_A comes equipped with three Capture/Compare blocks.
 
 Back to our trusty block diagram.  Today we'll be looking at the bottom:
-![Timer A Block Diagram](/notes/L28/timerA_block_diagram.jpg)
+![Timer A Block Diagram](382/notes/L28/timerA_block_diagram.jpg)
 
 **Capture:** Monitor a pin for a specified signal (rising edge, falling edge, either edge) and record when it occurs.
 
@@ -117,11 +111,11 @@ Compare mode is selected when the CAP bit in TACCTL is set to 0 (it's 0 by defau
 
 Remember the different Timer_A counting modes from last lesson?
 
-![Timer Modes](/notes/L28/timer_modes.jpg)
+![Timer Modes](/382/notes/L28/timer_modes.jpg)
 
 In the lab, we only used Continuous.  But what does Up Mode do?
 
-![Up Mode](/notes/L28/timer_up_mode.jpg)
+![Up Mode](/382/notes/L28/timer_up_mode.jpg)
 
 It counts from 0 up to the value in TACCR0!  We can set the value in TACCR0 just by writing to it.
 
@@ -193,7 +187,7 @@ On my robot, the stall current does not go below one amp until my motor is being
 
 **Supplying Power**
 
-We have 3.3V regulators!  Use them!  If you try to give 5V to your MSP430, you will fry it!  [Check out the datasheet for wiring details.](/datasheets/)
+We have 3.3V regulators!  Use them!  If you try to give 5V to your MSP430, you will fry it!  [Check out the datasheet for wiring details.](/382/datasheets/)
 
 **Programming**
 
