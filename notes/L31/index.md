@@ -1,10 +1,11 @@
 title = 'Timer_A: Capture / Compare, Pulse Width Modulation.  Lab 6 Introduction.'
 
-# Lesson 31 Notes
+# Lesson 32 Notes
 
 ## Readings
 - [Intro to Pulse Width Modulation](http://www.embedded.com/electronics-blogs/beginner-s-corner/4023833/Introduction-to-Pulse-Width-Modulation)
 - [MSP430: Timers and Clocks and PWM!  Oh My!](http://www.msp430launchpad.com/2010/07/timers-and-clocks-and-pwm-oh-my.html)
+- [ppt](Lsn32.pptx)
 
 ## Assignment
 - Lab 6 Prelab
@@ -30,7 +31,7 @@ How do you move a DC motor?  You apply an analog voltage!
 
 *[Demo motor with power supply]*
 
-But how can we do this with the MSP430?  GPIO only gives us logical 1 or 0.  We don't have an onboard Analog-to-Digital converter.  Say we want to generate an analog output using our MSP430 - how would we do it?  The technique we'll learn today and use in Lab 6 is called Pulse Width Modulation.
+But how can we do this with the MSP430?  GPIO only gives us logical 1 or 0.  We don't have an onboard Digital-to-Analog converter.  Say we want to generate an analog output using our MSP430 - how would we do it?  The technique we'll learn today and use in Lab 6 is called Pulse Width Modulation.
 
 ## Pulse Width Modulation
 
@@ -111,15 +112,15 @@ Compare mode is selected when the CAP bit in TACCTL is set to 0 (it's 0 by defau
 
 Remember the different Timer_A counting modes from last lesson?
 
-![Timer Modes](/382/notes/L28/timer_modes.jpg)
+![Timer Modes](/382/notes/L25/timer_modes.jpg)
 
-In the lab, we only used Continuous.  But what does Up Mode do?
+Remember Up Mode?
 
-![Up Mode](/382/notes/L28/timer_up_mode.jpg)
+![Up Mode](/382/notes/L25/timer_up_mode.jpg)
 
 It counts from 0 up to the value in TACCR0!  We can set the value in TACCR0 just by writing to it.
 
-TimerA0 also comes equipped with two more Capture / Compare registers - TA0CCR1 and TACCR2.  We can set their values by writing to them as well.  These give us interesting capabilities.  While TimerA0 counts upward, these registers can perform actions when the values in them are passed.  Here's what they can do:
+TimerA0 also comes equipped with two more Capture / Compare registers - TA0CCR1 and TA0CCR2.  We can set their values by writing to them as well.  These give us interesting capabilities.  While TimerA0 counts upward, these registers can perform actions when the values in them are passed.  Here's what they can do:
 
 ![Output Modes](output_modes.jpg)
 
@@ -173,7 +174,7 @@ int main(void)
 
 ### Motor Driver Chip
 
-You cannot hook your MSP430 directly up to the motors - it can't supply enough current!  We need to use a motor driver chip instead.  It can only supply 1A per circuit!  Do not exceed that!  [Check out the datasheet for wiring details.](/datasheets/)
+You cannot hook your MSP430 directly up to the motors - it can't supply enough current!  We need to use a motor driver chip instead.  It can only supply 1A per circuit!  Do not exceed that!  [Check out the datasheet for wiring details.](/382/datasheets/)
 
 ### Motor Stall Current
 
@@ -191,7 +192,7 @@ We have 3.3V regulators!  Use them!  If you try to give 5V to your MSP430, you w
 
 **Programming**
 
-[See the tutorial on the website!]()  You can just jump the VCC / TEST / RESET signal over to the chip on the breadboard.
+See the tutorial on the website!  You can just jump the VCC / TEST / RESET signal over to the chip on the breadboard.
 
 ### Chip Reset Due to Current Fluctuation
 
