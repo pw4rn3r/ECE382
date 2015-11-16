@@ -47,6 +47,8 @@ Consider what additional hardware you'll need (regulator, motor driver chip, dec
 
 Consider the interface you'll want to create to your motors.  Do you want to move each motor invidiually (`moveLeftMotorForward()`)?  Or do you want to move them together (`moveRobotForward()`)?
 
+When you create your schematic, you can use MS Paint, fritzing.org, or any other such drawing program of your choice.  
+
 ## Notes
 
 ### Motor Control Suggestions

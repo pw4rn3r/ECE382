@@ -139,6 +139,93 @@ void main(void)
 {
     WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
 
+    	P2DIR |= BIT1;                // TA1CCR1 on P2.1
+        P2SEL |= BIT1;                // TA1CCR1 on P2.1
+        P2OUT = 0;
+
+        TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
+        P1DIR = BIT0;            //use LED to indicate duty cycle has toggled
+        P1REN = BIT3;
+        P1OUT = BIT3;
+
+        TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
+        TA1CCR1 = 250;                // set duty cycle to 250/1000 (25%)
+        TA1CCTL0 |= CCIE;        		// enable CC interrupts
+        TA1CCTL1 |= OUTMOD_7|CCIE;        // set TACCTL1 to Set / Reset mode//enable CC interrupts
+        TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
+    	_enable_interrupt();
+
+    	while (1) {
+
+            while (P1IN & BIT3);     //every time the button is pushed, toggle the duty cycle
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 1000;            // set duty cycle to 1000/1000 (100%)
+            TA1CTL |= MC_1;
+
+            while (P1IN & BIT3);
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 750;            // set duty cycle to 750/1000 (75%)
+            TA1CTL |= MC_1;
+
+            while (P1IN & BIT3);
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 500;            // set duty cycle to 500/1000 (50%)
+            TA1CTL |= MC_1;
+
+            while (P1IN & BIT3);
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 250;            // set duty cycle to 250/1000 (25%)
+            TA1CTL |= MC_1;
+
+            while (P1IN & BIT3);
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 100;            // set duty cycle to 100/1000 (10%)
+            TA1CTL |= MC_1;
+
+            while (P1IN & BIT3);
+            __delay_cycles(1000000);
+            TA1CTL &= ~MC0;
+            TA1CCR1 = 20;            // set duty cycle to 20/1000 (2%)
+            TA1CTL |= MC_1;
+
+        }
+}
+
+
+#pragma vector = TIMER1_A0_VECTOR			// This is from the MSP430G2553.h file
+__interrupt void captureCompareInt (void) {
+    P1OUT |= BIT0;						//Turn on LED
+	// Disable Timer A Interrupt
+    TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
+//	TACTL &= ~TAIFG;
+}
+
+#pragma vector = TIMER1_A1_VECTOR			// This is from the MSP430G2553.h file
+__interrupt void captureCompareInt2 (void) {
+    P1OUT &= ~BIT0;						//Turn off LED
+	// Disable Timer A Interrupt
+    TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
+//	TACTL &= ~TAIFG;
+}
+```
+
+
+
+
+This is the code I used to show the PWM signals on the oscilloscope:
+
+```
+#include <msp430.h>
+
+void main(void)
+{
+    WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
+
 	  P2DIR |= BIT1;                // TA1CCR1 on P2.1
         P2SEL |= BIT1;                // TA1CCR1 on P2.1
         P2OUT = 0;
@@ -187,7 +274,6 @@ void main(void)
             TA1CCR1 = 10;            // set duty cycle to 10/1000 (1%)
             TA1CTL |= MC_1;
             P1OUT ^= BIT0;
-
 }
 ```
 
