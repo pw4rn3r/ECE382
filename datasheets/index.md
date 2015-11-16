@@ -18,7 +18,9 @@ title = 'Datasheets'
 
 - [SN754410 Motor Driver Datasheet](SN754410.pdf)
 - [LDV33 3.3V Regulator Datasheet](LD1117V33.pdf)
+- [HC-SR04 Ultrasonic Sensor Datasheet](HC-SR04.pdf)
 - [Using the MSP430 with the Robot](robot.html)
+
 
 ## Other Useful Resources
 
