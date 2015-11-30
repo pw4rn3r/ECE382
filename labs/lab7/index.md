@@ -12,7 +12,9 @@ This lab is designed to assist you in learning the concepts associated with the 
 
 ## Sensor Boards
 
-Each robot has one rangefinder/servo pair.  By using the headers available to you on the top of the robot PCB, you can read a pulsewidth that is proportional to the distance between an object and the sensor. 
+Each robot has one rangefinder/servo pair.  By using the headers available to you on the top of the robot PCB, you can read a pulsewidth that is proportional to the distance between an object and the sensor. You will need to send the servo a pulse of a particular length in order to rotate the sensor to each side and back to the center position.
+
+![Servo pulses](learn_arduino_servos.png)
 
 ## Required Functionality
 
@@ -20,11 +22,11 @@ Use the ADC subsystem to light LEDs based on the presence of a wall.  The presen
 
 ## B Functionality
 
-You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall.  This table/graph must be generated for three different servo positions.  Use these values to determine how your sensor/servo pair works so you can properly use them to solve the maze.
+You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph must be generated for three different servo positions.  Use these values to determine how your sensor/servo pair works so you can properly use them to solve the maze.
 
 ## A Functionality
 
-Demonstrate your robot moving through an 18" corridor for six feet without touching a wall.
+Control your servo position with your remote!  Use remote buttons other than those you have used for the motors.  
 
 ## Bonus Functionality
 
@@ -34,9 +36,9 @@ Create a standalone library for your ultrasonic code and release it on Bitbucket
 
 Include whatever information from this lab you think will be useful in creating your program.
 
-Consider how you'll setup the input capture subsystem.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
+Consider how you'll configure the input capture subsystem.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
 
-Consider the hardware interface.  Which signals will you use?  Which pins correspond to those signalss?
+Consider the hardware interface.  Which signals will you use?  Which pins correspond to those signals?  How will you send a particular pulse width to the servo?
 
 Consider the interface you'll create to your sensor.  Will you block or use interrupts?  Will you stop moving while you sense?
 
@@ -53,7 +55,7 @@ Consider the interface you'll create to your sensor.  Will you block or use inte
 | Required Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L38 |
 | B Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
 | A Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| Bonus Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L38 |
+| Bonus Functionality | **On-Time** ----------------------------------------------------------------------------------------------------------| | 5 | | COB L38 |
 | Use of Git | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | Code Style | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | README | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
