@@ -1,6 +1,6 @@
 title = 'Lab 7 - A/D Conversion - "Robot Sensing"'
 
-# Lab 7 - A/D Conversion - "Robot Sensing"
+# Lab 7 - "Robot Sensing"
 
 [Teaching Notes](notes.html)
 
@@ -8,43 +8,42 @@ title = 'Lab 7 - A/D Conversion - "Robot Sensing"'
 
 ## Overview
 
-This lab is designed to assist you in learning the concepts associated with the analog-to-digital converter (ADC) for your MSP430.  A set of three infrared (IR) emitter and detector pairs on your robot is used to bring in analog voltage values for the ADC.  You will program your MSP430 to interpret these incoming voltages to determine whether your mobile robot is approaching a wall in front or on one of its sides.  The skills you will learn from this lab will come in handy in the future – especially for your senior design project since many designs require you to interface analog systems with digital systems.
+This lab is designed to assist you in learning the concepts associated with the input capture features for your MSP430.  A single ultrasonic rangefinder is attached to a servo motor that can rotate.  You will program your MSP430 to use the rangefinder to determine whether your mobile robot is approaching a wall in front or on one of its sides.  The skills you will learn from this lab will come in handy in the future as you start interfacing multiple systems.
 
 ## Sensor Boards
 
-Each robot has three IR emitter/detector pairs.  By using the headers available to you on the top of the robot PCB, you can read a value between 0 V and 5 V that is proportional to the distance to an object in front of the IR sensor.  The left/right directions are relative to a person standing behind the robot.
+Each robot has one rangefinder/servo pair.  By using the headers available to you on the top of the robot PCB, you can read a pulsewidth that is proportional to the distance between an object and the sensor. 
 
 ## Required Functionality
 
-Use the ADC subsystem to light LEDs based on the presence of a wall.  The presence of a wall next to the left sensor should light LED1 on your Launchpad board.  The presence of a wall next to the right sensor should light LED2 on your Launchpad board.  Demonstrate that the LEDs do not light until each of the three sensors comes into close proximity with a wall.
+Use the ADC subsystem to light LEDs based on the presence of a wall.  The presence of a wall on the left side of the robot should light LED1 on your Launchpad board.  The presence of a wall next to the right side should light LED2 on your Launchpad board.  A wall in front should light both LEDs.  Demonstrate that the LEDs do not light until the sensor comes into close proximity with a wall.
 
 ## B Functionality
 
-Create a standalone library for your ATD code and release it on Github.  This should be separate from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.
+You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall.  This table/graph must be generated for three different servo positions.  Use these values to determine how your sensor/servo pair works so you can properly use them to solve the maze.
 
 ## A Functionality
 
-Since each robot's sensors are a little bit different, you need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the ATD values for a variety of distances from a maze wall.  This table/graph must be generated for each IR sensor.  Use these values to determine how the IR sensors work so you can properly use them to solve the maze.
+Demonstrate your robot moving through an 18" corridor for six feet without touching a wall.
+
+## Bonus Functionality
+
+Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository should be publicly accessible.
 
 ## Prelab
 
 Include whatever information from this lab you think will be useful in creating your program.
 
-Test your sensors with a DMM.  Ensure they are functional.  What would good reference values be?
+Consider how you'll setup the input capture subsystem.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
 
-Consider how you'll setup the ADC10 subsystem.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
+Consider the hardware interface.  Which signals will you use?  Which pins correspond to those signalss?
 
-Consider the hardware interface.  Which ADC10 channels will you use?  Which pins correspond to those channels?
-
-Consider the interface you'll create to your sensors.  Will you block or use interrupts?  Will you convert one sensor at a time or multiple?
+Consider the interface you'll create to your sensor.  Will you block or use interrupts?  Will you stop moving while you sense?
 
 ## Lab Hints
 
-- You must provide 5V and ground to the IR sensors!
-- Be mindful of loading!
-  - To combat it, sample as slowly as possible
 - Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
-- You may want to use your moving average library to smooth the output from your sensors.
+
 
 ## Grading
 
@@ -54,7 +53,8 @@ Consider the interface you'll create to your sensors.  Will you block or use int
 | Required Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L38 |
 | B Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
 | A Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| Use of Git / Github | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
+| Bonus Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L38 |
+| Use of Git | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | Code Style | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | README | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | **Total** | | | **100** | | |
