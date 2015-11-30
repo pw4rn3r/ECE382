@@ -19,41 +19,14 @@ title = 'Analog-to-Digital and Digital-to-Analog Conversion. Lab 7 / 8 Intro.'
 - Amazon Drone video!
   - http://www.youtube.com/watch?v=98BIu9dpwHU&feature=youtu.be
   - You better believe there are microcontrollers in that thing!
-- Demo robot fix
-  - I sent this e-mail on the Friday before break, but wanted to show you the fix in action
-  - It turns out that the RESET line on the MSP430 is extremely sensitive to noise, which DC motors can create
-  - To guard against the noise we can use a small (10pF) capacitor to smooth any voltage variation
-  - Demo before fix, demo after fix
-- Make up assignment
-  - I'm offering an opportunity to do an assignment that will replace your lowest score
-  - Send me 1 pull request on Github for the course website or file three issue reports for the course website
-  - They must be meaningful, not necessarily specific
 
-This is our last in-class lesson of the year!  I'm going to experiment with a new approach today where I kind of start at the end and work backward - let me know what you think!
+This is our last in-class lesson of the year!  I'm going to experiment with a new approach today - let me know what you think!
 
-From here on out, we're working toward getting you through the maze.  This lesson will show you how to use the robot sensors to detect walls and move your robot accordingly.
+This lesson used to show how to use the robot sensors to detect walls and move the robot accordingly.  However, with the new sensors, this is no longer the case.  
 
-## Robot Demo
+Each has an IR emitter and IR sensor.  The idea is that the closer the wall gets, the more radiation from the emitter will be reflected off the wall and into the sensor.  The amount of radiation detected is proportional to the amount of voltage the sensor emits.  So voltage increased as the wall moved closer and decreased as it got further away.
 
-Your robot has three sets of sensors that you'll use to navigate the maze.  They're on the front, left, and right. *[Show on robot]*
-
-Each has an IR emitter and IR sensor.  The idea is that the closer the wall gets, the more radiation from the emitter will be reflected off the wall and into the sensor.  The amount of radiation detected is proportional to the amount of voltage the sensor emits.
-
-So voltage will increase as the wall gets closer and decrease as it gets farther away.
-
-You get access to these readings via pins on your robot.
-
-*[Demo with multimeter and moving toward and away from the center sensor]*
-
-See how the voltage changes?
-
-Another important thing to note - the reflectivity of the surface the radiation is bouncing off of matters **a lot** for how much will be picked up by the emitter
-
-*[Demo with black box in front of sensor, then with white paper]*
-
-In Lab 7, you'll have to use Analog-to-Digital conversion to take these readings into your chip.  Then, you'll have to take measurements throughout the maze so you know the distance from the wall that different voltages mean.
-
-## ADC Example Code
+## ADC Example Code from old robot
 
 Let's take the first sensor readings from our robot.  This code monitors A4, located on P1.4.  If the voltage on that pin is above the threshold 0x1FF, it sets P1.0 (an LED on the Launchpad).  Otherwise, it clears it.
 
@@ -211,14 +184,11 @@ How would the robot motion lab have been easier if you had access to a DAC?
 
 ## Lab 7 / 8 Introduction
 
-[Lab 7](/labs/lab7/index.html)
+[Lab 7](/382/labs/lab7/index.html)
 
-## End of Semster Talk
 
-Congratulations on getting this far.  This class underwent a ton of changes this semester.  A lot of material we used to teach in ECE383 was moved into this course.  We also hit on a few topics we've never taught before.  Some of the material was brand new and untested.  The class got much harder than it had been in the past.  I know a lot of you were pushed to do things you weren't comfortable with.  I hope you can see the value in the skills you've learned.  I think you'll find them some of the most useful, practical things you'll learn.  I'm excited to see what you do with them in capstone and beyond.
-
-General advice about living in the moment and not looking to future events to fix your problems.
+#### General advice about living in the moment and not looking to future events to fix your problems.
 
 http://www.thisamericanlife.org/radio-archives/episode/494/hit-the-road - 2030-2400
 
-I'm going to send out an e-mail about course critiques - if you do them, I'll drop your lowest assignment.
+
