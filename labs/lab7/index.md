@@ -4,7 +4,7 @@ title = 'Lab 7 - A/D Conversion - "Robot Sensing"'
 
 [Teaching Notes](notes.html)
 
-**[A Note On Robot Sharing](/labs/lab6/other_peoples_robots.html)**
+**[A Note On Robot Sharing](/382/labs/lab6/other_peoples_robots.html)**
 
 ## Overview
 
@@ -47,7 +47,7 @@ Consider the interface you'll create to your sensor.  Will you block or use inte
 - Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
 
 
-## Grading
+## Grading - Lab 7
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
@@ -55,8 +55,8 @@ Consider the interface you'll create to your sensor.  Will you block or use inte
 | Required Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L38 |
 | B Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
 | A Functionality | **On-Time** ------------------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| Bonus Functionality | **On-Time** ----------------------------------------------------------------------------------------------------------| | 5 | | COB L38 |
-| Use of Git | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| Code Style | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
+| Bonus Functionality | **On-Time** -------------------------------------------------------------------------------------------------------------------------| | 5 | | COB L38 |
+| Use of Git | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus --------------------------------------------------------| | 10 | | COB L40 |
+| Code Style | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus --------------------------------------------------------| | 10 | | COB L40 |
 | README | **On-Time:** 0 ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | **Total** | | | **100** | | |
