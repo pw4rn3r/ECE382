@@ -101,6 +101,7 @@ Capture mode is selected when the CAP bit in TACCTL is set to 1.  It is used to 
 Each TACCRx has two possible capture pins - CCIxA and CCIxB.  The one being monitored is selectable by software.  In the device-specific guide, you can find more information on which timer signals these inputs correspond with in the pin functions, terminal functions, and the timer signal connections tables.
 
 If a capture occurs:
+
 	- The TAR value is copied into the TACCRx register
 	- The interrupt flag CCIFG is set
 
