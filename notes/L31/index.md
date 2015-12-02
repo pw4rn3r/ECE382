@@ -91,20 +91,25 @@ Here's how those registers are configured:
 
 ### Capture
 
-Capture mode is selected when the CAP bit in TACCTL is set to 1.  It's used to record time events.  It can be used for:
+Capture mode is selected when the CAP bit in TACCTL is set to 1.  It is used to record time events.  It can be used for:
 
 - Event detection
 - Event counting
 - Pulse-width measurement
 - Frequency measurement
 
-Each TACCRx has two possible capture pins - CCIxA and CCIxB.  The one being monitored is selectable by software.
+Each TACCRx has two possible capture pins - CCIxA and CCIxB.  The one being monitored is selectable by software.  In the device-specific guide, you can find more information on which timer signals these inputs correspond with in the pin functions, terminal functions, and the timer signal connections tables.
 
 If a capture occurs:
 	- The TAR value is copied into the TACCRx register
 	- The interrupt flag CCIFG is set
 
+You could measure the time between a rising edge on two different signals, for example, or you could measure how long a particular signal is high.  If you are measuring the time between two events, it is recommended that you use Timer_A in the continuous mode.  (What capture mode is this?)  Your TAR could overflow once or even multiple times between the two events; you will know an overflow happened if the COV bit was set in the TACCTLx register.  If you are in up mode, dealing with the differences in TARs could be a little more difficult.  Look at the state diagram below to figure out how to deal with the COV bit.
+
 ![Capture Cycle](capture_cycle.jpg)
+
+You can use your Timer_A interrupt to help you in your quest for an input capture, as long as you enable the capture/compare interrupt.  Note another bit in the TACCTLx register: CCI.  TI says this bit is the "capture/compare input.  The selected input signal can be read by this bit."  In other words, you can see the value of the signal you are watching.  Why does that matter?  If you are measuring the time a signal is high using CM_3, you will need to differentiate between the TAR at the start of the rising edge and the TAR at the falling edge.  Checking the CCI bit will tell you which edge you just left, which might be important inside an interrupt.  However, the CCI bit can also get into a race condition; for this reason it is important that you synchronoize your capture with the timer clock.
+
 
 ### Compare
 
