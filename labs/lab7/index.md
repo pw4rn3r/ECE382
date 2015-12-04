@@ -26,7 +26,7 @@ You need to fully characterize the sensor for your robot.  Create a table and gr
 
 ## A Functionality
 
-Control your servo position with your remote!  Use remote buttons other than those you have used for the motors.  
+Control your servo position with your remote!  Use remote buttons other than those you have used for the motors.  Note: you still need to be able to get readings from the ultrasonic sensor after changing your servo position with the remote.
 
 ## Bonus Functionality
 
