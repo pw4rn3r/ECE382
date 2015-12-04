@@ -41,7 +41,7 @@ All the laboratory requirements above are required to be met for the maze, with 
 
 ## Prelab
 
-Paste the grading section in your lab notebook as the first page of this lab.
+Print out your grading sheet.
 
 Include whatever information from this lab you think will be useful in creating your program.
 
