@@ -7,11 +7,11 @@ title = 'Course Letter'
 ### Instructors
 
 **Capt Jeff Falkinburg (CD)**  
-Office: 2F46E    
+Office: 2E46E    
 E-mail: jeffrey.falkinburg@usafa.edu  
 
 **Capt Phillip Warner**  
-Office: 2E46D  
+Office: 2F46C  
 E-mail: phillip.warner@usafa.edu  
 
 
