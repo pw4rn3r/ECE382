@@ -6,13 +6,13 @@ title = 'Course Letter'
 
 ### Instructors
 
-**Capt Virginia Trimble (CD)**  
-Office: 2F46C    
-E-mail: virginia.trimble@usafa.edu  
-
-**Capt Jeff Falkinburg**  
-Office: 2E46C  
+**Capt Jeff Falkinburg (CD)**  
+Office: 2F46E    
 E-mail: jeffrey.falkinburg@usafa.edu  
+
+**Capt Phillip Warner**  
+Office: 2E46D  
+E-mail: phillip.warner@usafa.edu  
 
 
 ### Course Objectives
@@ -67,7 +67,7 @@ If problems arise with graded assignments, see your instructor in advance.  Assi
 
 ### Course Materials
 
-- **Course Text** - MSP430 Microcontroller Basics - John H. Davies (optional, but encouraged)
+- **Course Text** - Microcontroller Programming and Interfacing: Texas Instruments MSP430 - Steven Barrett and Daniel Pack 
 - **Course URL** - http://ece.ninja/382
 
 ### Extra Instruction (EI) Policy
@@ -103,5 +103,5 @@ This course is designed to help you in your development as an electrical and com
 
 Good luck!
 
-VIRGINIA TRIMBLE, Capt, USAF  
+JEFFREY FALKINBURG, Capt, USAF  
 Course Director, ECE 382
