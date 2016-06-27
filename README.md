@@ -6,7 +6,7 @@ Live site: ece.ninja/382
 
 This courseware was originally built by Todd Branchflower (https://github.com/toddbranch/).
 
-The course materials are written in markdown.  To build it, I use a slightly modified markdown parser and some basic templating in conjunction with a build script.  These are written in javascript and run using node.js.  Here is the course-build script: https://github.com/toddbranch/course-build .
+The course materials are written in markdown.  To build it, I use a slightly modified markdown parser and some basic templating in conjunction with a build script.  These are written in javascript and run using node.js.  Here is the course-build script: https://github.com/jfalkinburg/course-build .
 
 ## License
 
