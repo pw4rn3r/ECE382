@@ -76,7 +76,7 @@ Make it look something like this:
 ```
 ;-------------------------------------------------------------
 ; Lab 1 - Introduction to the MSP430 and Code Composer Studio
-; Capt Todd Branchflower, USAF / 19 Jul 2013 / 19 Jul 2013
+; Capt Jeff Falkinburg, USAF / 19 Jul 2016 / 19 Jul 2016
 ;
 ; This program is a demonstration of using the CCS IDE to
 ; program, assemble, flash, and debug the MSP430.
@@ -159,13 +159,13 @@ Now, when you push the green Play button to run the code, it stops when it hits 
 
 Good luck!
 
-## Questions
+# Questions
 
-Name:
+**Name:**
 <br>
 <br>
 <br>
-Section:
+**Section:**
 <br>
 <br>
 <br>
