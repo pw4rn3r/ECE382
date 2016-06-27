@@ -6,7 +6,7 @@ title = 'Course Letter'
 
 ### Instructors
 
-**Capt Jeff Falkinburg (CD)**  
+**Capt Jeffrey Falkinburg (CD)**  
 Office: 2E46E    
 E-mail: jeffrey.falkinburg@usafa.edu  
 
