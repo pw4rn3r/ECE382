@@ -16,7 +16,7 @@ Lab notebooks are heavily emphasized in this course and constitute a large porti
 - Preliminary design
 - Software flow chart / algorithms
 - Hardware schematic
-- Well-formatted code
+- Well-formatted code (only include key code snippets...code files should be included in code folder)
 - Debugging
 - Testing methodology / results
 - Observations and Conclusions
@@ -38,6 +38,8 @@ In this class, we will use an electronic lab notebook.  We'll be using the versi
         - Include all images you use in your notebook here
     - notebook.md (or README.md)
         - Lab notes not included in your git commit history
+
+**ECE 383 Lab Notebook Example** - [https://github.com/jfalkinburg/ECE_382_Lab_Ex](https://github.com/jfalkinburg/ECE_382_Lab_Ex)
 
 Your commit history will be used as verification that you've been keeping your lab notebook up to date as you progress.  You should commit early and often.
 
