@@ -88,7 +88,7 @@ Reading assignments are provided at the top of the lesson notes and should be ac
 
 ### Labs / Lab Notebooks
 
-Labs will be turned in and graded via Bitbucket.  
+Labs will be turned in and graded via Bitbucket.  Lab notebooks must follow the lab notebook standards specified under the [Lab Notebooks](/382/admin/labs.html) link on the Admin page.  The lab notebook is maintained as a journal of your lab experience and should allow you, or any knowledgeable engineer, to recreate your project.
 
 ### Exams
 

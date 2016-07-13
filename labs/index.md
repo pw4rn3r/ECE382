@@ -20,7 +20,7 @@ If you can't find an instructor, send them an e-mail with the features you were 
 
 ## Lab Notebook Standards
 
-See the [Labs](/382/admin/labs.html) link on the Admin page.
+See the [Lab Notebooks](/382/admin/labs.html) link on the Admin page.
 
 ## Lab notebook instructor access
 
