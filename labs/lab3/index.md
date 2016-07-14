@@ -175,23 +175,23 @@ Create a project around the lab3_given.asm file.  Be sure to include your Delay1
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
 <br>
-When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. Find the three calls to writeCommand and eight calls to writeData that generate these packets. In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
+When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. **Find the three calls to writeCommand and eight calls to writeData that generate these packets.** In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
 
 Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the values sent and what and where the pixels are drawn. Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
-|Line|Command/Data|8-bit packet|Meaning of packet|
-|:-:|:-:|:-:|
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-||||||
+|Packet|Line|Command/Data|8-bit packet|Meaning of packet|
+|:-:|:-:|:-:|:-:|
+|1|||||
+|2|||||
+|3|||||
+|4|||||
+|5|||||
+|6|||||
+|7|||||
+|8|||||
+|9|||||
+|10|||||
+|11||||||
 
 Be sure to label your signals on the logic analyzer and include screenshots (which can be saved to your external hard drive, for eventual posting in your lab notebook) of each analyzed signal.
 

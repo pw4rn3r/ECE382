@@ -101,18 +101,18 @@ For each pulse type list the range of timer A counts that would correctly classi
 
 Write the codes (in hex) for at least 10 remote control buttons.  ("Button name" refers to CH+, 6, VOL-, Power, etc.)
 
-| Button name | Hex code (not including start and stop bits) |
-| :-: | :-: |
-|  | |	 
-|  | | 
-|  | |	 
-|  | | 
-|  | |	 
-| | | 
-| | | 
-| | |
-| | |
-| | | |
+| Button | Button name | Hex code (not including start and stop bits) |
+| :-: | :-: | :-: |
+| 1 | | |	 
+| 2 | | | 
+| 3 | | |	 
+| 4 | | | 
+| 5 | | |	 
+| 6 | | | 
+| 7 | | | 
+| 8 | | |
+| 9 | | |
+| 10 | | | |
 
 ### Day 2
 
