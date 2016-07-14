@@ -22,7 +22,7 @@ Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The pr
 
 ## B Functionality
 
-You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph must be generated for three different servo positions.  Use these values to determine how your sensor/servo pair works so you can properly use them to solve the maze.
+You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph should be generated for only one servo position.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.
 
 ## A Functionality
 
@@ -30,7 +30,7 @@ Control your servo position with your remote!  Use remote buttons other than tho
 
 ## Bonus Functionality
 
-Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository should be publicly accessible.
+Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate folder from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository will remain private.
 
 ## Prelab
 

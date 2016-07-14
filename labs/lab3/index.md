@@ -205,9 +205,12 @@ Import the following image into a paint program and show the result of the opera
 
 
 
-**Required functionality**: Create a block on the LCD that is 10x10 pixels.  <br>
-**A functionality**: Move the 10-pixel block one block (10 pixels) in the direction of the pressed button (up, down, left, right).  
-**Bonus functionality**: Write your name or nickname of at least 5 characters to the screen on a solid background when the S1 button is pushed.
+### Required functionality: 
+Create a block on the LCD that is 10x10 pixels.  <br>
+### A functionality: 
+Move the 10-pixel block one block (10 pixels) in the direction of the pressed button (up, down, left, right).  
+### Bonus functionality: 
+Write your name or nickname of at least 5 characters to the screen on a solid background when the S1 button is pushed.
 
 
 ## Grading - Lab 3

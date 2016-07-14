@@ -147,8 +147,6 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 
 ## Grading - Lab 4
 
-Name:
-
 **Name:**<br>
 <br>
 **Documentation:**<br>
