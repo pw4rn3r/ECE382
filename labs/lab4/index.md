@@ -160,6 +160,6 @@ Name:
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L24 |
 | B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L24 |
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L24 |
-| Bonus Functionality | Circle ------- Background ------- Score ------- Other______________________| | 5 each | | COB L24 |
+| Bonus Functionality |  ------- Circle ------- Background ------- Score ------- Other -------| | 5 each | | COB L24 |
 | Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L25 |
 | **Total** | | | **100** | | | |

@@ -155,5 +155,5 @@ Ensure you are committing regularly.
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L30 |
 | Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L31 |
 | README | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L31 |
-| Use of version control | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus| | 5 | | COB L31 |
+| Use of version control | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ----| | 5 | | COB L31 |
 | **Total** | | | **100** | | | |

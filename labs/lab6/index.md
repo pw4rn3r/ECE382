@@ -127,7 +127,7 @@ To test whether a fuse is burned, use the ohmmeter - a working fuse should have 
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus | | 15 | | BOC L33 |
+| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- | | 15 | | BOC L33 |
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L35 |
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L35 |
 | Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L36 |
