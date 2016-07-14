@@ -159,7 +159,7 @@ Now, when you push the green Play button to run the code, it stops when it hits 
 
 Good luck!
 
-# Questions
+# Questions - CompEx 1
 
 **Name:**
 <br>
@@ -214,7 +214,7 @@ Good luck!
 
 ### General
 
-4. (10pts) What's the purpose of a breakpoint?  Why are they useful?  Give an example of a situation where you'd use a breakpoint.
+1. (10pts) What's the purpose of a breakpoint?  Why are they useful?  Give an example of a situation where you'd use a breakpoint.
 <br>
 <br>
 <br>
@@ -227,7 +227,7 @@ Good luck!
 <br>
 <br>
 <br>
-5a. (5pts) Consider the `forever    jmp forever` instruction from the simple program you wrote first.  What type of instruction is this?  
+2. (5pts) Consider the `forever    jmp forever` instruction from the simple program you wrote first.  What type of instruction is this?  
 <br>
 <br>
 <br>
@@ -240,7 +240,7 @@ Good luck!
 <br>
 <br>
 <br>
-5b. (5pts) How many different addressing modes are used in the mystery code?  List and give an example from the code of each mode used.
+3. (5pts) How many different addressing modes are used in the mystery code?  List and give an example from the code of each mode used.
 <br>
 <br>
 <br>
@@ -253,7 +253,7 @@ Good luck!
 <br>
 <br>
 <br>
-6. (10pts) Are the values in memory stored in little-endian or big-endian format?  Using the debugger, how can you tell?  If they were stored in the other format, what would it look like?  Give me an example from your code.
+4. (10pts) Are the values in memory stored in little-endian or big-endian format?  Using the debugger, how can you tell?  If they were stored in the other format, what would it look like?  Give me an example from your code.
 <br>
 <br>
 <br>
@@ -266,7 +266,7 @@ Good luck!
 <br>
 <br>
 <br>
-7. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words starting at 0 and counting upward by 2.  Use CCS to verify that it works, and explain your verification process.
+5. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words starting at 0 and counting upward by 2.  Use CCS to verify that it works, and explain your verification process.
 <br>
 <br>
 <br>
@@ -279,6 +279,6 @@ Good luck!
 <br>
 <br>
 <br>
-8. (10pts) Go to bitbucket.org and create an account there if you do not have one already.  This site will be where you turn in your labs for this class.  For each lab, you will create a separate project (with a descriptive name, such as ECE382-Lab1).  Each repository will be private, and you will add your instructor with read permissions to each repository.  For full points on this question, send your instructor an email with your bitbucket username before this assignment is due.  
+6. (10pts) Go to bitbucket.org and create an account there if you do not have one already.  This site will be where you turn in your labs for this class.  You will create one repository (with a descriptive name, such as ECE382-YourLastName) for all Lab turn in requirements.  For each lab, you will create a separate folder under this repository (with a descriptive name, such as Lab1-YourLastName).  Your repository will be private, and you will add your instructor with read permissions to the repository.  For full points on this question, give your instructor access before this assignment is due.  
 <br>
 <br>

@@ -99,23 +99,25 @@ Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.h
 
 ## Test Cases!
 
-In addition to using the test cases I have provided, create at least two test cases of your own.  Explain why your test cases provide added value in testing your program.  Be sure to include the expected results.
+**In addition to using the test cases I have provided, create at least two test cases of your own.  Explain why your test cases provide added value in testing your program.  Be sure to include the expected results.**
 
 [Test Cases](test_cases.html)
 
-## Grading
+## Grading - Lab 1
 
 Do not forget to give your instructor access to your repository!
 
-Name:<br>
-Documentation:<br>
+**Name:**<br>
+<br>
+**Documentation:**<br>
+<br>
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** | | 5 | | BOC L9 |
-| Required Functionality | **On-Time** --------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L10 |
-| B Functionality | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L10 |
-| A Functionality - O(n) | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| A Functionality - O(log n) | **On-Time** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| Lab Notebook | **On-Time:** ---------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L11 |
-| **Total** | | | **100** | | |
+| Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | BOC L9 |
+| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L10 |
+| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L10 |
+| A Functionality - O(n) | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
+| A Functionality - O(log n) | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
+| Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L11 |
+| **Total** | | | **100** | | | |

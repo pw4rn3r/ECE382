@@ -145,16 +145,21 @@ Mind your code style!
 As you are writing your lab notebook (DURING the coding process; not after it is over), be sure to include discussion of the various algorithms you use for each program and bonus functionality.
 
 
-## Grading -- Lab 4
+## Grading - Lab 4
 
 Name:
 
+**Name:**<br>
+<br>
+**Documentation:**<br>
+<br>
+
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time**  | | 10 | | BOC L23 |
-| Required Functionality | **On-Time** ---------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L24 |
-| B Functionality | **On-Time** ---------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L24 |
-| A Functionality | **On-Time** ---------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L24 |
-| Bonus Functionality | Circle ------- Background ------- Score ------- Other| | 5 each | | COB L24 |
-| Lab Notebook | **On-Time:** ---------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L25 |
+| Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days  | | 10 | | BOC L23 |
+| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L24 |
+| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L24 |
+| A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L24 |
+| Bonus Functionality | Circle ------- Background ------- Score ------- Other______________________| | 5 each | | COB L24 |
+| Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L25 |
 | **Total** | | | **100** | | | |

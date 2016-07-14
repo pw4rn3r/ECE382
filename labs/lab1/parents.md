@@ -1,6 +1,6 @@
 # Parents Weekend Notes
 
-Welcome parents to Embedded Systems I!  I'm Todd Branchflower, the Course Director this semester.  But today you're in luck because you're not going to hear me talk much.
+Welcome parents to Embedded Systems I!  I'm Capt Jeffrey Falkinburg, the Course Director this semester.  But today you're in luck because you're not going to hear me talk much.
 
 Your sons and daughters have been learning about tiny computers called microcontrollers.  *[Hold up chip.]*
 
