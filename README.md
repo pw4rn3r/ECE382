@@ -1,6 +1,6 @@
 # ECE382 (Embedded Systems I) Course Website
 
-Live site: ece.ninja/382
+Live site: http://ece.ninja/382
 
 ## Building the Site
 
