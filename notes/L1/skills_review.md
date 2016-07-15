@@ -137,7 +137,7 @@ Objectives:
 5. (5 pts each) All of the numbers below are represented using 8-bit, two's complement notation.  Perform the specified operations and specify whether or not an overflow occurs.
 
 a.  
-   1110 1101  
+&nbsp; &nbsp; 1110 1101  
 + 1010 1100  
 <br>
 <br>
@@ -146,7 +146,7 @@ a.
 <br>
 <br>
 b.  
-   1001 1000  
+&nbsp; &nbsp; 1001 1000  
 - 1110 0111  
 <br>
 <br>
@@ -164,8 +164,8 @@ b.
 7. (10pts each) Perform the specified operations and specify whether or not an overflow occurs.  Give the answer in unsigned 16-bit hexadecimal format.
 
 a.  
-  0xE76D (unsigned 16-bit)  
-+   0x14 (2's comp 8-bit)  
+&nbsp; &nbsp; 0xE76D (unsigned 16-bit)  
++ &nbsp; &nbsp; 0x14 (2's comp 8-bit)  
 <br>
 <br>
 <br>
@@ -173,8 +173,8 @@ a.
 <br>
 <br>
 b.  
-  BD72 (unsigned 16-bit)  
--   D6 (2's comp 8-bit)  
+&nbsp; &nbsp; BD72 (unsigned 16-bit)  
+- &nbsp; &nbsp; D6 (2's comp 8-bit)  
 <br>
 <br>
 <br>
