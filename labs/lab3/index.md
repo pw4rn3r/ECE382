@@ -11,7 +11,7 @@ title = 'Lab 3 - SPI - "I/O"'
 A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine (line 566), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
+In lab3_given.asm, you have the header for a subroutine (line 569), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
 ### ILI9341 LCD BoosterPack 
 
@@ -50,7 +50,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | MOSI |   |   |
 | DC |	| | |
 
-Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 132 - 138) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
+Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 135 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
 1:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
 2:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
@@ -77,7 +77,7 @@ Line 6: <br>
 Line 7: <br>
 
 ### Communicate with the LCD
-The following code (lines 290 - 330) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
+The following code (lines 293 - 333) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
 
 ```
 ;-------------------------------------------------------------------------------
@@ -127,7 +127,7 @@ Use this code to draw two timing diagrams (one for each subroutine) of the expec
 
 
 ### Draw a pixel
-The following code (lines 538 - 562) draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
+The following code (lines 541 - 565) draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
 
 |Subroutine| Purpose|
 |:-:|:-:|

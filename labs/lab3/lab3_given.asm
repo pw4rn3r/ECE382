@@ -7,7 +7,6 @@
 ;
 ;		This code was created using RobG's example LCD program, then modified for our particular function.
 ;
-;
 ;-------------------------------------------------------------------------------
             .cdecls C,LIST,"msp430.h"       ; Include device header file
 
@@ -60,6 +59,7 @@ YEND:			.equ	254
 XLINELEN:		.equ	5
 YLINELEN:		.equ	5
 
+;-------------------------------------------------------------------------------
             .text                           ; Assemble into program memory
             .retain                         ; Override ELF conditional linking
                                             ; and retain current section
