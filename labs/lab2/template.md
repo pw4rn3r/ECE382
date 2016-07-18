@@ -2,12 +2,15 @@
 
 ```
 ;-------------------------------------------------------------------------------
-; MSP430 Assembler Code Template for use with TI Code Composer Studio
+; Insert your code header here
 ;
 ;
 ;-------------------------------------------------------------------------------
             .cdecls C,LIST,"msp430.h"       ; Include device header file
  
+;-------------------------------------------------------------------------------
+            .def    RESET                   ; Export program entry-point to
+                                            ; make it known to linker.
 ;-------------------------------------------------------------------------------
             .text                           ; Assemble into program memory
             .retain                         ; Override ELF conditional linking

@@ -39,7 +39,7 @@ In this class, we will use an electronic lab notebook.  We'll be using the versi
     - notebook.md (or README.md)
         - Lab notes not included in your git commit history
 
-**ECE 383 Lab Notebook Example** - [https://github.com/jfalkinburg/ECE_382_Lab_Ex](https://github.com/jfalkinburg/ECE_382_Lab_Ex)
+**ECE 382 Lab Notebook Example** - [https://github.com/jfalkinburg/ECE_382_Lab_Ex](https://github.com/jfalkinburg/ECE_382_Lab_Ex)
 
 Your commit history will be used as verification that you've been keeping your lab notebook up to date as you progress.  You should commit early and often.
 
