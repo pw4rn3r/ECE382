@@ -89,7 +89,8 @@ Objectives:
 - Understand the concept and uses of two's complement numbers.
 
 
-3. (5pts each) Find the 8-bit two's complement representation of the following numbers.
+<ol start="3">
+<li> (5pts each) Find the 8-bit two's complement representation of the following numbers.
 
     a. 116 (base 10)
 <br>
@@ -112,7 +113,7 @@ Objectives:
 <br>
 <br>
 <br>
-4. (5pts) What are the largest (most positive) and the smallest (most negative) 8-bit two's complement numbers in hexadecimal **and** decimal formats?
+<li> (5pts) What are the largest (most positive) and the smallest (most negative) 8-bit two's complement numbers in hexadecimal **and** decimal formats?
 <br>
 <br>
 <br>
@@ -126,6 +127,7 @@ Objectives:
 <br>
 <br>
 <br>
+</ol>
 ## Part 4: Binary Addition and Subtraction, Concept of Overflow
 
 Objectives:
@@ -134,8 +136,8 @@ Objectives:
 - Explain the concept of overflow and when it occurs.
 - Know how to add and subtract two binary numbers and note whether an overflow occurs.
 
-
-5. (5 pts each) All of the numbers below are represented using 8-bit, two's complement notation.  Perform the specified operations and specify whether or not an overflow occurs.
+<ol start="5">
+<li> (5 pts each) All of the numbers below are represented using 8-bit, two's complement notation.  Perform the specified operations and specify whether or not an overflow occurs.
 
 a.  
 &nbsp; &nbsp; 1110 1101  
@@ -155,14 +157,14 @@ b.
 <br>
 <br>
 <br>
-6. (5pts) When an overflow occurs, a common solution is to expand the number of bits used in the calculation (known as sign extension).  How would  you extend the negative 8-bit two's complement number with a hexadecimal value of BC to 16 bits?
+<li> (5pts) When an overflow occurs, a common solution is to expand the number of bits used in the calculation (known as sign extension).  How would  you extend the negative 8-bit two's complement number with a hexadecimal value of BC to 16 bits?
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-7. (10pts each) Perform the specified operations and specify whether or not an overflow occurs.  Give the answer in unsigned 16-bit hexadecimal format.
+<li> (10pts each) Perform the specified operations and specify whether or not an overflow occurs.  Give the answer in unsigned 16-bit hexadecimal format.
 
 a.  
 &nbsp; 0xE76D (unsigned 16-bit)  
@@ -182,6 +184,7 @@ b.
 <br>
 <br>
 <br>
+</ol>
 ## Part 5: Digital Logic
 
 Objectives:
@@ -189,6 +192,8 @@ Objectives:
 - Know how to use bit masking to change registers. 
 - Demonstrate the ability to design a digital logic circuit.
 <br>
+<br>
+
 <ol start="8">
 <li> (5 pts)  You are given a 16-bit register called R6 that contains a certain value.  You need to ensure that the 0th and the 6th bits are set (in other words, they have a value of one) in order for your program to function correctly, but you don't want to change any other bits in the register.  Describe what operation needs to be performed and the operands involved in order to set these bits.  Pseudocode will suffice.</li>
 <br>
