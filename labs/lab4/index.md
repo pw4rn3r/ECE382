@@ -91,7 +91,7 @@ What is the role of the `extern` directive in a .c file?  Hint: check out the [e
 
 
 
-What is the role of the `.global` directive in an .asm file (used in lines 56-60)?  Hint: reference section 2.6.2 in the MSP 430 Assembly Language Tools v4.3 User's Guide.
+What is the role of the `.global` directive in an .asm file (used in lines 60-64)?  Hint: reference section 2.6.2 in the MSP 430 Assembly Language Tools v4.3 User's Guide.
 <br><br><br><br><br>
 
 

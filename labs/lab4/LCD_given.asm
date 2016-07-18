@@ -47,6 +47,10 @@ LCD_WIDTH:		.equ	240
 COLOR1:			.equ	0x4416	;steel blue
 ORIENT:			.equ	0x88	;;this sets default screen orientation. other values are 0x48, 0xE8, 0x88, 0x28. Origin at upper L corner.
 
+;-------------------------------------------------------------------------------
+            .def    RESET                   ; Export program entry-point to
+                                            ; make it known to linker.
+;-------------------------------------------------------------------------------
             .text                           ; Assemble into program memory
             .retain                         ; Override ELF conditional linking
                                             ; and retain current section
