@@ -134,10 +134,11 @@ Objectives:
 - Explain the concept of overflow and when it occurs.
 - Know how to add and subtract two binary numbers and note whether an overflow occurs.
 
+
 5. (5 pts each) All of the numbers below are represented using 8-bit, two's complement notation.  Perform the specified operations and specify whether or not an overflow occurs.
 
 a.  
-&nbsp; 1110 1101  
+&nbsp; &nbsp; 1110 1101  
 + 1010 1100  
 <br>
 <br>
