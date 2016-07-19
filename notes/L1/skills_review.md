@@ -1,15 +1,12 @@
 # ECE382 Skills Review
 
-Name:
+**Name:**
 <br>
 <br>
-<br>
-Section:
-<br>
+**Section:**
 <br>
 <br>
-Documentation:
-<br>
+**Documentation:**
 <br>
 <br>
 Due Date: **Beginning of Class (BOC), Lesson 3**

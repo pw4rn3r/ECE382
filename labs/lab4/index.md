@@ -149,6 +149,9 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 
 **Name:**<br>
 <br>
+**Section:**
+<br>
+<br>
 **Documentation:**<br>
 <br>
 

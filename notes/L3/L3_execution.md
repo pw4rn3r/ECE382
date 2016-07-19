@@ -1,11 +1,12 @@
 # L3 Assignment - Assembly Process, MSP430 Execution, MSP430 Instruction Set
 
-Name:
+**Name:**
 <br>
-Section:
 <br>
-Documentation:
+**Section:**
 <br>
+<br>
+**Documentation:**
 <br>
 <br>
 

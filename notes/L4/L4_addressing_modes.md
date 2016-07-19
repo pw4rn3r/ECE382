@@ -2,9 +2,15 @@
 
 ## Addressing Modes
 
-Name:
-Documentation:
-
+**Name:**
+<br>
+<br>
+**Section:**
+<br>
+<br>
+**Documentation:**
+<br>
+<br>
 
 **All answers should be in little-endian, hex format.**
 
@@ -82,7 +88,8 @@ What addressing mode do relative jumps use (if any)?
 <br>
 <br>
 
-2. Consider the following code snippet:
+<ol start="2">
+<li> Consider the following code snippet:
 ```
 mov.w   #0xFF, P1OUT    ;P1OUT is 0x0021
 ```
@@ -126,6 +133,8 @@ How would you change the code snippet to fix the problem?
 <br>
 <br>
 <br>
+</ol>
+
 3. Consider the following code snippet:
 ```
 mov.w   r10, @r9

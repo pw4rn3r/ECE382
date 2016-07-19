@@ -109,6 +109,9 @@ Do not forget to give your instructor access to your repository!
 
 **Name:**<br>
 <br>
+**Section:**
+<br>
+<br>
 **Documentation:**<br>
 <br>
 

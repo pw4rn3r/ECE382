@@ -51,6 +51,9 @@ Consider the interface you'll create to your sensor.  Will you block or use inte
 
 **Name:**<br>
 <br>
+**Section:**
+<br>
+<br>
 **Documentation:**<br>
 <br>
 

@@ -66,6 +66,9 @@ There are a variety of techniques that cadets have used in the past to solve the
 
 **Name:**<br>
 <br>
+**Section:**
+<br>
+<br>
 **Documentation:**<br>
 <br>
 

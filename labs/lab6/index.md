@@ -122,6 +122,9 @@ To test whether a fuse is burned, use the ohmmeter - a working fuse should have 
 
 **Name:**<br>
 <br>
+**Section:**
+<br>
+<br>
 **Documentation:**<br>
 <br>
 

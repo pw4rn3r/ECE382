@@ -1,7 +1,13 @@
 # L7 Assignment - Control Flow
-Name: <br>
-Section: <br>
-Documentation: <br>
+**Name:**
+<br>
+<br>
+**Section:**
+<br>
+<br>
+**Documentation:**
+<br>
+<br>
 
 ## The Program
 
