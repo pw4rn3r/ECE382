@@ -57,16 +57,16 @@ Address:	  Program:
 |0x0400	|0xEF | | |
 
 <br>
-**r6=** &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; 
+**r6=** &#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f; 
 <br>
 <br>
-**r10=** &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; 
+**r10=** &#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f; 
 <br>
 <br>
-**r11=** &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; 
+**r11=** &#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f; 
 <br>
 <br>
-**r12=** &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; &#x5f; 
+**r12=** &#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f; 
 <br>
 <br>
 Has the stackmanip subroutine been created using good coding practices?? Why or why not?

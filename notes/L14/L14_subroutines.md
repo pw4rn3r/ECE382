@@ -1,4 +1,13 @@
 # Subroutines
+**Name:**
+<br>
+<br>
+**Section:**
+<br>
+<br>
+**Documentation:**
+<br>
+<br>
 
 This is actual code produced by a C compiler and recovered by a disassembler. What does it do?  It's ok to start by analyzing each assembly instruction, but you should arrive at a simple, one-sentence purpose.
 
