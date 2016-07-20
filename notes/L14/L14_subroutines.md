@@ -42,12 +42,13 @@ What does this subroutine do?
 <br>
 <br>
 <br>
-<br>
+<br>	
 
 
 In the MSP430G2553 detailed Tech Doc (75 pages):<br>
 
 Look at the top of your MSP430 chip and write down all the numbers you can read.  Consult the Package Option Addendum section of the Tech Doc and determine the following information for your chip.<br>
+<br>
 -	Orderable Device &#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f;&#x5f; 
 <br>
 <br>
