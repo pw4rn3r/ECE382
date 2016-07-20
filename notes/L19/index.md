@@ -406,7 +406,7 @@ Name: <Your Name>
 Date: <The date you stated working on the file>
 Course: <The course's name>
 File: <This file's name>
-HW: <HW# and name>
+Event: <HW# and name>
 
 Purp: A brief description of what this program does and 
     the general solution strategy. 

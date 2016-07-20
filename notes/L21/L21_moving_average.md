@@ -38,11 +38,11 @@ unsigned long int rand(void)
 }
 ```
 
-## Turn-In Requirements (E-mail)
+## Turn-In Requirements (Bitbucket)
 
 - Source code files (`main.c`, header, and implementation).
 - Simulator screenshots.
-- Answers to the following questions:
+- Answers to the following questions in readme.md file:
     - What data type did you choose for your arrays?  Why?
     - How did you test each of your functions to verify they were functioning correctly?
 

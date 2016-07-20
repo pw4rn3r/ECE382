@@ -14,11 +14,11 @@ Write a C program that implements a subset of the functionality of the video "po
     - The "collision detection" functions return a `char` (1 for true, 0 for false - `#define` these values) to indicate whether or not there is a collision.
 - You must create three separate files: header, implementation, and your `main.c`.
 
-## Turn-In Requirements (E-mail)
+## Turn-In Requirements (Bitbucket)
 
 - Source code files (`main.c`, header, and implementation).
 - Simulator screenshots.
-- Answers to the following questions:
+- Answers to the following questions in readme.md file:
     - How did you verify your code functions correctly?
     - How could you make the "collision detection" helper functions only visible to your implementation file (i.e. your `main.c` could not call those functions directly)?
 

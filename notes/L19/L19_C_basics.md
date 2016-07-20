@@ -16,7 +16,7 @@ Additional Requirements:
 - The threshold value must be a properly defined constant (refer to the lesson notes if you are confused by this requirement).
 - Comment your code.  In particular, provide a good file header (example provided in lesson notes).
 
-## Turn-In Requirements (BitBucket)
+## Turn-In Requirements (Bitbucket)
 
 - Main source code file (`main.c`).
 - Debugger screenshots to prove to the instructor that your code functions correctly.
