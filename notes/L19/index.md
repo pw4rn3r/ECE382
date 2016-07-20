@@ -401,9 +401,24 @@ void main(void)
 Don't forget your code style!
 
 ```
-/*******************************************
-  * Author: Capt Todd Branchflower
-  * Created: 7 Oct 2013
-  * Description: This is an example header!
-*******************************************/
+/*--------------------------------------------------------------------
+Name: <Your Name>
+Date: <The date you stated working on the file>
+Course: <The course's name>
+File: <This file's name>
+HW: <HW# and name>
+
+Purp: A brief description of what this program does and 
+    the general solution strategy. 
+
+Doc:    <list the names of the people who you helped>
+        <list the names of the people who assisted you>
+
+Academic Integrity Statement: I certify that, while others may have 
+assisted me in brain storming, debugging and validating this program, 
+the program itself is my own work. I understand that submitting code 
+which is the work of other individuals is a violation of the honor   
+code.  I also understand that if I knowingly give my original work to 
+another individual is also a violation of the honor code. 
+-------------------------------------------------------------------------*/
 ```

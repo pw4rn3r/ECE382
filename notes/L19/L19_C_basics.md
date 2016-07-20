@@ -16,11 +16,11 @@ Additional Requirements:
 - The threshold value must be a properly defined constant (refer to the lesson notes if you are confused by this requirement).
 - Comment your code.  In particular, provide a good file header (example provided in lesson notes).
 
-## Turn-In Requirements (E-mail)
+## Turn-In Requirements (BitBucket)
 
 - Main source code file (`main.c`).
 - Debugger screenshots to prove to the instructor that your code functions correctly.
-- Answers to the following questions:
+- Answers to the following questions in readme.md file:
     - Exactly where in memory on the microcontroller are your variables stored?
     - How do you know?
 
