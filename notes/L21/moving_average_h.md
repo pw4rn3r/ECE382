@@ -18,8 +18,6 @@ which is the work of other individuals is a violation of the honor
 code.  I also understand that if I knowingly give my original work to 
 another individual is also a violation of the honor code. 
 -------------------------------------------------------------------------*/
- * Description: Functions to update and monitor a moving average
- */
 
 #ifndef _MOV_AVG_H
 #define _MOV_AVG_H
