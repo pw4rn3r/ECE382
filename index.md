@@ -7,9 +7,9 @@ title = 'Intro to Embedded Systems with the MSP430'
 | Lesson | Topic | Assigned | Due |
 | :-: | :-: | :-: | :-: | :-: |
 | [L1](notes/L1/index.html) | Course Introduction. Computer Structure.  Architecture vs Microarchitecture.  RISC vs CISC. | [Skills Review](notes/L1/skills_review.html) | |
-| [L2](notes/L2/index.html) | Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Languages. | | |
+| [L2](notes/L2/index.html) | Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Languages. | [uCorrupt 1](notes/L2/ucorrupt1.html) | |
 | [L3](notes/L3/index.html) | Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Converting Assembly to Machine Code. | [Assignment 1](notes/L3/L3_execution.html) | [Skills Review](notes/L1/skills_review.html) |
-| [L4](notes/L4/index.html) | Addressing Modes.  CompEx 1 Intro. | [Assignment 2](notes/L4/L4_addressing_modes.html) | [Assignment 1](notes/L3/L3_execution.html) |
+| [L4](notes/L4/index.html) | Addressing Modes.  CompEx 1 Intro. | [Assignment 2](notes/L4/L4_addressing_modes.html) | [Assignment 1](notes/L3/L3_execution.html)[uCorrupt 1](notes/L2/ucorrupt1.html) |
 | L5 | [CompEx 1](labs/compex1/index.html) - Introduction to the MSP430 and CodeComposer. | [CompEx 1](labs/compex1/index.html) | [Assignment 2](notes/L4/L4_addressing_modes.html )|
 | [L6](notes/L6/index.html) | Status Register.  Flow of Control.  Movement Instructions. | | [CompEx 1](labs/compex1/index.html) Questions |
 | [L7](notes/L7/index.html) | Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer. *Miniquiz*| [Assignment 3](notes/L7/L7_control_flow.html) | |

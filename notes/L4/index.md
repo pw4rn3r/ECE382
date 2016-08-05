@@ -11,6 +11,9 @@ Davies 5.2 (pp125 - pp131)
 
 [ppt](Lsn4.pptx)
 
+## Example Code
+[Example Programming Code](code/lec4.asm)
+
 ## Assignment
 [Addressing Modes](L4_addressing_modes.html)
 
