@@ -7,7 +7,7 @@ title = 'Intro to Embedded Systems with the MSP430'
 | Lesson | Topic | Reading | Assigned | Due |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | [L1](notes/L1/index.html) | Course Introduction. Computer Structure.  Architecture vs Microarchitecture.  RISC vs CISC. | Barrett 1.1-1.4, 2.1-2.2 (pp1-6, pp25-26) | [Skills Review](notes/L1/skills_review.html) | |
-| [L2](notes/L2/index.html) | Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Languages. | Barrett 1.5,2.11, 3.1-3.4 (pp7-11, pp52-53, pp77-83) | [uCorrupt 1](notes/L2/ucorrupt1.html) | |
+| [L2](notes/L2/index.html) | Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Languages. | Barrett 1.5, 2.11, 3.1-3.4 (pp7-11, pp52-53, pp77-83) | [uCorrupt 1](notes/L2/ucorrupt1.html) | |
 | [L3](notes/L3/index.html) | Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Converting Assembly to Machine Code. | | [Assignment 1](notes/L3/L3_execution.html) | [Skills Review](notes/L1/skills_review.html) |
 | [L4](notes/L4/index.html) | Addressing Modes.  CompEx 1 Intro. | Barrett 2.8-2.11 (pp47-54) | [Assignment 2](notes/L4/L4_addressing_modes.html) | [Assignment 1](notes/L3/L3_execution.html), [uCorrupt 1](notes/L2/ucorrupt1.html) |
 | L5 | [CompEx 1](labs/compex1/index.html) - Introduction to the MSP430 and CodeComposer. | | [CompEx 1](labs/compex1/index.html) | [Assignment 2](notes/L4/L4_addressing_modes.html )|
