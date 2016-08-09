@@ -10,7 +10,7 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 - [PPT Slides](Lsn15.pptx)
 
 ## Assignment
-- [Lab 3](/382/labs/lab3/index.html) Prelab
+- [Lab 3 Mega Prelab](/382/labs/lab3/index.html)
 
 ## Lesson Outline
 - Serial Comm Fundamentals

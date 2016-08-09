@@ -7,6 +7,9 @@ title = 'Polling. Debouncing. Software Delay Routines.'
 - [Logic Analyzer](http://www.radio-electronics.com/info/t_and_m/logic_analyzer/logic_analyzer.php)
 - [PPT Slides](Lsn14.pptx)
 
+## Assignment
+- [Assignment 5 - Subroutines](L14_subroutines.html)
+
 Optional motivational stuff:
 
 Tutorial on MSP430-based quadcopter:

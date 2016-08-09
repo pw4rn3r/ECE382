@@ -15,7 +15,7 @@ title = 'Addressing Modes.  CompEx 1 Intro.'
 - [Example Programming Code](code/lec4.asm)
 
 ## Assignment
-- [Addressing Modes](L4_addressing_modes.html)
+- [Assignment 2 - Addressing Modes](L4_addressing_modes.html)
 
 ## Lesson Outline
 - Addressing Modes

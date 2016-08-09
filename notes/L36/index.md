@@ -6,7 +6,7 @@ title = 'Analog-to-Digital and Digital-to-Analog Conversion. Lab 7 / 8 Intro.'
 - Barrett 8.1-8.5 (pp241-259)
 
 ## Assignment
-- Lab 7 Prelab
+- [Lab 7 Prelab](/382/labs/lab7/index.html)
 
 ## Lesson Outline
 - Admin
@@ -15,7 +15,7 @@ title = 'Analog-to-Digital and Digital-to-Analog Conversion. Lab 7 / 8 Intro.'
 - The MSP430's ADC10
 - Analog-to-Digital Conversion
 - Digital-to-Analog Conversion
-- Lab 7 / 8 Introduction
+- [Lab 7](/382/labs/lab7/index.html) / [Lab 8](/382/labs/lab8/index.html) Introduction
 
 ## Admin
 

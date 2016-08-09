@@ -9,7 +9,7 @@ title = 'Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer.'
 - [PPT Slides](Lsn7.pptx)
 
 ## Assignment
-- [Control Flow](L7_control_flow.html)
+- [Assignment 3 - Control Flow](L7_control_flow.html)
 
 ## Lesson Outline
 - Arithmetic Instructions

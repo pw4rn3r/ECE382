@@ -9,7 +9,7 @@ title = 'Timer_A: Capture / Compare, Pulse Width Modulation.  Lab 6 Introduction
 - [PPT Slides](Lsn32.pptx)
 
 ## Assignment
-- Lab 6 Prelab
+- [Lab 6 Prelab](/382/labs/lab6/index.html)
 
 ## Lesson Outline
 - Admin

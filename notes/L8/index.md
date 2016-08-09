@@ -10,7 +10,7 @@ title = 'Directives.  Assembly Process.  Structured Design and Test.  Debugging.
 
 ## Assignment
 
-- [Lab 1](/382/labs/lab1/index.html) Prelab
+- [Lab 1 Prelab](/382/labs/lab1/index.html)
 
 ## Lesson Outline
 - Instruction Execution Time

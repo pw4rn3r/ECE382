@@ -7,6 +7,7 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 - [PPT Slides](Lsn22.pptx)
 
 ## Assignment
+- [Lab 4 Prelab](/382/labs/lab4/index.html)
 
 ## Lesson Outline
 - Admin

@@ -10,7 +10,7 @@ title = 'Compilers. Introduction to C.'
 - [PPT Slides](Lsn19.pptx)
 
 ## Assignment
-- [C Basics](L19_C_basics.html)
+- [Assignment 6 - C Basics](L19_C_basics.html)
 
 ## Lesson Outline
 - Compilers

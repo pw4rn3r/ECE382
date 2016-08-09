@@ -8,7 +8,7 @@ title = 'Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Convertin
 - [PPT Slides](Lsn3.pptx)
 
 ## Assignment
-- [Execution](L3_execution.html)
+- [Assignment 1 - Execution](L3_execution.html)
 
 ## Lesson Outline
 - MSP430 Execution Model

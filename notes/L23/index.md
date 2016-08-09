@@ -6,12 +6,10 @@ title = 'Lab 4 Introduction.  Mapping C to Assembly.'
 - Barrett 9.1-9.4 (pp269-297)
 - [Mapping C Programming Constructs to MSP430 Assembly](L23_Mapping_C_to_Assembly.html)
 
-## Assignment
-- [Lab 4 Prelab](/labs/lab4/index.html)
 
 ## Lesson Outline
 - Admin
-- [Lab 4](/labs/lab4/index.html) Overview
+- [Lab 4](/382/labs/lab4/index.html) Overview
 - Electronic Lab Notebook
 - Working with the C Headers
 - Mapping C to Assembly

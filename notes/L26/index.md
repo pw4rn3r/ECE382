@@ -9,7 +9,7 @@ title = 'More timers.  Interrupts and ISRs.  MSP430 Interrupt System.'
 - [PPT Slides](Lsn26.pptx)
 
 ## Assignment
-- [Assignment](/382/notes/L26/L26_timer_interrupt_lab4.html)
+- [Assignment 9](/382/notes/L26/L26_timer_interrupt_lab4.html)
 
 ## Lesson Outline
 - Admin

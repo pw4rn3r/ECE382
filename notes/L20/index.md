@@ -9,7 +9,7 @@ title = 'C Programming - Structs, Functions, and Headers.'
 - [PPT Slides](Lsn20.pptx)
 
 ## Assignment
-- [Assignment - Pong!](/382/notes/L20/L20_pong.html)
+- [Assignment 7 - Pong!](/382/notes/L20/L20_pong.html)
 
 ## Lesson Outline
 - Structs

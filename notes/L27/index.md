@@ -6,6 +6,9 @@ title = 'Interrupts and ISRs.  MSP430 Interrupt System.'
 - Barrett 3.1-3.5 (pp77-85)
 - [Low Power Operation - Family Users Guide pp38-41](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 
+## Assignment
+- Read [Lab 5](/382/labs/lab5/index.html)
+
 ## Lesson Outline
 - Review Interrupts
 - Low Power Modes
