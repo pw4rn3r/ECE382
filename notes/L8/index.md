@@ -3,10 +3,10 @@ title = 'Directives.  Assembly Process.  Structured Design and Test.  Debugging.
 # Lesson 8 Notes
 
 ## Readings
-
+- Barrett 2.14-2.15 (pp56-67)
 - [What's the Hardest Bug You've Debugged?](http://www.quora.com/Programming-Interviews/Whats-the-hardest-bug-youve-debugged/answer/Dave-Baggett?srid=pxH3&share=1)
 - [Modularity](http://www.examiner.com/article/programming-concepts-the-benefits-of-modular-programming)
-- [ppt](Lsn8.pptx)
+- [PPT Slides](Lsn8.pptx)
 
 ## Assignment
 

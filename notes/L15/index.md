@@ -7,7 +7,7 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 - [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
 - [Serial Peripheral Interface (SPI)](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 - [Lab 3](/382/labs/lab3/index.html)
-- [ppt](Lsn15.pptx)
+- [PPT Slides](Lsn15.pptx)
 
 ## Assignment
 - [Lab 3](/382/labs/lab3/index.html) Prelab

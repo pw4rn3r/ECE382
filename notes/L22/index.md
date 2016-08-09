@@ -4,7 +4,7 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 
 ## Readings
 - [Revision Control](https://en.wikipedia.org/wiki/Revision_control)
-- [ppt](Lsn22.pptx)
+- [PPT Slides](Lsn22.pptx)
 
 ## Assignment
 

@@ -3,12 +3,12 @@ title = 'Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Convertin
 # Lesson 3 Notes
 
 ## Readings
-[Debuggers](http://en.wikipedia.org/wiki/Debugger)  
-[MSP430 Instruction Set](http://mspgcc.sourceforge.net/manual/x223.html)<br>
-[ppt](Lsn3.pptx)
+- [Debuggers](http://en.wikipedia.org/wiki/Debugger)  
+- [MSP430 Instruction Set](http://mspgcc.sourceforge.net/manual/x223.html)<br>
+- [PPT Slides](Lsn3.pptx)
 
 ## Assignment
-[Execution](L3_execution.html)
+- [Execution](L3_execution.html)
 
 ## Lesson Outline
 - MSP430 Execution Model

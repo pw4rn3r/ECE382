@@ -3,10 +3,10 @@ title = 'More timers.  Interrupts and ISRs.  MSP430 Interrupt System.'
 # Lesson 26 Notes
 
 ## Readings
+- Barrett 7.1-7.5 (pp219-237)
 - [Interrupts](http://en.wikipedia.org/wiki/Interrupt)
 - [Interrupt Handler](http://en.wikipedia.org/wiki/Interrupt_handler)
-- Davies pp 186-198
-- [ppt](Lsn26.pptx)
+- [PPT Slides](Lsn26.pptx)
 
 ## Assignment
 - [Assignment](/382/notes/L26/L26_timer_interrupt_lab4.html)

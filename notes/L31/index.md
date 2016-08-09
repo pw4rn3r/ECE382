@@ -3,9 +3,10 @@ title = 'Timer_A: Capture / Compare, Pulse Width Modulation.  Lab 6 Introduction
 # Lesson 32 Notes
 
 ## Readings
+- Barrett 6.5 (pp175-177)
 - [Intro to Pulse Width Modulation](http://www.embedded.com/electronics-blogs/beginner-s-corner/4023833/Introduction-to-Pulse-Width-Modulation)
 - [MSP430: Timers and Clocks and PWM!  Oh My!](http://www.msp430launchpad.com/2010/07/timers-and-clocks-and-pwm-oh-my.html)
-- [ppt](Lsn32.pptx)
+- [PPT Slides](Lsn32.pptx)
 
 ## Assignment
 - Lab 6 Prelab

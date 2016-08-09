@@ -5,11 +5,11 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 ## Readings
 - <a href="http://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Stacks</a>  
 - [Stack Overflow](http://en.wikipedia.org/wiki/Stack_overflow)
-- Subroutines (Davies pp138-139, 178-185)
-- [ppt](Lsn10.pptx)
+- Subroutines (Barrett A.3 (pp364-371)
+- [PPT Slides](Lsn10.pptx)
 
 ## Assignment
-[Stacks](stack_hw.htm)
+- [Stacks](stack_hw.htm)
 
 ## Lesson Outline
 - Admin

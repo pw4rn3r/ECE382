@@ -3,19 +3,19 @@ title = 'Addressing Modes.  CompEx 1 Intro.'
 # Lesson 4 Notes
 
 ## Readings
-[MSP430 Family Users Guide pp47-55](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)  
-Davies 5.2 (pp125 - pp131)  
-[MSP430 Addressing Modes](http://mspgcc.sourceforge.net/manual/x147.html)
+- Barrett 2.8-2.11 (pp47-54)
+- [MSP430 Family Users Guide pp47-55](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)  
+- [MSP430 Addressing Modes](http://mspgcc.sourceforge.net/manual/x147.html)
+- [PPT Slides](Lsn4.pptx)
+*Note*: Barrett is great for walking through each addressing mode step-by-step and showing how it's relevant to higher-level programming.  MSP430 Addressing Modes addresses some of the nuances and conversion to machine code.
 
-*Note*: Davies is great for walking through each addressing mode step-by-step and showing how it's relevant to higher-level programming.  MSP430 Addressing Modes addresses some of the nuances and conversion to machine code.
 
-[ppt](Lsn4.pptx)
 
 ## Example Code
-[Example Programming Code](code/lec4.asm)
+- [Example Programming Code](code/lec4.asm)
 
 ## Assignment
-[Addressing Modes](L4_addressing_modes.html)
+- [Addressing Modes](L4_addressing_modes.html)
 
 ## Lesson Outline
 - Addressing Modes

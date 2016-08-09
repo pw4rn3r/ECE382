@@ -3,6 +3,7 @@ title = 'Lab 4 Introduction.  Mapping C to Assembly.'
 # Lesson 23 Notes
 
 ## Readings
+- Barrett 9.1-9.4 (pp269-297)
 - [Mapping C Programming Constructs to MSP430 Assembly](L23_Mapping_C_to_Assembly.html)
 
 ## Assignment

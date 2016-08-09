@@ -3,9 +3,9 @@ title = 'Timer A (Interval Timing)'
 # Lesson 25 Notes
 
 ## Readings
+- Barrett 6.10 (pp197-213)
 - [Family Users Guide](/382/datasheets) pp355-373 - Timer_A
-- Davies pp287-291
-- [ppt](Lsn25.pptx)
+- [PPT Slides](Lsn25.pptx)
 
 ## Lesson Outline
 

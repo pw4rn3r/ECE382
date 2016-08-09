@@ -3,8 +3,8 @@ title = 'Interrupts and ISRs.  MSP430 Interrupt System.'
 # Lesson 27 Notes
 
 ## Readings
+- Barrett 3.1-3.5 (pp77-85)
 - [Low Power Operation - Family Users Guide pp38-41](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
-- Davies pp 198-205
 
 ## Lesson Outline
 - Review Interrupts

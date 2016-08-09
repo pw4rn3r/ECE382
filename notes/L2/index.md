@@ -3,10 +3,14 @@ title = 'Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Langua
 # Lesson 2 Notes
 
 ## Readings
-<a href="http://en.wikipedia.org/wiki/Assembler_(computing)#Assembler">Assembler</a>  
-<a href="https://en.wikipedia.org/wiki/Linker_(computing)">Linker</a>
+- Barrett 1.5, 2.11, 3.1-3.4 (pp7-11, pp52-53, pp77-83)
+- <a href="http://en.wikipedia.org/wiki/Assembler_(computing)#Assembler">Assembler</a>  
+- <a href="https://en.wikipedia.org/wiki/Linker_(computing)">Linker</a>
 <br>
-[ppt](Lsn2.pptx)
+- [PPT Slides](Lsn2.pptx)
+
+## Assignment
+- [uCorrupt 1](ucorrupt1.html)
 
 ## Lesson Outline
 - Intro to the MSP430

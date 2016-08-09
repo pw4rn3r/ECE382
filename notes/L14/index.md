@@ -5,6 +5,7 @@ title = 'Polling. Debouncing. Software Delay Routines.'
 ## Readings
 - [Polling](https://en.wikipedia.org/wiki/Polling_(computer_science))
 - [Logic Analyzer](http://www.radio-electronics.com/info/t_and_m/logic_analyzer/logic_analyzer.php)
+- [PPT Slides](Lsn14.pptx)
 
 Optional motivational stuff:
 
@@ -20,7 +21,6 @@ Videos of cool MSP430 projects:
 - [Hacking an RC Car](http://www.youtube.com/watch?v=SPbOUqOpu3I)
 - [Interactive Periodic Table](http://www.youtube.com/watch?v=s0c2vkO8tck)
 
-- [ppt](Lsn14.pptx)
 
 ## Assignment
 

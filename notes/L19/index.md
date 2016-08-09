@@ -3,9 +3,11 @@ title = 'Compilers. Introduction to C.'
 # Lesson 19 Notes
 
 ## Readings
+- Barrett A.1-A.4 (pp363-380)
+- also Reference Digital Design and Comp Arch Book from ECE 281 
 - [I'm a Compiler](http://stackoverflow.com/questions/2684364/why-arent-programs-written-in-assembly-more-often) - Read the question and top two answers, particularly the second answer
 - [High-level Programming Language](http://en.wikipedia.org/wiki/High-level_programming_language)
-- [ppt](Lsn19.pptx)
+- [PPT Slides](Lsn19.pptx)
 
 ## Assignment
 - [C Basics](L19_C_basics.html)

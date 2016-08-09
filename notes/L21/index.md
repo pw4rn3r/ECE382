@@ -6,7 +6,7 @@ title = 'C Programming - Pointers and Arrays'
 - [Everything You Need to Know About Pointers in C](http://boredzo.org/pointers/)
 - [Short, Funny Pointer Video](http://www.youtube.com/watch?v=UvoHwFvAvQE)
     - NOTE: `new` is a C++ keyword - we don't use it in C
-- [ppt](Lsn21.pptx)
+- [PPT Slides](Lsn21.pptx)
 
 ## Assignment
 - [Assignment](/notes/L21/L21_moving_average.html)

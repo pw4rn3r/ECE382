@@ -3,13 +3,12 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 # Lesson 6 Notes
 
 ## Readings
-
+- Barrett 2.4-2.7 (pp29-47)
 - [MSP430 Family Users Guide pp121](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
-- Davies pp123-124
 - [Control Flow](http://en.wikipedia.org/wiki/Control_flow)
 - [Overflow Flag](http://en.wikipedia.org/wiki/Overflow_flag)
 - [Status Register](https://en.wikipedia.org/wiki/Status_register)
-- [ppt](Lsn6.pptx)
+- [PPT Slides](Lsn6.pptx)
 
 ## Assignment
 

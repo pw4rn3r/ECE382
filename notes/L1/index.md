@@ -3,6 +3,7 @@ title = 'Course Introduction. Computer Structure.  Architecture vs Microarchitec
 # Lesson 1 Notes
 
 ## Readings
+- Barrett 1.1-1.4, 2.1-2.2 (pp1-6, pp25-26)
 - [Embedded System](http://en.wikipedia.org/wiki/Embedded_system)
 - [Complex Instruction Set Computing](http://en.wikipedia.org/wiki/Complex_instruction_set_computing)
 - [Reduced Instruction Set Computing](https://en.wikipedia.org/wiki/Reduced_instruction_set_computing)
@@ -10,7 +11,7 @@ title = 'Course Introduction. Computer Structure.  Architecture vs Microarchitec
 - [PPT slides](Lsn1.pptx)
 
 ## Assignments
-[Skills Review](skills_review.html)
+- [Skills Review](skills_review.html)
 
 ## Lesson Outline
 - Course Intro

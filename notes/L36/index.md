@@ -2,6 +2,9 @@ title = 'Analog-to-Digital and Digital-to-Analog Conversion. Lab 7 / 8 Intro.'
 
 # Lesson 36 Notes
 
+## Readings
+- Barrett 8.1-8.5 (pp241-259)
+
 ## Assignment
 - Lab 7 Prelab
 

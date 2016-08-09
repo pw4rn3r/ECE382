@@ -5,8 +5,7 @@ title = 'Peripherals, Ports, GPIO, Multiplexing'
 ## Readings
 - [Memory-mapped IO](http://en.wikipedia.org/wiki/Memory-mapped_I/O)
 - [MSP 430 peripherals](https://en.wikipedia.org/wiki/TI_MSP430#Peripherals)
-- Davies p32-33
-- [ppt](Lsn13.pptx)
+- [PPT Slides](Lsn13.pptx)
 
 ## Lesson Outline
 - Peripherals
