@@ -30,7 +30,6 @@ Download the Windows version of the latest CCS.  You'll have to create an accoun
 - Run the exe - it might warn you about McAfee running, just ignore that.
 - Accept the terms of the license agreement and click Next.
 - I accepted the default install folder since I don't have an existing Eclipse installation - modify the path to suit your needs and click Next.
-- On the "Setup Type" screen, select Custom and click Next.
 - On the "Processor Support" screen, select MSP430 Low Power MCUs and click Next.
 - On the "Select Components" screen, select TI MSP430 Compiler Tools and TI Documention under Compiler Tools and MSP430ware Only and Grace (includes MSP430ware) under Device Software, click Next.
 - On the "Select Emulators" screen, leave the defaults and click Next.
