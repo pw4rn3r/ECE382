@@ -79,7 +79,7 @@ mov.w   #0xdfec, &0x0200        ; stores the value 0xdfec at memory location 0x0
 <br>
 <br>
 <br>
-**Assume `pc` currently holds `0xc000`.  The current instruction is 4 bytes long.  What is the value of `pc` the instant I step?  Don't overthink this.**
+**Assume `pc` currently holds `0xc000`.  The current instruction is 4 bytes long.  What is the value of `pc` the instant after this step?  Don't overthink this.**
 <br>
 <br>
 <br>
