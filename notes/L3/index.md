@@ -122,7 +122,7 @@ How can we change the address of the current instruction we're executing?  Write
 
 Let's add this instruction to see what happens.
 
-`mov.w      #0x9000, $SP`
+`mov.w      #0x9000, PC`
 
 Power up clear!
 
