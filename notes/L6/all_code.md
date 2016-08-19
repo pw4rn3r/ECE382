@@ -85,8 +85,8 @@ op2:	.byte	0x00,0x10,0x20,0x30,0x40,0x50,0x60,0x70,0x80,0x90,0xA0,0xB0,0xC0,0xD0
 ;           			main
 ;-------------------------------------------------------------------------------
 main
-	mov.w   #__STACK_END,SP		; BOILERPLATE	Initialize stack pointer
-	mov.w   #WDTPW|WDTHOLD,&WDTCTL 	; BOILERPLATE	Stop watchdog timer
+RESET	mov.w   #__STACK_END,SP		; BOILERPLATE	Initialize stack pointer
+StopWDT	mov.w   #WDTPW|WDTHOLD,&WDTCTL 	; BOILERPLATE	Stop watchdog timer
 
 ;------------------------------------------------------------------------
 ; XOR SWAP algorithm = swap two variables without using a third
