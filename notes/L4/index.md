@@ -74,7 +74,7 @@ fill        mov.w   r6, 0(r5)           ; anyone know what this syntax means?
 
 forever     jmp     forever
 ```
-*[Quckly through this]*
+*[Quickly through this]*
 
 Review - Who can name the three different instruction types?  One operand, relative jump, and two operand.
 
