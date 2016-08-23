@@ -22,8 +22,8 @@
 ;           						main
 ;-------------------------------------------------------------------------------
 main:
-	mov.w   #__STACK_END,SP			; BOILERPLATE	Initialize stackpointer
-	mov.w   #WDTPW|WDTHOLD,&WDTCTL 	; BOILERPLATE	Stop watchdog timer
+RESET 	mov.w   #__STACK_END,SP			; BOILERPLATE	Initialize stackpointer
+StopWDT mov.w   #WDTPW|WDTHOLD,&WDTCTL 	; BOILERPLATE	Stop watchdog timer
 
 	call	#initMSP
 	mov.w	#0x20, &R5+				; R5 is the duty cycle

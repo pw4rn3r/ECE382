@@ -11,6 +11,7 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 - [PPT Slides](Lsn6.pptx)
 
 ## Assignment
+- [uCorrupt 2](ucorrupt2.html)
 
 ## Lesson Outline
 - Status Register
