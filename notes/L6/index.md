@@ -12,6 +12,7 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 
 ## Assignment
 - [uCorrupt 2](ucorrupt2.html)
+- [Badlec5.asm Extra Credit ](code/badlec5.asm)
 
 ## Lesson Outline
 - Status Register
