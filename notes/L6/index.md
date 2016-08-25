@@ -229,7 +229,7 @@ forever:                        ; trap CPU
     jmp     forever
 ```
 
-What's the distance limitation on our jumps?  -1024 - +1022.  So we can't jump throughout our entire memory map (which is 64k in size).  The `BR` instruction is an emulated instruction for a `MOV` to the `PC` - this allows us to move anywhere in the map we choose.
+What's the distance limitation on our jumps?  -1024 to +1022 (or -511 to +512 words relative to the program counter).  So we can't jump throughout our entire memory map (which is 64k in size).  The `BR` instruction is an emulated instruction for a `MOV` to the `PC` - this allows us to move anywhere in the map we choose.
 
 One additional instruction:
 
@@ -241,4 +241,4 @@ This instruction is simply a MOV to the PC.  So, with `BR` we have access to the
 
 ## Final Notes
 
-No HW tonight!  But Lab 1 is coming so it would be in your best interest to take a look and get a head start on it if you can.
+Just MicroCorruption homework tonight!  But Lab 1 is coming so it would be in your best interest to take a look and get a head start on it if you can.
