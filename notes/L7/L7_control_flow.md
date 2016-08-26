@@ -33,7 +33,8 @@
 
 ## Questions
 
-1. (10pts each) Run the following starting values through your program and record the results.  Be sure to list the expected answer, the answer you received, and address that answer was written to.
+<ol start="1">
+<li> (10pts each) Run the following starting values through your program and record the results.  Be sure to list the expected answer, the answer you received, and address that answer was written to.
 
 a) `0x1235`:
 <br>
@@ -61,7 +62,8 @@ e) `0x801`:
 <br>
 <br>
 
-2. (20pts) In the MSP430G2553 detailed Tech Doc (75 pages): <br>
+<ol start="2">
+<li> (20pts) In the MSP430G2553 detailed Tech Doc (75 pages): <br>
 a) (5pts) What is the range of recommended operating voltages for the MSP430G2553? <br> <br> <br> <br>
 b) (5pts) What are the absolute maximum and minimum voltages that should be applied to any pin? <br> <br> <br> <br>
 c) (10pts) Running at 3.5 V, what is the operating current of the MSP430G2553 at <br>
@@ -70,7 +72,8 @@ ii)	 Fdco = 12 MHz <br> <br>
 iii)  Fdco = 8 MHz <br> <br> 
 iv)	 Fdco = 1 MHz <br> <br>
 <br>	
-3. (10 pts) For the following question consult page 25.<br>
+<ol start="3">
+<li> (10 pts) For the following question consult page 25.<br>
 a) Assume your MSP430 is operating at room temperature and 3 V supply.  You need to draw a large amount of current from an MSP430 I/O pin while not allowing the output voltage to fall below Vcc = 2.5 V at high-level output voltage and rise above Vss = 0.5 V at low-level output voltage.  How much current can you draw from the I/O pin in each case? <br> <br> <br> <br> <br> <br>
 b) Pin P1.0 can be functionally multiplexed between an I/O signal and an analog-to-digital converter (ADC) signal (represented by AX, where X is the pin number).  In order to select the proper multiplexed signal, one must ensure certain bits are set or cleared in certain registers.  Describe what values need to be written to P1DIR, P1SEL, and P1SEL2 in order to select a) digital output and b) ADC input for P1.0.  Hint, consult page 43. <br> <br> <br> <br> <br> <br> <br> <br>
 
