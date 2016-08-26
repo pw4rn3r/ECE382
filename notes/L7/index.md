@@ -86,7 +86,7 @@ Show DADD in datasheet to illustrate use of carry bit.
 | Opcode | Assembly Instruction | Description | Notes |
 | :---: | :---: | :---: | :---: |
 | 1001 | CMP src, dest | dest - src | Sets status only; the destination is not written. |
-| 1010 | DADD src, dest | dest += src + C, BCD (Binary Coded Decimal) | |
+| 1010 | DADD src, dest | dest += src + C, BCD (Binary Coded Decimal) | | |
 
 Compare sets the flags based on subtracting the destination from the source - but it does not write to the destination.  It can be a little tricky to wrap your head around.
 

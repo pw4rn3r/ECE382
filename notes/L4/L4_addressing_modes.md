@@ -141,9 +141,6 @@ c) (5pts) How would you change the code snippet to fix the problem?
 <br>
 <br>
 <br>
-</ol>
-
-</ol>
 <ol start="4">
 <li> (10pts) Consider the following code snippet:
 ```
@@ -169,6 +166,7 @@ b) (5pts) What's an equivalent replacement instruction?
 <br>
 <br>
 <br>
+
 <ol start="5">
 <li> (5pts)What is the purpose of emulated instructions?
 <br>
@@ -182,7 +180,6 @@ b) (5pts) What's an equivalent replacement instruction?
 <br>
 <br>
 <br>
-</ol>
 <ol start="6">
 <li> (20pts)Use the MSP430x2xx Family User's Guide to answer the following questions:
 
