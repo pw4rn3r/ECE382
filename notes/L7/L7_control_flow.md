@@ -11,7 +11,7 @@
 
 ## The Program
 
-1. (20pts) Write a program that reads an **unsigned** word from `0x0216`.
+(20pts) Write a program that reads an **unsigned** word from `0x0216`.
 
 - If the value is greater than `0x1234`: 
     - Use a loop to add `20+19+18+...+1` (decimal)
