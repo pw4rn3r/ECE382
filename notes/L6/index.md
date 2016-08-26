@@ -11,7 +11,7 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 - [PPT Slides](Lsn6.pptx)
 
 ## Example Code
-- [Lesson 4 Example Programming Code](/382/code/lec4.asm)
+- [Lesson 4 Example Programming Code](/382/notes/code/lec4.asm)
 
 ## Assignment
 - [uCorrupt 2](ucorrupt2.html)
