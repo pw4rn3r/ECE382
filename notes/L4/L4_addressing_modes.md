@@ -79,6 +79,7 @@ hand-assembly of `mov @r12, r6`:
 <br>
 <br>
 <br>
+</ol>
 <ol start="2">
 <li> (5pts) Consider the following code snippet:
 ```
@@ -95,11 +96,13 @@ What addressing mode do relative jumps use (if any)?
 <br>
 <br>
 
+</ol>
 <ol start="3">
 <li> (20pts) Consider the following code snippet:
 ```
 mov.w   #0xFF, P1OUT    ;P1OUT is 0x0021
 ```
+<br>
 a) (5pts) What addressing modes are being used here?
 <br>
 <br>
@@ -140,6 +143,7 @@ c) (5pts) How would you change the code snippet to fix the problem?
 <br>
 </ol>
 
+</ol>
 <ol start="4">
 <li> (10pts) Consider the following code snippet:
 ```
@@ -178,6 +182,7 @@ b) (5pts) What's an equivalent replacement instruction?
 <br>
 <br>
 <br>
+</ol>
 <ol start="6">
 <li> (20pts)Use the MSP430x2xx Family User's Guide to answer the following questions:
 

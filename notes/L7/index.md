@@ -48,7 +48,7 @@ Ok, let's take a look at a few more instructions.
 | Opcode | Assembly Instruction | Description | Notes |
 | :---: | :---: | :---: | :---: |
 | 0101 | ADD src, dest | dest += src | |
-| 0110 | ADDC src, dest | dest += src + C | |
+| 0110 | ADDC src, dest | dest += src + C | | |
 
 Make error - get class to diagnose - forget `0x`.
 
