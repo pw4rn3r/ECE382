@@ -11,7 +11,7 @@
 
 ## The Program
 
-Write a program that reads an **unsigned** word from `0x0216`.
+1. (20pts) Write a program that reads an **unsigned** word from `0x0216`.
 
 - If the value is greater than `0x1234`: 
     - Use a loop to add `20+19+18+...+1` (decimal)
@@ -33,48 +33,48 @@ Write a program that reads an **unsigned** word from `0x0216`.
 
 ## Questions
 
-Run the following starting values through your program and record the results.  Be sure to list the expected answer, the answer you received, and address that answer was written to.
+1. (10pts each) Run the following starting values through your program and record the results.  Be sure to list the expected answer, the answer you received, and address that answer was written to.
 
-`0x1235`:
+a) `0x1235`:
 <br>
 <br>
 <br>
 <br>
-`0x1234`:
+b) `0x1234`:
 <br>
 <br>
 <br>
 <br>
-`0x1001`:
+c) `0x1001`:
 <br>
 <br>
 <br>
 <br>
-`0x0800`:
+d) `0x0800`:
 <br>
 <br>
 <br>
 <br>
-`0x801`:
+e) `0x801`:
 <br>
 <br>
 <br>
 <br>
 
-In the MSP430G2553 detailed Tech Doc (75 pages): <br>
-a)	What is the range of recommended operating voltages for the MSP430G2553? <br> <br> <br> <br>
-b)	What are the absolute maximum and minimum voltages that should be applied to any pin? <br> <br> <br> <br>
-c)	Running at 3.5 V, what is the operating current of the MSP430G2553 at <br>
+2. (20pts) In the MSP430G2553 detailed Tech Doc (75 pages): <br>
+a) (5pts) What is the range of recommended operating voltages for the MSP430G2553? <br> <br> <br> <br>
+b) (5pts) What are the absolute maximum and minimum voltages that should be applied to any pin? <br> <br> <br> <br>
+c) (10pts) Running at 3.5 V, what is the operating current of the MSP430G2553 at <br>
 i)	Fdco = 16 MHz <br> <br>
 ii)	 Fdco = 12 MHz <br> <br>
-iii)	  Fdco = 8 MHz <br> <br> 
+iii)  Fdco = 8 MHz <br> <br> 
 iv)	 Fdco = 1 MHz <br> <br>
 <br>	
-For the following question consult page 25.<br>
+3. (10 pts) For the following question consult page 25.<br>
 a) Assume your MSP430 is operating at room temperature and 3 V supply.  You need to draw a large amount of current from an MSP430 I/O pin while not allowing the output voltage to fall below Vcc = 2.5 V at high-level output voltage and rise above Vss = 0.5 V at low-level output voltage.  How much current can you draw from the I/O pin in each case? <br> <br> <br> <br> <br> <br>
 b) Pin P1.0 can be functionally multiplexed between an I/O signal and an analog-to-digital converter (ADC) signal (represented by AX, where X is the pin number).  In order to select the proper multiplexed signal, one must ensure certain bits are set or cleared in certain registers.  Describe what values need to be written to P1DIR, P1SEL, and P1SEL2 in order to select a) digital output and b) ADC input for P1.0.  Hint, consult page 43. <br> <br> <br> <br> <br> <br> <br> <br>
 
 ## Turn-in Requirements
 
-- Email your instructor your final assembly program.
+- Submit your final assembly program on Bitbucket.
 - Turn in this sheet with answers to the questions.
