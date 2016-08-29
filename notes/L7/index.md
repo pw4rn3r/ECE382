@@ -283,7 +283,7 @@ Here's the structure of the register:
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | WDTPW	colspan=8 | WDTHOLD | WDTNMIES | WDTNMI | WDTTMSEL | WDTCNTCL | WDTSSEL | WDTISx colspan=2 |
 
-User's guide page 355.
+User's guide page 347.
 
 WDTPW - the WDT uses a password to prevent inadvertent writing - it's 0x5a.  You must write that in the upper 8 bits for a write to work - otherwise you'll get a PUC.
 WDTHLD - setting this bit stops the watchdog timer.
