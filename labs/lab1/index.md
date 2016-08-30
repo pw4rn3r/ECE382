@@ -67,7 +67,7 @@ O(n) means that the time it takes to reach a solution varies with the size of th
 
 ## Prelab
 
-Print out the grading section.  Hand it in to your instructor, complete with functionality marks, when the lab is due.  
+Print out the grading [Cutsheet](Lab_1_Cutsheet.pdf).  Hand it in to your instructor, complete with functionality marks, when the lab is due.  
 
 Include whatever information from this lab you think will be useful in creating your program.
 
@@ -104,7 +104,7 @@ Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.h
 [Test Cases](test_cases.html)
 
 ## Grading - Lab 1
-
+[Printable Lab 1 Cutsheet](Lab_1_Cutsheet.pdf)
 Do not forget to give your instructor access to your repository!
 
 **Name:**<br>
