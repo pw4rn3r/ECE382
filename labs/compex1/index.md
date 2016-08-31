@@ -184,7 +184,7 @@ Good luck!
 <br>
 <br>
 <br>
-2. (10pts) If you wanted to change the program to make it more readable and understandable, what changes would you make?  **Be specific**.
+2. (10pts) If you wanted to change the program to make it more readable and understandable, what changes would you make?  **Describe at least two *specific* changes you would make**.
 <br>
 <br>
 <br>
@@ -197,7 +197,7 @@ Good luck!
 <br>
 <br>
 <br>
-3. (10pts) If you were an attacker and wanted to obfuscate (make unclear) the purpose of your code, what changes would you make?  **Be specific**.
+3. (10pts) If you were an attacker and wanted to obfuscate (make unclear) the purpose of your code, what changes would you make?  **Describe at least two *specific* changes you would make**.
 <br>
 <br>
 <br>
@@ -226,7 +226,7 @@ Good luck!
 <br>
 <br>
 <br>
-2. (5pts) Consider the `forever    jmp forever` instruction from the simple program you wrote first.  What type of instruction is this?  
+2. (5pts) Consider the `forever    jmp forever` instruction from the simple program you wrote first.  What type of instruction is this?  How is the line of code used in your program, and why is it needed?
 <br>
 <br>
 <br>
@@ -239,7 +239,7 @@ Good luck!
 <br>
 <br>
 <br>
-3. (5pts) How many different addressing modes are used in the mystery code?  List and give an example from the code of each mode used.
+3. (5pts) List the different addressing modes used in the mystery code.  List and give an example instruction from the code for each addressing mode used.
 <br>
 <br>
 <br>
@@ -252,7 +252,7 @@ Good luck!
 <br>
 <br>
 <br>
-4. (10pts) Are the values in memory stored in little-endian or big-endian format?  Using the debugger, how can you tell?  If they were stored in the other format, what would it look like?  Give me an example from your code.
+4. (10pts) Are the values in memory stored in little-endian or big-endian format?  Using the debugger, how can you tell?  If they were stored in the other format, what would it look like?  Give me an example from your code.  **Be specific on *where* and *how* you find the answer in Code Composer.**
 <br>
 <br>
 <br>
@@ -265,7 +265,7 @@ Good luck!
 <br>
 <br>
 <br>
-5. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words starting at 0 and counting upward by 2.  Use CCS to verify that it works, and explain your verification process.
+5. (20pts) Write a program that fills RAM (0x0200 - 0x03ff) with words whose *values* start at 0 and count upward by 2.  Use CCS to verify that it works, and **explain your verification process.**
 <br>
 <br>
 <br>
@@ -278,6 +278,6 @@ Good luck!
 <br>
 <br>
 <br>
-6. (10pts) Go to bitbucket.org and create an account there if you do not have one already.  This site will be where you turn in your labs for this class.  You will create one repository (with a descriptive name, such as ECE382-YourLastName) for all Lab turn in requirements.  For each lab, you will create a separate folder under this repository (with a descriptive name, such as Lab1-YourLastName).  Your repository will be private, and you will add your instructor with read permissions to the repository.  For full points on this question, give your instructor access before this assignment is due.  
+6. (10pts) Go to bitbucket.org and create an account there if you do not have one already.  This site will be where you turn in your labs for this class.  Create one and only one repository for this class (use a descriptive name, such as ECE382-YourLastName).  For each lab, you will create a separate folder under this repository (with a descriptive name, such as Lab1-YourLastName).  Your repository must be private, and **you must add your instructor with read permissions to the repository before this assignment is due in order to obtain full points for this portion.**
 <br>
 <br>
