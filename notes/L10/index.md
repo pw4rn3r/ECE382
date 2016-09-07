@@ -9,7 +9,7 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 - [PPT Slides](Lsn10.pptx)
 
 ## Handout Code
-- [Stacks Handout Code](stack_hanout.html)
+- [Stacks Handout Code](stack_handout.html)
 
 ## Assignment
 - [Assignment 4 - Stacks](stack_hw.html)
