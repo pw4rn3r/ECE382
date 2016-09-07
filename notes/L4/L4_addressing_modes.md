@@ -1,4 +1,4 @@
-# L4 Assignment - Addressing Modes, Hand-assembly
+# Assignment 2 - Addressing Modes, Hand-assembly
 
 ## Addressing Modes
 

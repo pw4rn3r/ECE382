@@ -1,4 +1,4 @@
-# L7 Assignment - Control Flow
+# Assignment 3 - Control Flow
 **Name:**
 <br>
 <br>

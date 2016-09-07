@@ -1,4 +1,4 @@
-# L20 Assignment - Pong
+# Assignment 7 - Pong
 
 ## Pong in C
 

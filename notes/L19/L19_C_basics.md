@@ -1,4 +1,4 @@
-# L19 Assignment - Your First C Program
+# Assignment 6 - Your First C Program
 
 ## A Simple C Program
 

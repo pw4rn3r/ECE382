@@ -1,4 +1,4 @@
-# L26 Assignment - Timers and Interrupts
+# Assignment 9 - Timers and Interrupts
 
 ## Timers and Interrupts
 

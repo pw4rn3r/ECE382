@@ -1,4 +1,4 @@
-# L3 Assignment - Assembly Process, MSP430 Execution, MSP430 Instruction Set
+# Assignment 1 - Assembly Process, MSP430 Execution, MSP430 Instruction Set
 
 **Name:**
 <br>
