@@ -8,6 +8,9 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 - Subroutines (Barrett A.3 (pp364-371)
 - [PPT Slides](Lsn10.pptx)
 
+## Handout Code
+- [Stacks Handout Code](stack_hanout.html)
+
 ## Assignment
 - [Assignment 4 - Stacks](stack_hw.html)
 
@@ -150,7 +153,7 @@ A subroutine must specify which registers it expects arguments to passed in and 
 ```
 ;---------------------------------------------------
 ;Subroutine Name: Addition
-;Author: Capt Todd Branchflower, USAF
+;Author: Capt Jeff Falkinburg, USAF
 ;Function: Adds two numbers
 ;Inputs: operand1 in r12, operand2 in r13
 ;Outputs: result in r13
@@ -191,7 +194,7 @@ Let's modify our addition subroutine to take arguments in memory locations.
 ```
 ;---------------------------------------------------
 ;Subroutine Name: Addition
-;Authoer: Capt Todd Branchflower, USAF
+;Authoer: Capt Jeff Falkinburg, USAF
 ;Function: Adds two numbers, returns the result
 ;Inputs: address of operand1 in r12, address of operand2 in r13
 ;Outputs: result in r13
