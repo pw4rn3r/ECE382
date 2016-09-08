@@ -57,6 +57,8 @@ wait:								; terminate this process in an
 ;	Name:		average
 ;	Inputs:	R12	first number to average
 ;			R13	second number to average
+;			R14	third number to average
+;			R15	forth number to average
 ;	Outputs:	R12	returned average
 ;	Purpose:	Compute the average of 4 integers
 ;-------------------------------------------------------------------------------
