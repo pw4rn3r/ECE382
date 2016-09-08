@@ -27,15 +27,14 @@ oper:	.byte	0x2A,0x14,0x0A,0x40
 		.byte	0x2A,0x14,0x22,0x39
 
 ;-------------------------------------------------------------------------------
-RESET       mov.w   #__STACK_END,SP         ; Initialize stackpointer (must be first!)
-StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
-
-
-;-------------------------------------------------------------------------------
 ; Main loop here
 ;-------------------------------------------------------------------------------
 
 main:
+
+RESET       mov.w   #__STACK_END,SP         ; Initialize stackpointer (must be first!)
+StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
+
 	mov.w	#num, R5				; put the address of num of 4-tuples in R5
 	mov.b	@R5, R5					; read value at that address into R5
 	mov.w	#oper, R6				; Point R6 to the first set of 4-tuples
