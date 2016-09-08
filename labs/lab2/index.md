@@ -45,7 +45,7 @@ To achieve unbreakable encryption, the key and the message must be the same leng
 
 - The encrypted and decrypted message will be in memory locations.  The encrypted message and key will be stored in ROM - any location in ROM is acceptable.  The message will be of arbitrary length, but the key will be one byte long.  The decrypted message will be stored in RAM starting at 0x0200.  Labels shall be used to to refer to the location of the encrypted message, decrypted message, and key.
 - The key and encrypted message will be given to you.  You can tell how long the message is by counting the bytes.
-- Good coding standards, in accordance with the [Lab guidelines](/admin/labs.html), must be used throughout.
+- Good coding standards, in accordance with the [Lab guidelines](/382/admin/labs.html), must be used throughout.
 
 Encrypted Message:
 ```
@@ -93,7 +93,7 @@ Think about how you'll implement your subroutines.  Draw a flowchart of how it w
 
 ## Notes
 
-Read the [guidance on Labs / Lab Notebooks / Coding standards](/admin/labs.html) thoroughly and follow it.
+Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.
 
 If you want, decrypt the first word of the message by hand so you get the idea of how it works.  If the ASCII characters you're getting don't make sense, you're probably thinking about the problem wrong.
 
