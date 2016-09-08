@@ -83,7 +83,7 @@ There are many ways to attack this problem.  Some techniques require substantial
 
 ## Prelab
 
-Print out the grading section and bring it to class.
+Print out the grading [cutsheet](Lab_2_Cutsheet.pdf) and bring it to class.
 
 Your prelab can be brought to class as a hard copy, or it can be posted in your README on Bitbucket.  Your final README should include your prelab. 
 
@@ -110,6 +110,7 @@ byteLabel       .byte       0xab,0xcd,0xef
 ```
 
 ## Grading - Lab 2
+[Printable Lab 2 Cutsheet](Lab_2_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
