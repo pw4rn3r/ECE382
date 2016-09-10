@@ -7,6 +7,7 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 - [Stack Overflow](http://en.wikipedia.org/wiki/Stack_overflow)
 - Subroutines (Barrett A.3 (pp364-371)
 - [PPT Slides](Lsn10.pptx)
+- [Stack Example in CCS](Lesson10_Stack_Example_in_CCS.pptx)
 
 ## Handout Code
 - [Stacks Handout Code](stack_handout.html)
