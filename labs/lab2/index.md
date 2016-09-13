@@ -60,7 +60,6 @@ In addition to the Required Functionality, your program must decrypt messages wi
 
 The length of the key should be a parameter passed into your subroutine.  You know the length of the key in advance.
 
-Your subroutines don't have to exclusively pass-by-reference or pass-by-value - it's perfectly acceptable to make a subroutine that uses both.
 
 Encrypted Message:
 ```
