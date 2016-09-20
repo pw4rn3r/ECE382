@@ -122,7 +122,6 @@ vertFine:
 initMSP:
 		mov.b	#CALBC1_8MHZ, &BCSCTL1				; Setup 8MHz clock
 		mov.b	#CALDCO_8MHZ, &DCOCTL
-
 		bis	#LCD_SCLK_PIN, &P1OUT
 		bis	#LCD_SCLK_PIN, &P1DIR
 		bis #LCD_CS_PIN, &P1OUT
@@ -132,13 +131,14 @@ initMSP:
 		bis	#LCD_DC_PIN, &P1OUT
 		bis #LCD_DC_PIN, &P1DIR
 
-		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
-		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+		bis.b	#UCSWRST, &UCB0CTL1
 		mov #UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
 		bis #UCSSEL_2, &UCB0CTL1
 		bis #BIT0, &UCB0BR0
 		clr	&UCB0BR1
-		bic	#UCSWRST, &UCB0CTL1
+		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
+		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+		bic.b	#UCSWRST, &UCB0CTL1
 		ret
 
 ;-------------------------------------------------------------------------------
