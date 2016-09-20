@@ -3,7 +3,7 @@ title = 'Polling. Debouncing. Software Delay Routines.'
 # Lesson 14 Notes
 
 ## Readings
-- [Polling](https://en.wikipedia.org/wiki/Polling_(computer_science))
+- [Polling](https://en.wikipedia.org/wiki/Polling_%28computer_science%29)
 - [Logic Analyzer](http://www.radio-electronics.com/info/t_and_m/logic_analyzer/logic_analyzer.php)
 - [PPT Slides](Lsn14.pptx)
 
@@ -20,16 +20,9 @@ Tutorial on MSP430-based quadcopter:
 Videos of cool MSP430 projects:
 
 - [LED Cube](http://www.youtube.com/watch?v=Jr50gT5O5IE)
-- [Playing Music](http://www.youtube.com/watch?v=5A3bBXRpYCI)
+- [Playing Music](http://www.youtube.com/watch?v=5Kz4BD8_Oao)
 - [Hacking an RC Car](http://www.youtube.com/watch?v=SPbOUqOpu3I)
 - [Interactive Periodic Table](http://www.youtube.com/watch?v=s0c2vkO8tck)
-
-
-## Assignment
-
-Very short assignment:
-
-[What does this subroutine do? (and a few tech doc questions)](L14_subroutines.html)
 
 ## Lesson Outline
 - Polling
