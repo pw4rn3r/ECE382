@@ -7,6 +7,7 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 - [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
 - [Serial Peripheral Interface (SPI)](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 - [Lab 3](/382/labs/lab3/index.html)
+- More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).
 - [PPT Slides](Lsn15.pptx)
 
 ## Assignment

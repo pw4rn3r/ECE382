@@ -29,6 +29,9 @@ title = 'Datasheets'
 - [Going Standalone](standalone.html)
 - [Mixing C and Assembly](mixing_c_and_assembly.pdf)
 
+## Logic Analyzer
+- More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).
+
 ## Miscellaneous
 
 ### git
