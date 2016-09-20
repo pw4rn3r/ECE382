@@ -26,12 +26,6 @@ Videos of cool MSP430 projects:
 - [Interactive Periodic Table](http://www.youtube.com/watch?v=s0c2vkO8tck)
 
 
-## Assignment
-
-Very short assignment:
-
-[What does this subroutine do? (and a few tech doc questions)](L14_subroutines.html)
-
 ## Lesson Outline
 - Polling
 - Intro to Logic Analyzer
