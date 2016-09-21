@@ -50,15 +50,16 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | MOSI |   |   |
 | DC |	| | |
 
-Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 135 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
+Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 134 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
-1:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
-2:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
-3:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
-4:		bis 	#UCSSEL_2, &UCB0CTL1
-5:		bis 	#BIT0, &UCB0BR0
-6:		clr	&UCB0BR1
-7:		bic	#UCSWRST, &UCB0CTL1
+1: 		bis.b	#UCSWRST, &UCB0CTL1
+2:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
+3:		bis 	#UCSSEL_2, &UCB0CTL1
+4:		bis 	#BIT0, &UCB0BR0
+5:		clr	&UCB0BR1
+6:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
+7:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+8:		bic	#UCSWRST, &UCB0CTL1
 ```
 Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
 
@@ -68,13 +69,16 @@ Fill in the chart below with the function that is enabled by the first two lines
 | P1.7| |
 | P1.6| ||
 
-Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 4 has been done for you as an example. <br>
+Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 1 and 3 have been done for you as an example. <br>
 
-Line 3: <br>
-Line 4: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode. <br>
+Line 1: Setting the UCSWRST bit in the CTL1 register resets the subsystem into a known state until it is cleared. <br>
+Line 2: <br>
+Line 3: The UCSSEL_2 setting for the UCB0CTL1 register has been chosen, selecting the SMCLK (sub-main clock) as the bit rate source clock for when the MSP 430 is in master mode. <br>
+Line 4: <br>
 Line 5: <br>
 Line 6: <br>
 Line 7: <br>
+Line 8: <br>
 
 ### Communicate with the LCD
 The following code (lines 293 - 333) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
