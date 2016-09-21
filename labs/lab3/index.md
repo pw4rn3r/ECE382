@@ -69,7 +69,7 @@ Fill in the chart below with the function that is enabled by the lines 6&7 of th
 | P1.7| |
 | P1.6| ||
 
-Next, describe specifically what happens in each of the five subsequent lines of code above.  Line 1 and 3 have been done for you as an example. <br>
+Next, describe specifically what happens in each of the eight lines of code above.  Line 1 and 3 have been done for you as an example. <br>
 
 Line 1: Setting the UCSWRST bit in the CTL1 register resets the subsystem into a known state until it is cleared. <br>
 Line 2: <br>
