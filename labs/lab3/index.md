@@ -61,7 +61,7 @@ Below the pin configuration code are some lines of code from the lab3_given.asm 
 7:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
 8:		bic	#UCSWRST, &UCB0CTL1
 ```
-Fill in the chart below with the function that is enabled by the first two lines of the above code.  Your device-specific datasheet can help.
+Fill in the chart below with the function that is enabled by the lines 6&7 of the above code.  Your device-specific datasheet can help.
 
 | Pin name | Function | 
 |:-:|:-:|
