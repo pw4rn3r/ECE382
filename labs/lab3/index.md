@@ -52,7 +52,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 
 Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 134 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
-1: 		bis.b	#UCSWRST, &UCB0CTL1
+1:		bis.b	#UCSWRST, &UCB0CTL1
 2:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
 3:		bis 	#UCSSEL_2, &UCB0CTL1
 4:		bis 	#BIT0, &UCB0BR0
