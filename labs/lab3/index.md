@@ -8,7 +8,7 @@ title = 'Lab 3 - SPI - "I/O"'
 - [lab3_given.asm](lab3_given.asm)
 
 ##  Mega Prelab
-A hard copy of this Mega Prelab is required to be turned in.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
+A hard copy of this Mega Prelab is required to be turned in as well as pushed to Bitbucket.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
 In lab3_given.asm, you have the header for a subroutine (line 569), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
@@ -218,6 +218,7 @@ Write your name or nickname of at least 5 characters to the screen on a solid ba
 
 
 ## Grading - Lab 3
+[Printable Lab 3 Cutsheet](Lab_3_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
