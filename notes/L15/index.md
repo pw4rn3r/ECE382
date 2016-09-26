@@ -9,6 +9,7 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 - [Lab 3](/382/labs/lab3/index.html)
 - More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).
 - [PPT Slides](Lsn15.pptx)
+- [Supplemental PPT Slides](Lsn15_Supp.pptx) giving examples of SPI phase and polarity.
 
 ## Assignment
 - [Lab 3 Mega Prelab](/382/labs/lab3/index.html)
