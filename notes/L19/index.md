@@ -194,7 +194,7 @@ myVar -= a;     // myVar = myVar - a
 | `==` | equal to | |
 | `!=` | not equal to | |
 | `&&` | logical and | |
-| **&#124;&#124;** | logical or | | |
+| ** &&32; &#124;&#124; ** | logical or | | |
 
 
 Example:
@@ -214,13 +214,11 @@ if ((a < 10) && (a > 5))
 | Operator | Description | Example |
 | :-: | :-: | :-: |
 | `&` | AND | |
-| **&#124;** | OR | |
+| ** &&32; &#124; ** | OR | |
 | `^` | XOR | |
 | `~` | One's Complement | |
 | `>>` | Bit-shift right | |
 | `<<` | Bit-shift left | | |
-
-**Logical OR is vertical bar `|`, but breaks markdown so I can't print it in the table.**
 
 ```
 // Example with SPI
