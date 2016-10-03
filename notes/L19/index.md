@@ -194,7 +194,7 @@ myVar -= a;     // myVar = myVar - a
 | `==` | equal to | |
 | `!=` | not equal to | |
 | `&&` | logical and | |
-| `&#124;&#124;` | logical or | | |
+| &#124;&#124; | logical or | | |
 
 
 Example:
@@ -214,7 +214,7 @@ if ((a < 10) && (a > 5))
 | Operator | Description | Example |
 | :-: | :-: | :-: |
 | `&` | AND | |
-| `&#124;` | OR | |
+| ```|``` | OR | |
 | `^` | XOR | |
 | `~` | One's Complement | |
 | `>>` | Bit-shift right | |
