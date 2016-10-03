@@ -7,6 +7,9 @@ title = 'Lab 3 - SPI - "I/O"'
 - [color.h](color.h) - lists some of the colors at your disposal on the LCD
 - [lab3_given.asm](lab3_given.asm)
 
+## Supplemental Slides
+ - [ECE382_Lab3-Help.pptx](ECE382_Lab3-Help.pptx) - Describes timing, how pixels are written, and how colors are represented
+
 ##  Mega Prelab
 A hard copy of this Mega Prelab is required to be turned in as well as pushed to Bitbucket.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
