@@ -34,7 +34,7 @@ I've provided my header as an example of an interface that I think is straightfo
 
 I'm open to electronic lab notebooks in this course.  I think git is an interesting way to accomplish this.  If you're interested in using an electronic lab notebook, here's a template I've created:
 
-[Lab Notebook Template](https://github.com/toddbranch/electronic_lab_notebook).
+[Lab Notebook Template](https://github.com/jfalkinburg/ECE_382_Lab_Ex).
 
 *[Walk through the structure, etc.]*
 
