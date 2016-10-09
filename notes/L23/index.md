@@ -20,7 +20,7 @@ title = 'Lab 4 Introduction.  Mapping C to Assembly.'
 
 ## [Lab 4](/382/labs/lab4/index.html) Overview
 
-In this lab, you'll create a library for working with the LCD on the Geek Box - your very first *device driver*.  A good starting point might be the assembly code from Lab 3.  You can port that to C to get it up and running.  But, eventually, I'll expect you to create a reusable LCD library that you can use on future labs (you'll need it for Lab 5).
+In this lab, you'll create a library for working with the LCD on the Booster Pack - your very first *device driver*.  A good starting point might be the assembly code from Lab 3.  You can port that to C to get it up and running.  But, eventually, I'll expect you to create a reusable LCD library that you can use on future labs (you'll need it for Lab 5).
 
 *[Walk through tiers of functionality.]*
 
