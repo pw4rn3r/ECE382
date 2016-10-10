@@ -8,13 +8,13 @@ You've spent the last few lessons transitioning from programming in assembly lan
 
 ## Details
 
-## Given Code
+### Given Code
 - [lab4.c](lab4.c)
 - [LCD_given.asm](LCD_given.asm)
 - [simpleLab4.c](simpleLab4.c)
 - [fonts.h](fonts.h)
 
-## Prelab
+### Prelab
 
 
 ### Data types
@@ -146,6 +146,7 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 
 
 ## Grading - Lab 4
+[Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
