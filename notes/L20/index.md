@@ -264,7 +264,7 @@ Last time, we talked a little about preprocessor directives (`#define` and `#inc
 #define _MATH_HELPER_H_
 
 // Useful constants
-                                (estimate)      (actual)
+                            //  (estimate)      (actual)
 #define PI  (339 / 108)     //  3.139       vs  3.142
 #define E  (155 / 57)       //  2.719       vs  2.718
 
