@@ -6,6 +6,18 @@ title = 'Lab 4 - C - "Etch-a-Sketch and Pong"'
 
 You've spent the last few lessons transitioning from programming in assembly language to C.  In this lab, you'll use C to create an etch-a-sketch-type program that utilizes some subroutines from Lab 3.  You'll be expected to write clean, maintainable, modular code that is committed regularly to Git.
 
+## Group Work Requirements
+If you are considering working on Lab 4 as a group here are the requirements:
+- **Max Group size is 2**
+- You must create a separate shared repo for the group to the shared repo named ECE382_LastName1_LastName2
+- Each team member will place a link at the top of a readme in your personal repo in a Lab 4 folder
+- Both partners must make contributions to the Lab and document contributions in commit messages
+- Most likely you will have to switch your CCS workspace to a new folder to separate your repo from your private repo
+- Don't forget to give you instructor access to the repo
+- The expectation is that if you have twice the team members that you will have a better product
+- Remember you **commit** to you own local copy of the repo, you **push** your to the cloud, and you **pull** the cloud copy to your local copy
+- You may want to review merging and branching allow for better collaboration [merge a file](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html) or [git merge](https://git-scm.com/docs/git-merge)
+
 ## Details
 
 ### Given Code
