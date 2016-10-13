@@ -22,6 +22,8 @@ title = 'C Programming - Writing Clean Code.  Revision Control.'
 ## Mixing C and assembly
 
 Our compiler follows a certain convention while calling an assembly function from C that involves passing parameters.  
+#### Register Input Arguments and Return Values
+
 - First input: r12
 - Second input: r13
 - Third input: r14
