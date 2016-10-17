@@ -12,6 +12,7 @@ title = 'Datasheets'
 - [LCD datasheet](TM022HDH26_V1.0.pdf)
 - [ILI9340 datasheet](ILI9340.pdf)
 - [Boosterpack schematic](EduBPsch.pdf)
+- [MSP430 Optimizing C Compiler](msp430_optimizing_c_compiler_v4-3.pdf)
 
 
 ## Robot (Lab 6, 7, 8)

@@ -31,7 +31,7 @@ You've spent the last few lessons transitioning from programming in assembly lan
 
 ### Data types
 
-Go to page 76 of the C Compiler User's Guide to complete the following table. For the type, fill in data type that produces a variable of the given size. For max/min values, write in the maximum and minimum values that can be represented with the data type in that row.  Two examples have been given.
+Go to page 76 of the [C Compiler User's Guide](../../admin/msp430_optimizing_c_compiler_v4-3.pdf) to complete the following table. For the type, fill in data type that produces a variable of the given size. For max/min values, write in the maximum and minimum values that can be represented with the data type in that row.  Two examples have been given.
 
 | Size | Signed/Unsigned | Type | Min value | Max value |
 | :---: | :---: | :---: | :---: | :---: |
