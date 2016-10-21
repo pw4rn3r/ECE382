@@ -61,7 +61,9 @@ Use meaningful, readable variable names - variable1 or var1 or loop1 or L1 are u
 
 For each coding file submitted in your lab notebook, ensure you have a header that includes your name, the date, the assignment, a brief purpose of the code, and documentation for that specific file.
 
-For each subroutine you use, include a header just above the subroutine's location.  Ensure the author, function, inputs, outputs, and destroyed registers for that subroutine are included in the subroutine header.
+For each subroutine you use, include a header just above the subroutine's location.  Ensure the author, function, inputs, outputs, and destroyed registers for that (assembly) subroutine are included in the subroutine header.
+
+[C Template](main_template.c)
 
 ### Assembly
 
@@ -104,3 +106,5 @@ Other guidance:
 ### C
 
 [Check out the C style guide.](c_style_guide.html)
+
+[C Template](main_template.c)
