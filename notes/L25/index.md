@@ -138,19 +138,19 @@ int main(void)
 
     P1DIR |= BIT0|BIT6;         // set LEDs to output 
 
-    TACTL &= ~(MC1|MC0);        // stop timer
+    TA0CTL &= ~(MC1|MC0);        // stop timer
 
-    TACTL |= TACLR;             // clear TAR
+    TA0CTL |= TACLR;             // clear TAR
 
-    TACTL |= TASSEL1;           // configure for SMCLK - what's the frequency (roughly)?
+    TA0CTL |= TASSEL1;           // configure for SMCLK - what's the frequency (roughly)?
 
-    TACTL |= ID1|ID0;           // divide clock by 8 - what's the frequency of interrupt?
+    TA0CTL |= ID1|ID0;           // divide clock by 8 - what's the frequency of interrupt?
 
-    TACTL &= ~TAIFG;            // clear interrupt flag
+    TA0CTL &= ~TAIFG;            // clear interrupt flag
 
-    TACTL |= MC1;               // set count mode to continuous
+    TA0CTL |= MC1;               // set count mode to continuous
 
-    TACTL |= TAIE;              // enable interrupt
+    TA0CTL |= TAIE;              // enable interrupt
 
     __enable_interrupt();       // enable maskable interrupts
 
@@ -175,14 +175,13 @@ int main(void)
         }
     }
 
-    return 0;
 }
 
 // Flag for continuous counting is TAIFG
 #pragma vector=TIMER0_A1_VECTOR
 __interrupt void TIMER0_A1_ISR()
 {
-    TACTL &= ~TAIFG;            // clear interrupt flag
+    TA0CTL &= ~TAIFG;            // clear interrupt flag
     flag = 1;
 }
 ```
