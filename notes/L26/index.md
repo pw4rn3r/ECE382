@@ -15,6 +15,7 @@ title = 'More timers.  Interrupts and ISRs.  MSP430 Interrupt System.'
 - Admin
 - Interrupts
 - Using Interrupts
+- [practice code](lec26.c)
 
 ## Admin
 
@@ -227,7 +228,7 @@ I want to write some code that will toggle the LEDs each time I push the Launchp
 ```
 char interruptFlag = 0;
 
-int main(void)
+void main(void)
 {
     WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
 
@@ -251,8 +252,6 @@ int main(void)
         //  if (interruptFlag)
         //      // respond
     }
-
-    return 0;
 }
 
 #pragma vector=PORT1_VECTOR
@@ -275,7 +274,7 @@ Remember how I said time spent inside ISRs should be minimized so you don't miss
 What would we do if we configured three Port 1 pins as buttons?  We'd have to test the P1IFG register to see which one hit and then handle it appropriately.  All pins on Port 1 trigger the same interrupt.
 
 ```
-int main(void)
+void main(void)
 {
     WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
 
@@ -293,8 +292,6 @@ int main(void)
     __enable_interrupt();
 
 	while (1) {}
-
-    return 0;
 }
 
 #pragma vector=PORT1_VECTOR
