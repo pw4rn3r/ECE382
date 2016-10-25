@@ -67,6 +67,8 @@ Before you start on this portion of the assignment, watch [Dave Jones' Trigger H
 Set up your LaunchPad like the picture below. Make sure to connect the power and ground in the correct order! Connect the the logic analyzer on the Vout pin of the IR receiver.
 
 <br>
+![IR Sensor Datasheet exerpt](ir_sensor.jpg)
+<br>
 ![LaunchPad setup](launchpadSetup.jpg)
 <br>
 
@@ -122,9 +124,7 @@ Demonstrate to your instructor that your code can receive and decode button pres
 
 Watch the [Dave Jones Trigger Hold-off](http://www.youtube.com/watch?v=ta096oBzSac) video and achieve that functionality using both timer interrupts and a port 2 interrupt.  Turn an LED on and off with one button on the remote.  Turn another LED on and off with a different button.  Turn both LEDs on and off with a third button.
 
-In addition to the start.c and start.h files, the below images may be of some use: 
-<br>
-![IR Sensor Datasheet exerpt](ir_sensor.jpg)
+In addition to the start.c and start.h files, the below image may be of some use: 
 <br>
 ![schematic](schematic.jpg)
 <br>
