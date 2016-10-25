@@ -13,6 +13,7 @@ title = 'Datasheets'
 - [ILI9340 datasheet](ILI9340.pdf)
 - [Boosterpack schematic](EduBPsch.pdf)
 - [MSP430 Optimizing C Compiler](msp430_optimizing_c_compiler_v4-3.pdf)
+- [IR Sensor Datasheet - TSSOP 34838](IR_Sensor.pdf)
 
 
 ## Robot (Lab 6, 7, 8)
@@ -29,6 +30,7 @@ title = 'Datasheets'
 - [Programming the MSP430 In-Circuit](in_circuit_programming.html)
 - [Going Standalone](standalone.html)
 - [Mixing C and Assembly](mixing_c_and_assembly.pdf)
+- [Temperature Sensor Datasheet - LM34](lm34.pdf)
 
 ## Logic Analyzer
 - More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).

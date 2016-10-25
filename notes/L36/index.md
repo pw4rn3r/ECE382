@@ -4,6 +4,7 @@ title = 'Analog-to-Digital and Digital-to-Analog Conversion. Lab 7 / 8 Intro.'
 
 ## Readings
 - Barrett 8.1-8.5 (pp241-259)
+- [Temperature Sensor Datasheet - LM34](/382/datasheets/lm34.pdf)
 
 ## Assignment
 - [Lab 7 Prelab](/382/labs/lab7/index.html)
