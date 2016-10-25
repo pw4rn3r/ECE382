@@ -28,8 +28,8 @@ void main(void) {
 		while(IR_DECODER_PIN != 0);			// IR input is nominally logic 1
 
 		for(i=0; i<SAMPLE_SIZE; i++) {
-
-			TAR = 0;						// reset timer and
+			//**Note** If you don't specify TA1 or TA0 then TAR defaults to TA0R
+			TAR = 0;						// reset timer and 
 			while(IR_DECODER_PIN==0);		// wait while IR is logic 0
 			time0[i] = TAR;					// and store timer A
 

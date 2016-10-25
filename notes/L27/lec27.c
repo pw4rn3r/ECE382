@@ -42,8 +42,8 @@ void initMSP430() {
 	P1OUT &= ~(BIT0 | BIT6);			// An turn the LED off
 
 	TA0CCR0 = 0xFFFF;					// set the roll-over period
-	TACTL &= ~TAIFG;					// clear flag
-	TACTL = ID_3 | TASSEL_2 | MC_1;		// Use 1:8 prescalar off MCLK and enable interrupts
+	TA0CTL &= ~TAIFG;					// clear flag
+	TA0CTL = ID_3 | TASSEL_2 | MC_1;		// Use 1:8 prescalar off MCLK and enable interrupts
 
 	_enable_interrupt();
 
@@ -61,10 +61,10 @@ __interrupt void pinChange (void) {
 	//------------------------------------------------------------------------------
 	if (P1IN & BIT3) {			// POSITIVE EDGE - button release
 		TAR = 0x0000;			// reset the timer
-		TACTL &= ~TAIFG;		// clear flag
+		TA0CTL &= ~TAIFG;		// clear flag
 		HIGH_2_LOW; 			// Set up pin interrupt on negative edge
 	} else {					// NEGATIVE EDGE - button press
-		TACTL &= ~TAIFG;		// clear flag
+		TA0CTL &= ~TAIFG;		// clear flag
 		TAR = 0x0000;			// time measurements are based at time 0
 		LOW_2_HIGH; 			// Set up pin interrupt on positive edge
 		P1OUT ^= BIT6;

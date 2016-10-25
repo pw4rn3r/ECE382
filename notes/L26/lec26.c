@@ -34,11 +34,11 @@ void initMSP430() {
 	BCSCTL1 = CALBC1_8MHZ;
 	DCOCTL = CALDCO_8MHZ;
 
-	P1DIR = BIT6;								// Set the green LED as an output
+	P1DIR |= BIT6;								// Set the green LED as an output
 
 	TA0CCR0 = 0xFFFF;							// create a 16ms roll-over period
-	TACTL &= ~TAIFG;							// clear flag before enabling interrupts = good practice
-	TACTL = ID_3 | TASSEL_2 | MC_1 | TAIE;		// Use 1:8 prescalar off MCLK and enable interrupts
+	TA0CTL &= ~TAIFG;							// clear flag before enabling interrupts = good practice
+	TA0CTL = ID_3 | TASSEL_2 | MC_1 | TAIE;		// Use 1:8 prescalar off MCLK and enable interrupts
 	_enable_interrupt();
 
 } // end initMSP430
@@ -52,5 +52,5 @@ void initMSP430() {
 __interrupt void timerOverflow (void) {
 
 	P1OUT ^= BIT6;						// This provides some evidence that we were in the ISR
-	TACTL &= ~TAIFG;					// See what happens when you do not clear the flag
+	TA0CTL &= ~TAIFG;					// See what happens when you do not clear the flag
 }

@@ -7,9 +7,9 @@ title = 'Lab 5 - Interrupts - "Remote Control Decoding"'
 In this lab, you'll use your knowledge of interrupts and the Timer_A subsytem to reverse engineer a remote control.  
 
 ## Given code
-- [test5.c](test5.c)
-- [start5.c](start5.c)
-- [start5.h](start5.h)
+- [test5.c](test5.c) - Use this file to characterize the buttons of your remote
+- [start5.c](start5.c) - Initial template file for lab
+- [start5.h](start5.h) - Initial template file for lab
 
 ## Prelab
 

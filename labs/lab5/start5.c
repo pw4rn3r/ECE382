@@ -97,13 +97,13 @@ __interrupt void pinChange (void) {
 
 	switch (pin) {					// read the current pin level
 		case 0:						// !!!!!!!!!NEGATIVE EDGE!!!!!!!!!!
-			pulseDuration = TAR;
+			pulseDuration = TA0R;	//**Note** If you don't specify TA1 or TA0 then TAR defaults to TA0R
 			packetData[packetIndex++] = pulseDuration;
 			LOW_2_HIGH; 				// Set up pin interrupt on positive edge
 			break;
 
 		case 1:							// !!!!!!!!POSITIVE EDGE!!!!!!!!!!!
-			TAR = 0x0000;						// time measurements are based at time 0
+			TA0R = 0x0000;						// time measurements are based at time 0
 			HIGH_2_LOW; 						// Set up pin interrupt on falling edge
 			break;
 	} // end switch
@@ -123,5 +123,5 @@ __interrupt void pinChange (void) {
 #pragma vector = TIMER0_A1_VECTOR			// This is from the MSP430G2553.h file
 __interrupt void timerOverflow (void) {
 
-	TACTL &= ~TAIFG;
+	TA0CTL &= ~TAIFG;
 }
