@@ -5,6 +5,7 @@ title = 'Interrupts and ISRs.  MSP430 Interrupt System.'
 ## Readings
 - Barrett 3.1-3.5 (pp77-85)
 - [Low Power Operation - Family Users Guide pp38-41](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
+- [PPT Slides](Lsn27.pptx)
 
 ## Assignment
 - Read [Lab 5](/382/labs/lab5/index.html)
@@ -47,10 +48,10 @@ Just a reminder to be creative about how you use the tools at your disposal to s
 
 - Create a project around interruptTones.c.  This C program utilizes interrupts to Blink the Green LED (P1.0 using Timer A at 440Hz  Modify the program to do the following:
 	- Put a speaker or headphones on P1.6 to listen to the 440Hz 'A' Tone using the following schematic.
-	![Setup for the hooking up 3.5mm Audio Jack to the MSP430 Launchpad Board](interruptTone.jpg)
 	- Implement another interrupt from a button press (P1.3) to toggle the Red LED (P1.0) and then increment through each tone in the counts array.
 	- Use the button interrupt to increment through the counts array to be output the different tones on a speaker.
-
+	![Setup for the hooking up 3.5mm Audio Jack to the MSP430 Launchpad Board](interruptTone.jpg)
+	
 
 ## Low Power Modes
 
