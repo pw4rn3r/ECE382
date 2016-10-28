@@ -14,6 +14,7 @@ title = 'Interrupts and ISRs.  MSP430 Interrupt System.'
 - Low Power Modes
 - [practice code](lec26.c)
 - [lec27.c](lec27.c)
+- [interruptTones.c](interruptTones.c)
 
 ## Review Interrupts
 
@@ -43,6 +44,13 @@ Just a reminder to be creative about how you use the tools at your disposal to s
 - Modify the original practice code again, this time to sample a push button and debounce it.  In order to verify that the button is not bouncing, sample the button value.  When you get eight consecutive 1s that are sampled, consider the button released.  When you get eight consecutive 0s in your sampling, consider the button to be pressed.
 
 - Create a project around lec27.c.  Modify the program so that is toggles the LED if the button press is less than 65 ms long.
+
+- Create a project around interruptTones.c.  This C program utilizes interrupts to Blink the Green LED (P1.0 using Timer A at 440Hz  Modify the program to do the following:
+	- Put a speaker or headphones on P1.6 to listen to the 440Hz 'A' Tone using the following schematic.
+	![Setup for the hooking up 3.5mm Audio Jack to the MSP430 Launchpad Board](interruptTone.jpg)
+	- Implement another interrupt from a button press (P1.3) to toggle the Red LED (P1.0) and then increment through each tone in the counts array.
+	- Use the button interrupt to increment through the counts array to be output the different tones on a speaker.
+
 
 ## Low Power Modes
 
