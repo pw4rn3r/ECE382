@@ -50,7 +50,8 @@ void main(void) {
     TA0CTL &= ~TAIFG;				// Turn off Timer A interrupt flag
     TA0CTL |= ID_3 | TASSEL_2 | MC_1 | TAIE;
     								// Setting all our bits count up to TA0CCR0
-    TA0CCR0 = counts [0];			// Set Timer A 0 TA0CCR0 value
+    TA0CCR0 = counts;				// Set Timer A 0 TA0CCR0 value
+//    TA0CCR0 = counts [0];			// Set Timer A 0 TA0CCR0 value indexed into counts array
     __enable_interrupt();			// Enable Interrupts and then write function
 
     while (1);						// cpu trap
@@ -66,5 +67,9 @@ __interrupt void timerOverFlow (void){
 	P1OUT ^= BIT6;					// XOR Toggles our green LED on/off after timer
 }
 
+#pragma vector = PORT1_VECTOR
+__interrupt void Port_1_ISR (void){
+	P1IFG &= ~BIT3;					// Clears interrupt flag
+}
 
 
