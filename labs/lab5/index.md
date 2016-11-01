@@ -28,10 +28,10 @@ Lab day 2: demonstrate your code can receive and decode button presses from the 
 Lab day 3: implement etch-a-sketch or pong
 
 ## Group Work Requirements
-####If you are considering working on Lab 4 as a group here are the requirements:
+####If you are considering working on Lab 5 as a group here are the requirements:
 - **Max Group size is 2**
 - You must create a separate shared repo for the group to the shared repo named ECE382_LastName1_LastName2
-- Each team member will place a link at the top of a readme in your personal repo in a Lab 4 folder
+- Each team member will place a link at the top of a readme in your personal repo in a Lab 5 folder
 - Both partners must make contributions to the Lab and document contributions in commit messages
 - Most likely you will have to switch your CCS workspace to a new folder to separate your repo from your private repo
 - Don't forget to give you instructor access to the repo
