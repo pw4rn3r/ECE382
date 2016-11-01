@@ -144,6 +144,7 @@ Ensure you are committing regularly.
 
 
 ## Grading - Lab 5
+[Printable Lab 5 Cutsheet](Lab_5_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
