@@ -6,6 +6,10 @@ title = 'Lab 5 - Interrupts - "Remote Control Decoding"'
 
 In this lab, you'll use your knowledge of interrupts and the Timer_A subsytem to reverse engineer a remote control.  
 
+## Handy References
+- Information on the [Sony SIRC Protocol](http://users.telenet.be/davshomepage/home.htm)
+- You can verify your remote's button codes [here](http://lirc.sourceforge.net/remotes/)
+
 ## Given code
 - [test5.c](test5.c) - Use this file to characterize the buttons of your remote
 - [start5.c](start5.c) - Initial template file for lab
