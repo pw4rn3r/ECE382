@@ -80,7 +80,7 @@ Ok, back to the technical stuff.
 In addition to what we talked about last time, Timer_A comes equipped with three Capture/Compare blocks.
 
 Back to our trusty block diagram.  Today we'll be looking at the bottom:
-![Timer A Block Diagram](382/notes/L25/timerA_block_diagram.jpg)
+![Timer A Block Diagram](/382/notes/L25/timerA_block_diagram.jpg)
 
 **Capture:** Monitor a pin for a specified signal (rising edge, falling edge, either edge) and record when it occurs.
 

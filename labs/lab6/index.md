@@ -71,7 +71,7 @@ Or invent your own!
 
 ### Using the MSP430 and Launchpad with the Robot
 
-[See the writeup available in the datasheets section of the site.](/datasheets/robot.html)
+[See the writeup available in the datasheets section of the site.](/382/datasheets/robot.html)
 
 ### Motor Driver Chip
 
