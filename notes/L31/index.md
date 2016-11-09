@@ -80,7 +80,7 @@ Ok, back to the technical stuff.
 In addition to what we talked about last time, Timer_A comes equipped with three Capture/Compare blocks.
 
 Back to our trusty block diagram.  Today we'll be looking at the bottom:
-![Timer A Block Diagram](382/notes/L28/timerA_block_diagram.jpg)
+![Timer A Block Diagram](382/notes/L25/timerA_block_diagram.jpg)
 
 **Capture:** Monitor a pin for a specified signal (rising edge, falling edge, either edge) and record when it occurs.
 
@@ -151,9 +151,9 @@ void main(void)
         P2OUT = 0;
 
         TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
-        P1DIR = BIT0;            //use LED to indicate duty cycle has toggled
-        P1REN = BIT3;
-        P1OUT = BIT3;
+        P1DIR |= BIT0;            //use LED to indicate duty cycle has toggled
+        P1REN |= BIT3;
+        P1OUT |= BIT3;
 
         TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
         TA1CCR1 = 250;                // set duty cycle to 250/1000 (25%)

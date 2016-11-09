@@ -142,13 +142,13 @@ int main(void)
 
     TA0CTL |= TACLR;             // clear TAR
 
-    TA0CTL |= TASSEL1;           // configure for SMCLK - what's the frequency (roughly)?
+    TA0CTL |= TASSEL_2;          // configure for SMCLK - what's the frequency (roughly)?
 
-    TA0CTL |= ID1|ID0;           // divide clock by 8 - what's the frequency of interrupt?
+    TA0CTL |= ID_3;    		     // divide clock by 8 - what's the frequency of interrupt?
 
     TA0CTL &= ~TAIFG;            // clear interrupt flag
 
-    TA0CTL |= MC1;               // set count mode to continuous
+    TA0CTL |= MC_1;              // set count mode to continuous
 
     TA0CTL |= TAIE;              // enable interrupt
 
