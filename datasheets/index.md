@@ -27,6 +27,7 @@ title = 'Datasheets'
 
 ## Other Useful Resources
 
+- [Robot Guidance and Troubleshooting](robot_guide.html)
 - [Programming the MSP430 In-Circuit](in_circuit_programming.html)
 - [Going Standalone](standalone.html)
 - [Mixing C and Assembly](mixing_c_and_assembly.pdf)
