@@ -149,7 +149,7 @@ void main(void)
 
     	P2DIR |= BIT1;                // TA1CCR1 on P2.1
         P2SEL |= BIT1;                // TA1CCR1 on P2.1
-        P2OUT = 0;
+        P2OUT &= ~BIT1;
 
         TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
         P1DIR |= BIT0;            //use LED to indicate duty cycle has toggled
@@ -236,7 +236,7 @@ void main(void)
 
 	  P2DIR |= BIT1;                // TA1CCR1 on P2.1
         P2SEL |= BIT1;                // TA1CCR1 on P2.1
-        P2OUT = 0;
+        P2OUT &= ~BIT1;
         TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
         P1DIR = BIT0;			//use LED to indicate duty cycle has toggled
         P1REN = BIT3;
