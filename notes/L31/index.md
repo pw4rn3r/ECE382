@@ -238,9 +238,9 @@ void main(void)
         P2SEL |= BIT1;                // TA1CCR1 on P2.1
         P2OUT &= ~BIT1;
         TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
-        P1DIR = BIT0;			//use LED to indicate duty cycle has toggled
-        P1REN = BIT3;
-        P1OUT = BIT3;
+        P1DIR |= BIT0;			//use LED to indicate duty cycle has toggled
+        P1REN |= BIT3;
+        P1OUT |= BIT3;
 
         TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
         TA1CCR1 = 250;                // set duty cycle to 250/1000 (25%)
