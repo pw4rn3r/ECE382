@@ -119,6 +119,7 @@ This will sometimes result in a short, causing you to burn out one of the fuses 
 To test whether a fuse is burned, use the ohmmeter - a working fuse should have very little resistance. You should turn off the power before you do this!  You can also use a voltmeter - there shouldn't be much voltage drop across a working fuse.  If you have burned a fuse, don't just replace it and try again - try to figure out what caused the fuse to burn in the first place! If you burned your motor driver chip, replace that - but also figure out why you burned it!  If you don't fix the root cause, you'll just break more parts and cost yourself more time / frustration.
 
 ## Grading - Lab 6
+[Printable Lab 6 Cutsheet](Lab_6_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
