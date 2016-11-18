@@ -99,10 +99,10 @@ The robot motors have the potential to create voltage fluctuations due to sudden
   - To supplement current when motor draw spikes
 - One smaller capacitor (~0.1uF) across the 5V rail
   - To smooth high frequency noise
-- One small capactior (10pF) between the RST pin and ground
+- One small capactior (10pF) between the RST pin and **power**
   - To smooth noise to the RST pin
   - The RST pin is **extremely** sensitive to voltage fluctuations
-  - If voltage drops, even briefly, it will reset your MCU
+  - If voltage drops, even briefly, it will reset your MCU (active LOW)
 
 ### How to Drive Your Motors
 
