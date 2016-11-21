@@ -35,13 +35,12 @@ Part I - Understanding the Ultrasonic Sensor and Servo
 
 #### Servo
 1.  Fill out the following table identifying the pulse lengths needed for each servo position:
-<br>
 
-    | Servo Position | Pulse Length (ms) | Pulse Length (counts) |
-    |----------------|:-----------------:|:---------------------:|
-    | Left           |                   |                       |
-    | Middle         |                   |                       |
-    | Right          |                   |                       |
+| Servo Position | Pulse Length (ms) | Pulse Length (counts) |
+|----------------|:-----------------:|:---------------------:|
+| Left           |                   |                       |
+| Middle         |                   |                       |
+| Right          |                   |                       |
     
 <br>
 

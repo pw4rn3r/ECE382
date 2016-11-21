@@ -16,6 +16,10 @@ Each robot has one rangefinder/servo pair.  By using the headers available to yo
 
 ![Servo pulses](learn_arduino_servos.png)
 
+## Prelab
+
+See the following [Prelab page](Prelab.html).
+
 ## Required Functionality
 
 Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The presence of a wall on the left side of the robot should light LED1 on your Launchpad board.  The presence of a wall next to the right side should light LED2 on your Launchpad board.  A wall in front should light both LEDs.  Demonstrate that the LEDs do not light until the sensor comes into close proximity with a wall.
@@ -32,20 +36,9 @@ Control your servo position with your remote!  Use remote buttons other than tho
 
 Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate folder from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository will remain private.
 
-## Prelab
-
-Include whatever information from this lab you think will be useful in creating your program.
-
-Consider how you'll configure the input capture subsystem.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
-
-Consider the hardware interface.  Which signals will you use?  Which pins correspond to those signals?  How will you send a particular pulse width to the servo?
-
-Consider the interface you'll create to your sensor.  Will you block or use interrupts?  Will you stop moving while you sense?
-
 ## Lab Hints
 
 - Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
-
 
 ## Grading - Lab 7
 
