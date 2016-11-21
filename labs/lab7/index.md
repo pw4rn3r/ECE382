@@ -16,6 +16,8 @@ Each robot has one rangefinder/servo pair.  By using the headers available to yo
 
 ![Servo pulses](learn_arduino_servos.png)
 
+For more information on servos, see the Seattle Robotics Society page on ["What is a Servo?"](http://www.seattlerobotics.org/guide/servos.html)
+
 ## Prelab
 
 See the following [Prelab page](Prelab.html).

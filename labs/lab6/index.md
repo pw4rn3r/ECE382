@@ -2,6 +2,10 @@ title = 'Lab 6 - PWM - "Robot Motion"'
 
 # Lab 6 - PWM - "Robot Motion"
 
+[Motors Overview](http://tigoe.net/pcomp/code/circuits/motors/)
+
+[Driving high current loads with logic](https://acroname.com/blog/driving-loads-high-power-blog-post)
+
 [Teaching Notes](notes.html)
 
 **[A Note On Robot Sharing](other_peoples_robots.html)**
