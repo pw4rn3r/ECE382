@@ -22,7 +22,7 @@ Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The pr
 
 ## B Functionality
 
-You need to fully characterize the sensor for your robot.  Create a table and graphical plot that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph should be generated for only one servo position.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.
+You need to fully characterize the sensor for your robot.  Create a table and graphical plot with at least three data points that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph should be generated for only **one servo position**.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.  **How do these experimental values compare to the timing values that you calculated in the Prelab?**
 
 ## A Functionality
 
