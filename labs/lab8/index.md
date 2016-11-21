@@ -8,7 +8,7 @@ title = 'Lab 8 - Robot Maze'
 
 ## Overview
 
-During this lab, you will combine the previous laboratory assignments and program your robot to autonomously navigate through a maze.  On the last day of the lab, each section will hold a competition to see who can solve the maze the fastest.  The fastest time in ECE 382 will have their name engraved on a plaque in the CSD lab.  Believe it or not, the main goal of this lab is for you to have some fun with computer engineering!
+During this lab, you will combine the previous laboratory assignments and program your robot to autonomously navigate through a maze.  On the last day of the lab, each section will hold a competition to see who can solve the maze the fastest.  The fastest time in ECE 382 will have their name engraved on a plaque in the lab.  Believe it or not, the main goal of this lab is for you to have some fun with computer engineering!
 
 ## Requirements
 
@@ -29,6 +29,10 @@ You must write a program that autonomously navigates your robot through a maze (
 
 **Do not step onto the maze since the floor will not support your weight.  You will notice the maze floor is cracked from cadets who ignored this advice.**
 
+![Maze Diagram](maze_diagram.png)
+
+**Figure 1: Diagram of the maze your robot must navigate.  Your demonstration grade depends on which door you go through.**
+
 ## Competition Requirements
 
 All the laboratory requirements above are required to be met for the maze, with the following additional requirements:
@@ -42,11 +46,24 @@ All the laboratory requirements above are required to be met for the maze, with 
 
 ## Prelab
 
-Print out your grading sheet.
+1.  Print out your grading sheet.
 
-Include whatever information from this lab you think will be useful in creating your program.
+2.  Consider your maze navigation strategy.  **Provide pseudocode and/or a flowchart** that shows what your main program loop will do.
+    - This should include your collision avoidance algorithm.
 
-Consider your maze navigation strategy.  Write pseudocode to show what your main program loop will look like.
+3.  Include whatever other information from this lab you think will be useful in creating your program.
+
+#### Collision avoidance
+How do you avoid hitting a wall?  Below are some questions for your consideration.
+
+ - If your robot does not naturally drive perfectly straight, **how can you correct this "drift"**?
+
+ - **How fast does your robot move?**  How far can it move in one full timing cycle?  What is a good way to figure this out?
+
+ - **How fast can you determine "distance"** on each side of your robot (think worst case while moving)?  Should one side have more scanning priority, and how do you determine the priority?
+
+ - If you follow a wall, what is a **good range of distances to attempt to be within?**
+
 
 ## Hints
 
@@ -59,9 +76,7 @@ There are a variety of techniques that cadets have used in the past to solve the
 - Use a wall-following algorithm (i.e., it tries to maintain a certain distance from the wall).
 - Use an empty-space detecting algorithm.  If it gets too close to a wall, it steers away.
 
-![Maze Diagram](maze_diagram.png)
-
-**Figure 1: Diagram of the maze your robot must navigate.  Your demonstration grade depends on which door you go through.**
+Additional hints are on the [Notes](notes.html) page.
 
 ## Grading - Lab 8
 
