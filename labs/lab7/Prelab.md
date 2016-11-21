@@ -36,11 +36,11 @@ Part I - Understanding the Ultrasonic Sensor and Servo
 #### Servo
 1.  Fill out the following table identifying the pulse lengths needed for each servo position:
 
-    |        | Pulse Length (ms) | Pulse Length (counts) |
-    |--------|:-----------------:|:---------------------:|
-    | Left   |                   |                       |
-    | Middle |                   |                       |
-    | Right  |                   |                       |
+    | Servo Position | Pulse Length (ms) | Pulse Length (counts) |
+    |----------------|:-----------------:|:---------------------:|
+    | Left           |                   |                       |
+    | Middle         |                   |                       |
+    | Right          |                   |                       |
     
 <br>
 
@@ -65,5 +65,5 @@ Part II - Using the Ultrasonic Sensor and Servo
 
  - How long should you keep sending PWM pulses?  Keep in mind that you may have to send many PWM pulses before your servo is in the correct position.  Even after that, can you stop sending PWM pulses?
  
- - **Consider how to make your code extensible.**  If will be easier to achieve the bonus functionality of creating an ultrasonic library if you design it right from the beginning.  You should also consider how you will make the sensor and servo work together.
+ - **Consider how to make your code extensible.**  It will be easier to achieve the bonus functionality of creating an ultrasonic library if you design it right from the beginning.  You should also consider how you will make the sensor and servo work together.
 
