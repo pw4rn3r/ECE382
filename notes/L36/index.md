@@ -43,7 +43,7 @@ Let's run the code!  Later I'll go through it line-by-line.
 
 #include <msp430g2553.h>
 
-int main(void)
+void main(void)
 {
   WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
   ADC10CTL0 = ADC10SHT_3 + ADC10ON + ADC10IE; // ADC10ON, interrupt enabled
@@ -52,7 +52,7 @@ int main(void)
   ADC10CTL1 |= ADC10SSEL1|ADC10SSEL0;				// Select SMCLK
   P1DIR |= 0x01;                            // Set P1.0 to output direction
 
-  for (;;)
+  while(1)
   {
     ADC10CTL0 |= ENC + ADC10SC;             // Sampling and conversion start
     __bis_SR_register(CPUOFF + GIE);        // LPM0, ADC10_ISR will force exit
@@ -61,8 +61,6 @@ int main(void)
     else
       P1OUT |= 0x01;                        // Set P1.0 LED on
   }
-
-	return 0;
 }
 
 // ADC10 interrupt service routine
@@ -125,10 +123,10 @@ So we're setting bits in the `ADC10CTL1` and `ADC10AE0` registers - let's take a
 
 `P1DIR |= 0x01;` just sets P1.0 to output so we can light up the LED on the Launchpad.
 
-And now onto our `for` loop - that uses the ADC10MEM register:
+And now onto our `while` loop - that uses the ADC10MEM register:
 
 ```c
-  for (;;)
+  while(1)
   {
     ADC10CTL0 |= ENC + ADC10SC;             // Sampling and conversion start
     __bis_SR_register(CPUOFF + GIE);        // LPM0, ADC10_ISR will force exit
@@ -149,8 +147,6 @@ __interrupt void ADC10_ISR(void)
 ```
 
 ![ADC10MEM Register](ADC10MEM.jpg)
-
-`for (;;)` is a forever loop - the same as `while (1)`.
 
 `ADC10CTL0 |= ENC + ADC10SC;` - the ENC bit enables the core.  Control bits can only be modified when the core is disabled.  The ADC10SC bit tells the core to begin a sample-and-conversion sequence.
 
