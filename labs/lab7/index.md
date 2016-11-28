@@ -43,6 +43,7 @@ Create a standalone library for your ultrasonic code and release it on Bitbucket
 - Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
 
 ## Grading - Lab 7
+[Printable Combined Lab 7&8 Cutsheet](Lab_7-8_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
