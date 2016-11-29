@@ -40,7 +40,7 @@ Part I - Understanding the Ultrasonic Sensor and Servo
 |----------------|:-----------------:|:---------------------:|
 | Left           |                   |                       |
 | Middle         |                   |                       |
-| Right          |                   |                       |
+| Right          |                   |                       ||
     
 <br>
 
