@@ -47,7 +47,7 @@ Answer the following questions in your report and be able to explain during the 
 
 2.  What values did you choose for `VR+` and `VR-`. 
 
-3.  What calculations did you use to translate your input reference voltages to the different PWM values for the servo positions.
+3.  What calculations did you use to translate your input reference voltages to the different PWM values for the servo positions?
 
 ## Lab Hints
 
