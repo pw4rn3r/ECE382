@@ -34,9 +34,17 @@ You need to fully characterize the sensor for your robot.  Create a table and gr
 
 Control your servo position with your remote!  Use remote buttons other than those you have used for the motors.  Note: you still need to be able to get readings from the ultrasonic sensor after changing your servo position with the remote.
 
-## Bonus Functionality
+## Bonus Functionality 1
 
 Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate folder from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository will remain private.
+
+## Bonus Functionality 2
+
+Use a potentiometer to create an analog servo position selector input to your MSP430.  The analog value on this input will translate to a cooresponding PWM value for your servo and allow you to sweep your servo position from side to side and anywhere in between.  This will operate similar to the servo tester demod in class.
+Answer the following questions in your report and be able to explain during the demo. 
+1. What voltage range did you select for your potentiometer analog servo position selector input and why?
+2. What values did you choose for `VR+` and `VR-`, 
+3. What calculations did you use to translate your input reference voltages to the different PWM values for the servo positions.
 
 ## Lab Hints
 
@@ -59,7 +67,8 @@ Create a standalone library for your ultrasonic code and release it on Bitbucket
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L38 |
 | B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| Bonus Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days | | 5 | | COB L38 |
+| Bonus Functionality 1 | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days | | 5 | | COB L38 |
+| Bonus Functionality 2 | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days | | 5 | | COB L38 |
 | Use of Git | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L40 |
 | Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
 | README | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
