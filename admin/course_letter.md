@@ -2,17 +2,25 @@ title = 'Course Letter'
 
 # Electrical and Computer Engineering 382 - Embedded Systems I
 
-## Course Policies and Administration
+## Course Policies and Administration, Fall 2017
 
 ### Instructors
 
-**Capt Jeffrey Falkinburg (CD)**  
-Office: 2E46E    
-E-mail: jeffrey.falkinburg@usafa.edu  
-
-**Capt Phillip Warner**  
+**Capt Phillip Warner (CD)**  
 Office: 2F46C  
 E-mail: phillip.warner@usafa.edu  
+
+**Dr. George York**  
+Office: 2E44    
+E-mail: george.york@usafa.edu  
+
+**Maj Kevin Walchko**  
+Office: 2F48  
+E-mail: kevin.walchko@usafa.edu  
+
+
+### Course Goal
+Cadets shall develop the skills to design, implement, test, and debug microcontroller-based systems by developing operational assembly and C language programs that incorporate the built-in microcontroller functions, and by successfully interfacing the microcontroller to the external world.
 
 
 ### Course Objectives
@@ -44,7 +52,7 @@ CompSci 110 and ECE 281
 | Final | | 25% |
 | TOTAL | 100% | 100% |
 
-**You must complete the required functionality for every lab (even for zero credit) to pass the course.**
+**You must complete the required functionality and report for every lab (even for zero credit) to pass the course.**
 
 | Grade | Grade |
 | :-: | :-: |
@@ -56,7 +64,7 @@ CompSci 110 and ECE 281
 
 #### Late Work
 
-If problems arise with graded assignments, see your instructor in advance.  Assignments turned in later than the due date without prior permission from the instructor will be penalized as follows (note there is no distinction between "Duty Day" or "Day":
+If problems arise with graded assignments, see your instructor in advance.  Assignments turned in later than the due date without prior permission from the instructor will be penalized as follows (note there is no distinction between "Duty Day" or "Day"):
 
 | How Late? | Penalty |
 | :-: | :-: |
@@ -67,7 +75,7 @@ If problems arise with graded assignments, see your instructor in advance.  Assi
 
 ### Course Materials
 
-- **Course Text** - Microcontroller Programming and Interfacing: Texas Instruments MSP430 - Steven Barrett and Daniel Pack 
+- **Course Text (Optional)** - Microcontroller Programming and Interfacing: Texas Instruments MSP430 - Steven Barrett and Daniel Pack 
 - **Course URL** - http://ece.ninja/382
 
 ### Extra Instruction (EI) Policy
@@ -84,11 +92,15 @@ For all assignments in this course, you may work with any faculty members or stu
 
 ### Homework
 
-Reading assignments are provided at the top of the lesson notes and should be accomplished **prior** to the designated class.  Homework assignments are also given at the top of the class notes and are due BOC the next lesson.
+Reading assignments include the lesson notes provided on each lesson page, along with the links and datasheet pages specified at the top of the respective lesson page.  The Barrett readings are optional.  Readings should be accomplished **prior** to the designated class in order to be most beneficial.
 
-### Labs / Lab Notebooks
+Graded homework assignments are also given at the top of the class notes and are due BOC the next lesson unless otherwise stated.
 
-Labs will be turned in and graded via Bitbucket.  Lab notebooks must follow the lab notebook standards specified under the [Lab Notebooks](/382/admin/labs.html) link on the Admin page.  The lab notebook is maintained as a journal of your lab experience and should allow you, or any knowledgeable engineer, to recreate your project.
+### Prelabs, Labs, and Lab Notebooks
+
+Prelabs and Labs will be turned in and graded via Bitbucket unless otherwise stated.  **Prelabs are due NLT one duty day prior to the day you start a lab.**  This is to ensure that instructors have a reasonable amount of time to provide you feedback on your plan prior to starting the lab.
+
+Lab notebooks must follow the lab notebook standards specified under the [Lab Notebooks](/382/admin/labs.html) link on the Admin page.  The lab notebook is maintained as a journal of your lab experience and should allow you, or any knowledgeable engineer, to recreate your project.
 
 ### Exams
 
@@ -99,9 +111,11 @@ All exams are closed textbook and notes.  Cadets are allowed to use only the pro
 
 ### Miscellaneous
 
-This course is designed to help you in your development as an electrical and computer engineer.  Feel free to provide feedback on the lessons and labs at any time.  If you have ideas to improve or enhance the course, please let me know.  The class builds on concepts from the prerequisites, so it's important that you seek help as soon as you need it.  Procrastination is truly the enemy in an assembly language course.  A little foresight and planning and a lot of effort will result in an extremely rewarding experience serving as the basis for future microcontroller work.
+I hope you are as excited about this course as I am!  In ECE 281, you learned how to build architectures from digital logic.  In ECE 382, you will *apply* that knowledge to build various projects on the MSP430 architecture, culiminating in a maze navigating robot!
+
+This course is designed to help you in your development as an electrical and computer engineer.  Feel free to provide feedback on the lessons and labs at any time.  If you have ideas to improve or enhance the course, please let me know.  The class builds on concepts from the prerequisites, so it's important that you seek help as soon as you need it.  Procrastination is truly the enemy in a lab-based course.  A little foresight and planning, along with a lot of effort, will result in an extremely rewarding experience serving as the basis for future microcontroller work.
 
 Good luck!
 
-JEFFREY FALKINBURG, Capt, USAF  
+PHILLIP WARNER, Capt, USAF  
 Course Director, ECE 382
