@@ -2,7 +2,7 @@ title = 'Intro to Embedded Systems with the MSP430'
 
 # ECE382 - Embedded Systems I
 
-**Find a problem?  The source behind this site is available on Github: [file a bug report or send me a pull request!](https://github.com/jfalkinburg/ECE382/issues)**
+**Find a problem?  The source behind this site is available on Github: [file a bug report or send me a pull request!](https://github.com/pw4rn3r/ECE382/issues)**
 
 | Lesson | Topic | Assigned | Due |
 | :-: | :-: | :-: | :-: | :-: |

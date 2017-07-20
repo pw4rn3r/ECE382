@@ -52,7 +52,7 @@ CompSci 110 and ECE 281
 | Final | | 25% |
 | TOTAL | 100% | 100% |
 
-**You must complete the required functionality and report for every lab (even for zero credit) to pass the course.**
+**You must complete the required functionality for every lab (even for zero credit) to pass the course.**
 
 | Grade | Grade |
 | :-: | :-: |
