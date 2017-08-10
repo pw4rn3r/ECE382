@@ -2,6 +2,9 @@ title = 'GR2 Resources'
 
 # GR Resources
 
+## Past GR
+[GR2 Fall 2016](GR2 v3.pdf)
+
 ## Timer_A
 
 ### Timer Modes

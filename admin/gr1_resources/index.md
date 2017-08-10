@@ -2,6 +2,10 @@ title = 'GR1 Resources'
 
 # GR Resources
 
+## Past GR
+[GR1 Fall 2016](GR1_v3.pdf)
+
+
 ## Instruction Set
 
 | Opcode | Assembly Instruction | Description |
