@@ -19,11 +19,12 @@ First, we need to install Code Composer Studio.
 
 ## Installing Code Composer Studio (CCS)
 
-**This step will be completed as a portion of the Skills Review.**
+**This installation step will be completed as a portion of the Skills Review.**
 
-ECE382 uses the free version of Code Composer Studio, v6.0.x.  [It's available here](http://processors.wiki.ti.com/index.php/Download_CCS).
+ECE382 uses the free version of Code Composer Studio, v6.x.  You can download the installation executable file directly from EDU network at [M:\Organizations\DF\dfec\ECE382](M:\Organizations\DF\dfec\ECE382).  
 
-Download the Windows version of the latest CCS.  You'll have to create an account and fill out some information - it's pretty straightforward.  You'll be approved to receive the software, so download it!
+Alternatively, you can find the latest Windows 6.x version at the [TI download page](http://processors.wiki.ti.com/index.php/Download_CCS), but you will have to create an account and fill out some information - it's pretty straightforward.  You'll then be approved to receive the software.
+
 
 **Follow these steps**
 
@@ -73,8 +74,8 @@ The first comment block at the top is your program header.  In that, you should 
 Make it look something like this:
 ```
 ;-------------------------------------------------------------
-; Lab 1 - Introduction to the MSP430 and Code Composer Studio
-; Capt Jeff Falkinburg, USAF / 19 Jul 2016 / 19 Jul 2016
+; CE1 - Introduction to the MSP430 and Code Composer Studio
+; C2C John Doe, USAF / 19 Jul 2017 / 19 Jul 2017
 ;
 ; This program is a demonstration of using the CCS IDE to
 ; program, assemble, flash, and debug the MSP430.
