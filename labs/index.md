@@ -22,7 +22,15 @@ If you can't find an instructor, send them an e-mail with the features you were 
 
 See the [Lab Notebooks](/382/admin/labs.html) link on the Admin page.
 
-## Lab notebook instructor access
+## Lab notebook instructor access and issue tracker
 
-Do not forget to add your instructor to your Bitbucket repository.  (Settings --> Access Management --> Users) 
+Do not forget to add your instructor to your Bitbucket repository (Settings --> Access Management --> Users).
+You do not need to add all of the instructors.
+
+The current usernames for the 382 instructors are:
+- pwarner
+- walchko
+- GeorgeYork
+
+Also turn on your issue tracker (Settings --> Issue tracker --> select "Private issue tracker" radio box).
 
