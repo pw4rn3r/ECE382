@@ -28,6 +28,7 @@ Do not forget to add your instructor to your Bitbucket repository (Settings --> 
 You do not need to add all of the instructors.
 
 The current usernames for the 382 instructors are:
+
 - pwarner
 - walchko
 - GeorgeYork
