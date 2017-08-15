@@ -3,6 +3,10 @@ title = 'Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Convertin
 # Lesson 3 Notes
 
 ## Readings
+- **MSP430 Family User Guide**
+    - Sections 3.4 - 3.4.3 pgs 56 - 59 (BB pgs 16 - 18)
+    - Section 3.4.5 pgs 62 - 63 (BB pg 19 and back inside cover page)
+    - Reference Section 3.4.6 (pgs 64 - 114) as desired for *specific* instruction details
 - [Debuggers](http://en.wikipedia.org/wiki/Debugger)  
 - [MSP430 Instruction Set](http://mspgcc.sourceforge.net/manual/x223.html)<br>
 - [PPT Slides](Lsn3.pptx)
@@ -326,7 +330,6 @@ c026:	09 4a       	mov	r10,	r9
 c028:	f3 3f       	jmp	$-24     	;abs 0xc010
 ```
 
-**This was as far as we got.**
 
 ## Converting Assembly to Machine Code
 
