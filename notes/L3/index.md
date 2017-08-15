@@ -3,7 +3,7 @@ title = 'Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Convertin
 # Lesson 3 Notes
 
 ## Readings
-- **MSP430 Family User Guide**
+- [**MSP430 Family User Guide**](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
     - Sections 3.4 - 3.4.3 pgs 56 - 59 (BB pgs 16 - 18)
     - Section 3.4.5 pgs 62 - 63 (BB pg 19 and back inside cover page)
     - Reference Section 3.4.6 (pgs 64 - 114) as desired for *specific* instruction details
