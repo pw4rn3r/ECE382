@@ -20,6 +20,13 @@ title = 'Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Convertin
 - Converting Assembly to Machine Code
 
 
+## Code Snippets for demos (copy into main loop section)
+- [debugExample1.asm](codeSnippets/debugExample1.asm)
+- [debugExample2.asm](codeSnippets/debugExample2.asm)
+- [machineCodeExample.asm](codeSnippets/machineCodeExample.asm)
+
+
+
 ## Review
 
 **On Board!**
@@ -120,7 +127,7 @@ forever     jmp         forever
 
 It's boring to have to step through this entire thing.  I want to see what r6 contains when this is over with.  How can I do that?  Breakpoints!  Set breakpoint at `mov` instruction, execute.  Look at contents of `r5` and `r6`.  I can also examine memory - let's see what wound up being stored at 0x0200.  **Open memory window, look at contents, step, watch them change.**
 
-Remember last time when I said if we referenced undefined memory, our CPU would reset?  I wasn't quite right.  If we try to execute instructions in these areas, it will reset.  Writing won't do anything, reading will give you undefined results.
+**What happens if we reference undefined memory?  If we try to execute instructions in these areas, it will reset.  Writing won't do anything, and reading will give you undefined results.**
 
 How can we change the address of the current instruction we're executing?  Write to the PC!
 
@@ -128,7 +135,7 @@ Let's add this instruction to see what happens.
 
 `mov.w      #0x9000, PC`
 
-Power up clear!
+Power up clear (PUC)!
 
 
 Debuggers are a tool we'll use a lot.  Here's some more cool features that will help you get to the bottom of problems:
