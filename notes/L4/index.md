@@ -6,7 +6,7 @@ title = 'Addressing Modes.  CompEx 1 Intro.'
 - [**MSP430 Family Users Guide**](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
     - Section 3.3 pgs 47 - 55 (BB pgs 12 - 16)
 - [MSP430 Addressing Modes](http://mspgcc.sourceforge.net/manual/x147.html)
-- [Barrett 2.8-2.11]('Addressing Modes_Barrett and Pack Microcontroller Interfacing pgs 47-54.pdf') (pgs 47 - 54)
+- [Barrett 2.8-2.11](Addressing%20Modes_Barrett%20and%20Pack%20Microcontroller%20Interfacing%20pgs%2047-54.pdf) (pgs 47 - 54)
 - [PPT Slides](Lsn4.pptx)
 
 *Note*: Barrett is great for walking through each addressing mode step-by-step and showing how it's relevant to higher-level programming.  The others address the nuances and conversion to machine code.
