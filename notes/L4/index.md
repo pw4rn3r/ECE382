@@ -44,8 +44,6 @@ Anyone try to run a program on their MSP430 yet?
 
 Last lesson, we discussed the MSP430 instruction set.  We didn't quite get to assembly-machine conversion last time - we will today.  Learning about all of the different addressing modes also gives us a better understanding of the kinds of instructions we can write and how they work.
 
-Luckily, the MSP430 has only 4 different addressing modes to cover.  The old S12 had a lot more.
-
 **[Remember instruction formats: `mov.w src, dst`, `swpb dst`]**
 
 **[On side board, mark first two as available two both, bottom two as available only to destination - circle last bit for dest]**
@@ -81,8 +79,6 @@ forever     jmp     forever
 Review - Who can name the three different instruction types?  One operand, relative jump, and two operand.
 
 **[On side board]**  Who recognizes this table from last time?  What is it?
-
-Notice that in two operand, we've only got one bit for Ad - meaning it can only use two of the available addressing modes.
 
 | 15 | 14 | 13 | 12 | 11 | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
