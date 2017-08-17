@@ -10,7 +10,7 @@
 <br>
 <br>
 
-## Assembly Process
+## Assembly Process (10 pts each)
 
 **What does the assembler do?  Be specific.**
 <br>
@@ -117,7 +117,7 @@ inv.w   r8
 dec.w   r8
 ```
 
-**Show the contents of `r8` after the execution of each instruction.**
+**Show the contents of `r8` after the execution of each instruction. (5 pts each)**
 <br>
 <br>
 <br>
