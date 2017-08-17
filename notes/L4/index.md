@@ -14,7 +14,8 @@ title = 'Addressing Modes.  CompEx 1 Intro.'
 
 
 ## Example Code
-- [Example Programming Code](code/lec4.asm)
+- [Fill Beef in-class example](code/fillBeef.asm)
+- [Variety of assembly example code](code/lec4.asm)
 
 ## Assignment
 - [Assignment 2 - Addressing Modes](L4_addressing_modes.html)
