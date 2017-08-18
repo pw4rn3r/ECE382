@@ -5,4 +5,4 @@
 
 ## Turn-In Requirements (Bitbucket)
 
-- Screenshot of your MicroCorruption Profile with the New Orleans level passed.
+- Screenshot of your MicroCorruption "Levels Passed" table (on Profile page) with the New Orleans level passed.
