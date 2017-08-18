@@ -10,8 +10,8 @@ title = 'Intro to Embedded Systems with the MSP430'
 | [L2](notes/L2/index.html) | Intro to the MSP430.  MSP430 Architecture.  Assembly and Machine Languages. | [uCorrupt 1](notes/L2/ucorrupt1.html) | |
 | [L3](notes/L3/index.html) | Debuggers.  MSP430 Execution Model.  MSP430 Instruction Set.  Converting Assembly to Machine Code. | [Assignment 1](notes/L3/L3_execution.html) | [Skills Review](notes/L1/skills_review.html) |
 | [L4](notes/L4/index.html) | Addressing Modes.  CompEx 1 Intro. | [Assignment 2](notes/L4/L4_addressing_modes.html) | [Assignment 1](notes/L3/L3_execution.html), [uCorrupt 1](notes/L2/ucorrupt1.html) |
-| L5 | [CompEx 1](labs/compex1/index.html) - Introduction to the MSP430 and CodeComposer. | [CompEx 1](labs/compex1/index.html) [Badlec5.asm EC](notes/L6/code/badlec5.asm) | [Assignment 2](notes/L4/L4_addressing_modes.html )|
-| [L6](notes/L6/index.html) | Status Register.  Flow of Control.  Movement Instructions. | [uCorrupt 2](notes/L6/ucorrupt2.html) | [CompEx 1](labs/compex1/index.html) Questions |
+| L5 | [CompEx 1](labs/compex1/index.html) - Introduction to the MSP430 and CodeComposer. | [CompEx 1](labs/compex1/index.html) [Badlec5.asm EC](notes/L6/code/badlec5.asm) | |
+| [L6](notes/L6/index.html) | Status Register.  Flow of Control.  Movement Instructions. | [uCorrupt 2](notes/L6/ucorrupt2.html) | [Assignment 2](notes/L4/L4_addressing_modes.html ), [CompEx 1](labs/compex1/index.html) Questions |
 | [L7](notes/L7/index.html) | Arithmetic / Logic, Shift / Rotate Instructions.  Watchdog Timer. *Miniquiz*| [Assignment 3](notes/L7/L7_control_flow.html) | [uCorrupt 2](notes/L6/ucorrupt2.html) |
 | [L8](notes/L8/index.html) | Directives.  Assembly Process.  Structured Design and Test.  Debugging.  [Lab 1](labs/lab1/index.html) Introduction. *Miniquiz*| [Lab 1](labs/lab1/index.html) Prelab | [Assignment 3](notes/L7/L7_control_flow.html) |
 | L9 | [Lab 1](labs/lab1/index.html) - Loops / Branches.  "Simple Calculator". | [Lab 1](labs/lab1/index.html) | [Lab 1](labs/lab1/index.html) Prelab |
