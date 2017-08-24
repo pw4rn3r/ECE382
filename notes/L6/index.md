@@ -3,15 +3,16 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 # Lesson 6 Notes
 
 ## Readings
+- [MSP430 Family Users Guide Section 3.2.3 pgs 45 - 46 (BB pg 11)](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 - Barrett 2.4-2.7 (pp29-47)
-- [MSP430 Family Users Guide pp121](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf)
 - [Control Flow](http://en.wikipedia.org/wiki/Control_flow)
 - [Overflow Flag](http://en.wikipedia.org/wiki/Overflow_flag)
 - [Status Register](https://en.wikipedia.org/wiki/Status_register)
 - [PPT Slides](Lsn6.pptx)
 
 ## Example Code
-- [Lesson 4 Example Programming Code](/382/notes/code/lec4.asm)
+- [Lesson 6 examples (SR, emulated instructions, and flow control)](code/Lec6.asm)
+- [Variety of assembly example code](/382/notes/L4/code/lec4.asm)
 
 ## Assignment
 - [uCorrupt 2](ucorrupt2.html)
@@ -22,13 +23,6 @@ title = 'Status Register.  Flow of Control.  Movement Instructions.'
 - Flow of Control
 - Movement Instructions
 
-## Admin
-
-- [Listing of all code in this lesson](all_code.html)
-- Video - Daily Show Russian Meteor
-- Collect CompEx Questions at end of period
-
-*[Discuss CompEx, get some feedback]*
 
 ## Review
 
