@@ -8,23 +8,11 @@ The labs make up a significant portion of both your prog and final grades.  You 
 
 ## Lab Notebooks
 
-Lab notebooks are heavily emphasized in this course and constitute a large portion of lab grades.  The lab notebook is maintained as a journal of your lab experience and should allow you, or any knowledgeable engineer, to recreate your project.  For this course, your notebook should contain at least the following (as applicable to the particular lab):
+Lab notebooks are heavily emphasized in this course and constitute a large portion of lab grades.  The lab notebook is maintained as a journal of your lab experience and should allow you, or any knowledgeable engineer, to recreate your project.
 
-- Descriptive title
-- Objectives or purpose
-- Prelab
-- Preliminary design
-- Software flow chart / algorithms
-- Hardware schematic
-- Well-formatted code (only include key code snippets...code files should be included in code folder)
-- Debugging
-- Testing methodology / results
-- Observations and Conclusions
-- Documentation
+An example of what to include in a lab report can be found on the [382 Lab Notebook GitHub page](https://github.com/pw4rn3r/ECE_382_Lab_Ex/tree/master/CompEx1).  The actual format is flexible.  The information included in the lab report must be tailored according to what is important for the specific lab.  In general, the idea is that all full lab reports must stand up to the **"hit by a bus"** standard.  Should you die, another engineer must be able to continue your work without trouble.
 
-The actual format is flexible, so don't be afraid to add something later.  All lab reports must stand up to the **"hit by a bus"** standard.  Should you die, another engineer must be able to continue your work without trouble.
-
-You are expected to keep your lab notebooks current as you work on a lab.  You will lose substantial points if sections of the lab notebook which should be part of your documentation before the demonstration (such as prelab, approach, flowcharts, testing, debugging, etc.) are entered afterwards.  Your conclusion section, lessons learned, and your final formatted code are not required before your demo.
+You are expected to keep your lab notebooks current as you work on a lab.  You may lose substantial points if sections of the lab notebook which should be part of your documentation before the demonstration (such as prelab, approach, flowcharts, testing, debugging, etc.) are entered afterwards.  Your conclusion section, lessons learned, and your final formatted code (external to report) are not required before your demo.
 
 
 ### Electronic Lab Notebooks
