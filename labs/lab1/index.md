@@ -67,27 +67,51 @@ O(n) means that the time it takes to reach a solution varies with the size of th
 
 ## Prelab
 
-Print out the grading [Cutsheet](Lab_1_Cutsheet.pdf).  Hand it in to your instructor, complete with functionality marks, when the lab is due.  
+**Remember, the Prelab is due one full business day prior to the lab in order to provide your instructor time to provide you feedback on your plan (before you start implementing it).**
 
-Include whatever information from this lab you think will be useful in creating your program.
+Most prelabs in this class essentially require that you 1) lay out a plan for how you will tackle the lab, and 2) answer questions to guide you in developing a good plan.  A good plan usually requires multiple iterations.  Pages 17-18 and 55 of the Barret and Pack book provide a concise approach to design planning.
 
-Think about how you'll implement your calculator.  Draw a flowchart of how it will operate - include pseudocode.
+After you have carefully read through this document, make sure you understand the [test cases](test_cases.html).  Do the expected results make sense to you?  Make sure you understand how the input and output of the program will work.  Otherwise, you will be completely lost in implementing your program!
+
+Now that you understand *what* your program should do, you can start developing a plan on *how* it will accomplish its tasks.  Start with sketching ideas on paper.  This may result in an initial flowchart or pseudocode.  You will likely find that working out the problem on paper will help you to understand the problem better.  Once you have developed a reasonable algorithm to implement your task, test it with [test cases](test_cases.html).  Adjust the plan as needed. 
+
+Keep in mind that whenever you write any code, you should also consider what it should do in the event that you receive an invalid input.  Can you think of any invalid inputs in the context of this task?  Can you think of any inputs that might break the algorithm you have already developed?  For instance, what should your program do if an operator is unknown?  Are there any bytes that you cannot use an as operand?
+
+Are there any other ways to break your program?  For example, what would happen if someone were to provide a loooooonnnggg set of operations?
+
+Note, it is not expected that you will implement code that is unbreakable and completely robust.  **However, you should understand and DOCUMENT the limitations of your code.**
+
+
+#### Prelab Deliverables
+
+**Remember, the Prelab is due one full business day prior to the lab in order to provide your instructor time to provide you feedback on your plan (before you start implementing it).**
+
+1. **Refine your plan, and develop a professional looking flowchart describing how your code will operate.**  Use traditional symbols in your flowchart as much as possible, and include a symbol key.  **Do not include assembly in your flowchart.**  Make it easy to read and understand.
+
+2. Answer the following questions:
+
+ - How will you test your code?  Be *specific* on how you will verify correctness of results with a *repeatable and consistent* method.  Hint:  Think about where you will find your results and how that location is affected by subsequent tests.
+ - What should your program do if an operator is unknown?
+ - List two bytes that you *cannot* use as a first operand.
+ - Are there any other ways to break your program?  For example, what would happen if someone were to provide a loooooonnnggg set of operations?
+ - Is there anything about this lab that you would like me to address at the beginning of class?
+
 
 ## Notes
 
-Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.
+Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.  Additional guidance is provided in the [teaching notes](notes.html) page.
 
 - Comments
-    - Assume the reader is a competent assembly language programmer
+    - Assume the reader is a competent assembly language programmer (do NOT comment every line)
     - Comment above blocks of code to convey **purpose**
     - Only comment individual lines when purpose is unclear
 - Labels
     - Descriptive!
-        - loop or loop1 or l1 or blah - not acceptable!
+        - `loop` or `loop1` or `l1` or `blah` - not acceptable!
     - Used for all memory location, jumps, etc. 
 - Constants
     - Use `.equ` syntax for all constants!
-    - Don't want to see naked values
+    - Don't want to see naked values / magic numbers
 - Instruction Choice
     - Use the instruction that makes your code readable!
         - `JHS` rather than `JC`
@@ -104,23 +128,14 @@ Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.h
 [Test Cases](test_cases.html)
 
 ## Grading - Lab 1
-[Printable Lab 1 Cutsheet](Lab_1_Cutsheet.pdf)
-Do not forget to give your instructor access to your repository!
 
-**Name:**<br>
-<br>
-**Section:**
-<br>
-<br>
-**Documentation:**<br>
-<br>
+#### Points breakdown
+- Prelab 25 (15 flowchart, 10 questions)
 
-| Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | BOC L9 |
-| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L10 |
-| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L10 |
-| A Functionality - O(n) | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| A Functionality - O(log n) | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L10 |
-| Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L11 |
-| **Total** | | | **100** | | | |
+- Req'd funct 30
+- B funct 10
+- A funct (O(n)) 5
+- A funct (O(log(n)) 5
+
+- Code 10
+- Lab Notebook 15 (most of the notebook work is done with the prelab)
