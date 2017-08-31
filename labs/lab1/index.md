@@ -92,7 +92,7 @@ Note, it is not expected that you will implement code that is unbreakable and co
 
  - How will you test your code?  Be *specific* on how you will verify correctness of results with a *repeatable and consistent* method.  Hint:  Think about where you will find your results and how that location is affected by subsequent tests.
  - What should your program do if an operator is unknown?
- - List two bytes that you *cannot* use as a first operand.
+ - Are there any bytes that you *cannot* use as an operand?
  - Are there any other ways to break your program?  For example, what would happen if someone were to provide a loooooonnnggg set of operations?
  - Is there anything about this lab that you would like me to address at the beginning of class?
 
