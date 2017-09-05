@@ -61,9 +61,10 @@ The calculator program `0x02 0x33 0x04` is equivalent to `0x02 * 0x04`.  It woul
 
 The MSP430G2553 that you're using does not have a hardware multiplier, so you'll have to get creative to implement this.
 
-There are a couple of ways to implement multiply - **strive for the fastest possible implementation**.  Solutions that multiply in O(n) time will receive half points.  Only solutions that multiply in O(log n) time will receive full points.
+There are a couple of ways to implement multiply - **strive for the fastest possible, yet practical implementation**.  Solutions that multiply by brute force (worse than O(n) time) will receive half points.  Only solutions that multiply in O(n) or better time will receive full points.
 
-O(n) means that the time it takes to reach a solution varies with the size of the input.  O(log n) means that time to solve varies with the log of the size of the input.
+O(n) means that the time it takes to reach a solution varies with the size of the input.  A typical brute force multiply algorithm requires O(2^n )!
+
 
 ## Prelab
 
@@ -134,8 +135,8 @@ Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.h
 
 - Req'd funct 30
 - B funct 10
-- A funct (O(n)) 5
-- A funct (O(log(n)) 5
+- A funct (Brute force multiply) 5
+- A funct (O(n) multiply) 5
 
 - Code 10
 - Lab Notebook 15 (most of the notebook work is done with the prelab)
