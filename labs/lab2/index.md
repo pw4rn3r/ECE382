@@ -85,8 +85,6 @@ In addition to B Functionality, you must decrypt the following message *without*
 
 ## Prelab
 
-**REMOVE** Print out the grading [cutsheet](Lab_2_Cutsheet.pdf) and bring it to class.
-
 **Remember, the Prelab is due one full business day prior to the lab in order to provide your instructor time to provide you feedback on your plan (before you start implementing it).** 
 
 #### Prelab Deliverables
