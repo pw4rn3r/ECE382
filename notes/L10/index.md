@@ -8,12 +8,16 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 - Subroutines (Barrett A.3 (pp364-371)
 - [PPT Slides](Lsn10.pptx)
 - [Stack Example in CCS](Lesson10_Stack_Example_in_CCS.pptx)
+  - [Stack Example code](Lesson10_Stack_Example.asm)
 
 ## Handout Code
-- [Stacks Handout Code](stack_handout.html)
+- [Stacks Handout Code](Lsn10_Handout.asm)
 
 ## Assignment
 - [Assignment 4 - Stacks](stack_hw.html)
+- It is highly recommend that you run the [Assignment 4 code](Assignment4_Stack.asm) in CCS and watch how the stack, SP, and registers change.  This will help you to not only have a perfect homework score, but also to help you on the quiz.
+- For viewing the stack, I recommend that you use the 8-bit TI mode in your memory browser and set the width of the window to one byte wide.  Navigate to the smallest address of interest.
+
 
 ## Lesson Outline
 - Admin
@@ -23,8 +27,7 @@ title = 'The Stack. Subroutines. Lab 2 Introduction.'
 
 ## Admin
 
-- Demo your Lab 1 functionality by COB today!  
-- Be prepared to walk me through the program you've written to test your own lab.
+- Lab 1 functionality is due with the report (next lesson)  
 - Any quick questions?
 
 
@@ -36,7 +39,7 @@ A stack is a Last In First Out (LIFO) queue.  Push and Pop are our two operation
 
 As you push more items onto the stack, the more space in memory it occupies - it grows.  As you pop items off of the stack, it shrinks.  The core purpose of stacks is to allow for the temporary storage of values at runtime for later retrieval.
 
-In the MSP430, the stack grows upward - from higher locations in memory to lower locations in memory.
+In the MSP430, the stack grows from higher locations in memory to lower locations in memory.
 
 **Draw memory map.**
 
