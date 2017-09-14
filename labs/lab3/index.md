@@ -226,7 +226,7 @@ are drawn.
 
 Be sure to label your signals on the logic analyzer and include screenshots (which can be saved to your external hard drive, for eventual posting in your lab notebook) of each analyzed signal.
 
-###Writing modes
+### Writing modes
 The native write operation to our LCD will not overwrite any information that is on the display unless it is within the region defined in setArea.  However, that may not be the best course of action in your application.  The new bits being added to the image may be merged using the AND, OR, XOR operators.  To do this treat a black pixel as a logic 1 and a white pixel as a logic 0.  The pixel values from the same locations are combined using a logical operator and placed at the corresponding location in the destination imaged.
 Import the following image into a paint program and show the result of the operation between the two bits maps combined using the logic operator specified.
 ![xor picture](bitblock.bmp)
@@ -246,7 +246,7 @@ Move the 10-pixel block one block (10 pixels) in the direction of the pressed bu
 
 Write your name or nickname of at least 5 characters to the screen on a solid background when the S1 button is pushed.
 
-# Turn-in
+# Turn-ins for Lab 3
 
 ## Prelab (due 24hrs before class)
 
