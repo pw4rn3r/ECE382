@@ -211,8 +211,8 @@ are drawn.
 - *Question:* Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
 |Packet|Line|Command/Data|8-bit packet|Meaning of packet|
-|:-:|:-:|:-:|:-:|
-|1|||||
+|:-:|:-:|:-:|:-:|:-:|
+|1  |   |   |   ||
 |2|||||
 |3|||||
 |4|||||
