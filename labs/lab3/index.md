@@ -10,13 +10,13 @@ title = 'Lab 3 - SPI - "I/O"'
 ## Supplemental Slides
  - [ECE382_Lab3-Help.pptx](ECE382_Lab3-Help.pptx) - Describes timing, how pixels are written, and how colors are represented
 
-##  Mega Prelab
-A hard copy of this Mega Prelab is required to be turned in as well as pushed to Bitbucket.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
+##   Prelab
+
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine (line 569), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
+In lab3_given.asm, you have the header for a subroutine (line 569), but there is no code.  Write a subroutine that will create a 160ms delay.  **Show your analysis** that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
-### ILI9341 LCD BoosterPack 
+### ILI9341 LCD BoosterPack
 
 Look at the schematic for the LCD BoosterPack. Complete the following table.  The pin number (1 - 20) should be the pin number that signal connects to on the MSP 430, and the PX.X should be the pin and port it connects to (e.g. P1.0). <br>
 
@@ -27,12 +27,12 @@ Look at the schematic for the LCD BoosterPack. Complete the following table.  Th
 | S3 |   |   |
 | S4 |	| |
 | S5 |	| |
-| MOSI| | | 
+| MOSI| | |
 | CS | | |
 | DC | | |
 | MISO| | ||
 
-What are the hex values that need to be combined with the below registers for these signals to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.  If the register is not affected for that signal, simply say N/A. 
+- *Question 1:* What are the hex values that need to be combined with the below registers for these signals to be properly configured?  State whether that hex value needs to be used with the bis or bic instruction with each register to achieve these ends.  If the register is not affected for that signal, simply say N/A.
 
 |Signal|PxDIR|PxREN|PxOUT|PxSEL|PxSEL2|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -44,7 +44,10 @@ What are the hex values that need to be combined with the below registers for th
 
 ### Configure the MSP430
 
-Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  What is the pin number (1-20) associated with each of these signals?  What function does each signal serve?  For example, SCLK is the serial clock. 
+Look at the initMSP subroutine in the `lab3_given.asm` file.  There are four pins being intialized on port 1: SCLK, CS, MOSI, and DC.  
+
+- *Question 2:* What is the pin number (1-20) associated with each of these signals?
+- *Question 3:* What function does each signal serve?  For example, SCLK is the serial clock.
 
 | Name | Pin # | Function |
 |:-:|:-:|:-:|
@@ -53,7 +56,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | MOSI |   |   |
 | DC |	| | |
 
-Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 134 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
+Below the pin configuration code are some lines of code from the `lab3_given.asm` file (lines 134 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
 1:		bis.b	#UCSWRST, &UCB0CTL1
 2:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
@@ -64,15 +67,18 @@ Below the pin configuration code are some lines of code from the lab3_given.asm 
 7:		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
 8:		bic	#UCSWRST, &UCB0CTL1
 ```
-Fill in the chart below with the function that is enabled by the lines 6&7 of the above code.  Your device-specific datasheet can help.
+Fill in the chart below with the function that is enabled by the lines 6 & 7 of the above code.  Your device-specific datasheet can help.
 
-| Pin name | Function | 
+| Pin name | Function |
 |:-:|:-:|
 | P1.5| |
 | P1.7| |
 | P1.6| ||
 
-Next, describe specifically what happens in each of the eight lines of code above.  Line 1 and 3 have been done for you as an example. <br>
+Next, describe specifically what happens in each of the eight lines of code above.  Line 1 and 3
+have been done for you as an example.
+
+<br>
 
 Line 1: Setting the UCSWRST bit in the CTL1 register resets the subsystem into a known state until it is cleared. <br>
 Line 2: <br>
@@ -84,7 +90,8 @@ Line 7: <br>
 Line 8: <br>
 
 ### Communicate with the LCD
-The following code (lines 293 - 333) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
+The following code (lines 293 - 333) sends one byte (either data or command) to
+the TM022HDH26 display using its 8-bit protocol.  
 
 ```
 ;-------------------------------------------------------------------------------
@@ -130,7 +137,10 @@ pollD:
 	ret
 ```
 
-Use this code to draw two timing diagrams (one for each subroutine) of the expected behavior of LCD_CS_PIN, LCD_DC_PIN, LCD_SCLK_PIN, and UCBxTXBUF from the begining of these subroutines to the end.  Make sure that you clearly show the relationship of the edges in the clk and data waveforms. 
+Use this code to draw two timing diagrams (one for each subroutine) of the
+expected behavior of LCD_CS_PIN, LCD_DC_PIN, LCD_SCLK_PIN, and UCBxTXBUF from
+the begining of these subroutines to the end.  Make sure that you clearly show
+the relationship of the edges in the clk and data waveforms.
 
 
 ### Draw a pixel
@@ -171,20 +181,34 @@ drawPixel:
 	ret
 ```
 
-(This marks the end of the Mega Prelab.)
+(This marks the end of the  Prelab.)
 ---------------------------------------------------------------
 ## Logic Analyzer
-The answers to the logic analyzer section will be posted to Bitbucket in the lab writeup.
-###Physical communication
-Connect the LCD Booster Pack to your TI Launch Pad.  Make sure that the buttons on the Booster Pack are aligned with the buttons on the MSP430.  The pin numbers on the Boosterpack should match the pin numbers of the MSP430.
+
+### Physical communication
+Connect the LCD Booster Pack to your TI Launch Pad.  Make sure that the buttons on the Booster Pack
+are aligned with the buttons on the MSP430.  The pin numbers on the Boosterpack should match
+the pin numbers of the MSP430.
+
 <br>
-Create a project around the lab3_given.asm file.  Be sure to include your Delay160ms subroutine.
+
+Create a project around the lab3_given.asm file.  Be sure to include **your Delay160ms subroutine**.
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
-<br>
-When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. **Find the three calls to writeCommand and eight calls to writeData that generate these packets.** In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
 
-Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the values sent and what and where the pixels are drawn. Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
+<br>
+
+When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.
+The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be
+drawn. **Find the three calls to writeCommand and eight calls to writeData that generate these packets.**
+In addition, scan the nearby code to determine the parameters being passed into these subroutines.
+
+Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released.
+Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn
+on the display.  Be specific with the relationship between the values sent and what and where the pixels
+are drawn.
+
+- *Question:* Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
 |Packet|Line|Command/Data|8-bit packet|Meaning of packet|
 |:-:|:-:|:-:|:-:|
@@ -210,17 +234,37 @@ Import the following image into a paint program and show the result of the opera
 
 ## Functionality
 
+### Required functionality:
 
-
-### Required functionality: 
 Create a block on the LCD that is 10x10 pixels.  <br>
-### A functionality: 
+
+### A functionality:
+
 Move the 10-pixel block one block (10 pixels) in the direction of the pressed button (up, down, left, right).  
-### Bonus functionality: 
+
+### Bonus functionality:
+
 Write your name or nickname of at least 5 characters to the screen on a solid background when the S1 button is pushed.
 
+# Turn-in
 
-## Grading - Lab 3
+## Prelab (due 24hrs before class)
+
+A hard copy of the  Prelab is required to be turned in as well as pushed to Bitbucket.  Answers
+should not be handwritten.  The timing diagram may be **NEATLY** drawn by hand with the assistance
+of a straightedge on engineering paper. Ensure you answer the questions, do the analysis and
+write the code.
+
+## Lab (due Lsn 19)
+
+- Push a `readme.md` to bitbucket.org by **2359 on Lsn 19**
+    - Ensure your `readme.md` follows the [standard template](https://github.com/pw4rn3r/ECE_382_Lab_Ex)
+    - Ensure your assembly code follows the [coding standards](http://ece.ninja/382/admin/labs.html)
+- The answers to the logic analyzer section will be posted to Bitbucket in the lab writeup.
+- Make sure you demo the functionality to an instructor by **1430 on Lsn 19**
+
+## Grading
+
 [Printable Lab 3 Cutsheet](Lab_3_Cutsheet.pdf)
 
 **Name:**<br>
@@ -233,11 +277,10 @@ Write your name or nickname of at least 5 characters to the screen on a solid ba
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Mega Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days | | 20 | | EOC L16 |
+|  Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days | | 20 | | EOC L16 |
 | Required Logic Analyzer | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L19 |
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 20 | | COB L19 |
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
 | Bonus Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L19 |
 | Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
 | **Total** | | | **100** | | | |
-
