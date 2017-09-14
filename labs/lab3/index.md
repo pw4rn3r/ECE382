@@ -276,7 +276,7 @@ write the code.
 <br>
 
 | Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: |
+|:-: | :-: | :-: | :-: | :-: | :-: |
 |  Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days | | 20 | | EOC L16 |
 | Required Logic Analyzer | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L19 |
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 20 | | COB L19 |
