@@ -145,12 +145,12 @@ You do not need to include any other sections in your final report.
 
 **Section:**
 
-| **Item**                   | **Grade**                                                           | **Points** | **Out of** | **Date** | **Due**               |
-|----------------------------|---------------------------------------------------------------------|------------|------------|----------|-----------------------|
-| **Prelab**                 | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 25         |          | Bus. Day Prior to L11 |
-| **Required Functionality** | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 35         |          | L13                   |
-| **B Functionality**        | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13                   |
-| **A Functionality**        | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13                   |
-| **Code**                   | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13                   |
-| **Lab Notebook**           | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13                   |
-| **Total**                  |                                                                     |            | **100**    |          |                       |
+| **Item**                    | **Grade**                                                           | **Points** | **Out of** | **Date** | **Due**               |
+|-----------------------------|---------------------------------------------------------------------|------------|------------|----------|-----------------------|
+| **Prelab**                  | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 25         |          | Bus. Day Prior to L11 |
+| **Required Functionality**  | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 35         |          | L13                   |
+| **B Functionality**         | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 20         |          | L13                   |
+| **A Functionality (Bonus)** | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13                   |
+| **Code**                    | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13 Taps              |
+| **Lab Notebook**            | **On-Time:** ---- **Late:**  1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | L13 Taps              |
+| **Total**                   |                                                                     |            | **110**    |          |                       |
