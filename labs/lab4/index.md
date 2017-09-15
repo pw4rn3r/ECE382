@@ -4,18 +4,21 @@ title = 'Lab 4 - C - "Etch-a-Sketch and Pong"'
 
 ## Objectives
 
-You've spent the last few lessons transitioning from programming in assembly language to C.  In this lab, you'll use C to create an etch-a-sketch-type program that utilizes some subroutines from Lab 3.  You'll be expected to write clean, maintainable, modular code that is committed regularly to Git.
+You've spent the last few lessons transitioning from programming in assembly language to C.  In this lab, you'll use C to create an etch-a-sketch-type program that utilizes some subroutines from Lab 3.  **You'll be expected to write clean, maintainable, modular code that is committed regularly to Git.**
 
 ## Group Work Requirements
-####If you are considering working on Lab 4 as a group here are the requirements:
+
+### If you are considering working on Lab 4 as a group here are the requirements:
+
 - **Max Group size is 2**
 - You must create a separate shared repo for the group to the shared repo named ECE382_LastName1_LastName2
 - Each team member will place a link at the top of a readme in your personal repo in a Lab 4 folder
 - Both partners must make contributions to the Lab and document contributions in commit messages
 - Most likely you will have to switch your CCS workspace to a new folder to separate your repo from your private repo
-- Don't forget to give you instructor access to the repo
+- **Don't forget to give you instructor access to the repo**
 - The expectation is that if you have twice the team members that you will have a better product
-- Remember you **commit** to you own local copy of the repo, you **push** your to the cloud, and you **pull** the cloud copy to your local copy
+- Remember you **commit** to you own local copy of the repo, you **push** your code
+to the bitbucket cloud, and you **pull** the bitbucket cloud copy to your local copy
 - You may want to review merging and branching allow for better collaboration [merge a file](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html) or [git merge](https://git-scm.com/docs/git-merge)
 
 ## Details
@@ -44,10 +47,10 @@ Go to page 76 of the [C Compiler User's Guide](../../datasheets/msp430_optimizin
 | 64-bit | unsigned | | | |
 | 64-bit | signed | | | | |
 
-When writing embedded C code, it is always a good idea to separate your code from the architecture as much as possible because to make the code easier to change. This is why it is better to use the peripheral register names in your code (e.g. P2IN) rather than their address (e.g. 0x28), and to use peripheral register field names in your code 
+When writing embedded C code, it is always a good idea to separate your code from the architecture as much as possible because to make the code easier to change. This is why it is better to use the peripheral register names in your code (e.g. P2IN) rather than their address (e.g. 0x28), and to use peripheral register field names in your code
 
 
-Because space is limited on microcontrollers, it is a common practice to use variables with a range suitable for the task at hand. Unfortunately, there is no standard among C compilers between the basic data types like char, short, long and the number of bits in the underlying data representation. Furthermore, when writing and reading code, it is not readily apparent how many bits are in a short or long variable. Consequently, we will write our programs using typed definitions that provide an obvious connection between the data type and the number of bits in the representation. 
+Because space is limited on microcontrollers, it is a common practice to use variables with a range suitable for the task at hand. Unfortunately, there is no standard among C compilers between the basic data types like char, short, long and the number of bits in the underlying data representation. Furthermore, when writing and reading code, it is not readily apparent how many bits are in a short or long variable. Consequently, we will write our programs using typed definitions that provide an obvious connection between the data type and the number of bits in the representation.
 
 Start by consulting the [Typedef Wikipedia page](http://en.wikipedia.org/wiki/Typedef). Next, fill in the following chart with the appropriate C code definitions.
 
@@ -64,21 +67,21 @@ Start by consulting the [Typedef Wikipedia page](http://en.wikipedia.org/wiki/Ty
 
 ### Calling/Return Convention
 
-Make a project around simpleLab4.c. While the functioning of the program is not really that important, let's first take some time to understand what is going on in this program before we look at the underlying assembly language. Use CCS to step through the program and examine the a, b, c, d, e variables in main, just after the call to the function func in line 18.  Fill in the values for each variable in the table below for the first five iterations of the while loop.
+Make a project around `simpleLab4.c`. While the functioning of the program is not really that important, let's first take some time to understand what is going on in this program before we look at the underlying assembly language. Use CCS to step through the program and examine the a, b, c, d, e variables in main, just after the call to the function func in line 18.  Fill in the values for each variable in the table below for the first five iterations of the while loop.
 
 | Iteration | a | b | c | d | e |
 | :---: | :---: | :---: | :---: | :---:| :---: |
-| 1st | | | | | | 
-| 2nd | | | | | | 
-| 3rd | | | | | | 
-| 4th | | | | | | 
+| 1st | | | | | |
+| 2nd | | | | | |
+| 3rd | | | | | |
+| 4th | | | | | |
 | 5th | | | | | |  |
 
 Now examine the assembly code generated by the compiler by selecting the View -> Disassembly menu item. You should see the disassembly window as a selectable tab in the subwindow where your registers are displayed. To fill in the following table with the appropriate values, you have a few tasks:
 
-1) First, find the code for the function `func` and write down the starting and ending address in the table below. 
+1) First, find the code for the function `func` and write down the starting and ending address in the table below.
 
-2) Next, identify which registers are used to pass the input parameters from main to the function. Write their identities below. If it is not clear which register holds which input parameter, test it out!  Go ahead and change the code, so that `func` only has one input parameter, recompile the code, and then examine the assembly. 
+2) Next, identify which registers are used to pass the input parameters from main to the function. Write their identities below. If it is not clear which register holds which input parameter, test it out!  Go ahead and change the code, so that `func` only has one input parameter, recompile the code, and then examine the assembly.
 
 3) Finally, determine which register is used to return the value from func to main.
 
@@ -94,24 +97,26 @@ Now examine the assembly code generated by the compiler by selecting the View ->
 
 ### Cross language build constructs
 
-Answer the following questions:
-
-What is the role of the `extern` directive in a .c file?  Hint: check out the [external variable](http://en.wikipedia.org/wiki/External_variable) Wikipedia page.
+- *Question:* What is the role of the `extern` directive in a .c file?  Hint: check out the [external variable](http://en.wikipedia.org/wiki/External_variable) Wikipedia page.
 <br><br><br><br><br>
 
 
 
 
 
-What is the role of the `.global` directive in an .asm file (used in lines 60-64)?  Hint: reference section 2.6.2 in the MSP 430 Assembly Language Tools v4.3 User's Guide.
+- *Question:* What is the role of the `.global` directive in an .asm file (used in lines 60-64)?  *Hint:* reference section 2.6.2 in the MSP 430 Assembly Language Tools v4.3 User's Guide.
 <br><br><br><br><br>
+
+
+(This marks the end of the  Prelab.)
+---------------------------------------------------------------
 
 
 ### Required Functionality
 
 Modify your assembly drawBox function to take in 3 values: an x coordinate, a y coordinate, and a color.  
 
-Some hints have been included in the lab4.c file to get you started.  Create an etch-a-sketch program using the directional buttons of the LCD boosterpack to control the position of the paint brush. The paint brush will draw 10x10 blocks of pixels. The user will change the position of the paint brush by pressing the directional buttons. Each button press will move the cursor 10 pixels in the direction pressed (see table below). Pressing the auxiliary button (S1) will toggle the mode of the paint brush between filling squares and clearing squares.
+Some hints have been included in the `lab4.c` file to get you started.  Create an etch-a-sketch program using the directional buttons of the LCD boosterpack to control the position of the paint brush. The paint brush will draw 10x10 blocks of pixels. The user will change the position of the paint brush by pressing the directional buttons. Each button press will move the cursor 10 pixels in the direction pressed (see table below). Pressing the auxiliary button (S1) will toggle the mode of the paint brush between filling squares and clearing squares.
 
 | Button | Function |
 | --- | --- |
@@ -121,13 +126,13 @@ Some hints have been included in the lab4.c file to get you started.  Create an 
 | S5/Right | Move the cursor right 1 block |
 | S1/Aux | Toggle the color of the paint brush |
 
-This program must be written in C and call many of the subroutines written as part of lab 3, including drawBox. 
+This program must be written in C and call many of the subroutines written as part of lab 3, including `drawBox`.
 
-Mind your coding standards!  Commit regularly with descriptive commit messages!
+Mind your [coding standards](http://ece.ninja/382/admin/labs.html)!  Commit regularly with descriptive commit messages!
 
 ### B Functionality
 
-Create a bouncing block!  This block should move across the screen with no more than 10 pixels per jump.  It should bounce off the walls appropriately, similar to assignment 7.  An adequate delay should be added between each block movement.  Your starting position and starting x and y velocities should be initialized in your header, or should be randomly generated. 
+Create a bouncing block!  This block should move across the screen with no more than 10 pixels per jump.  It should bounce off the walls appropriately, similar to assignment 7.  An adequate delay should be added between each block movement.  Your starting position and starting x and y velocities should be initialized in your header, or should be randomly generated.
 
 ### A Functionality
 
@@ -135,27 +140,42 @@ Create Pong on your display! Create a single paddle that will move up and down (
 
 ### Bonus Functionality
 
-Each bonus functionality can be achieved in conjunction with either A or B functionality.  Each is worth 5 points.
+Each bonus functionality can be achieved in conjunction with either A or B functionality.  Each is worth **5 points**.
 
-Circle: Instead of a bouncing block, create a bouncing circular ball!
+- **Circle:** Instead of a bouncing block, create a bouncing circular ball!
+- **Background image:**  Create a background image for your game!  Be sure to get your instructor's approval of the image to ensure it will count for the bonus points.
+- **Keep score:**  Each time the ball bounces off the paddle, increment your decimal score.  Use the fonts.h file.
 
-Background image:  Create a background image for your game!  Be sure to get your instructor's approval of the image to ensure it will count for the bonus points.
+- **Other:** do you have another suggestion?  Ask your instructor!
 
-Keep score!  Each time the ball bounces off the paddle, increment your decimal score.  Use the fonts.h file.
-
-Other: do you have another suggestion?  Ask your instructor!
-
-Note:  The maximum lab grade cannot exceed 105.
+**Note:**  The maximum lab grade cannot exceed 105.
 
 
-## Notes
+# Turn-ins for Lab 4
 
-Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.
+- Ensure you follow the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html).
+- Ensure your `readme.md` pushed to bitbucket follows the [standard template](https://github.com/pw4rn3r/ECE_382_Lab_Ex)
+- Mind your code style!
+- Remeber to write your lab notebook as you are doing the lab, **not** after the lab is over!
+- Be sure to include discussion of the various algorithms you use for each program and bonus functionality.
+- Double check your lab notebook make it correctly to bitbucket
+- Ensure you are making atomic commits taught in ECE 281 with meaningful commit messages
 
-Mind your code style!  
+## Prelab (due lesson 23)
 
-As you are writing your lab notebook (DURING the coding process; not after it is over), be sure to include discussion of the various algorithms you use for each program and bonus functionality.
+A hard copy of the  Prelab is required to be turned in as well as pushed to Bitbucket.  Answers
+should not be handwritten.  Ensure you answer the questions, fill out the tables and
+make the code modifications. Ensure you compile and test the modifications to ensure they
+work.
 
+## Lab Demo Functionality (Lsn Lsn 24)
+
+Demo your lab required functionality to an instructor before 1630 hrs on this day. Ensure you
+have a cutsheet for the instructor to sign.
+
+## Lab Notebook (due Lsn 25)
+
+- Push a `readme.md` to bitbucket.org by **2359**
 
 ## Grading - Lab 4
 [Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf)
@@ -169,7 +189,7 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 <br>
 
 | Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: |
+|:-: | :-: | :-: | :-: | :-: |:-: |
 | Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days  | | 10 | | BOC L23 |
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L24 |
 | B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L24 |
