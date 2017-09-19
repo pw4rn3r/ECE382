@@ -14,32 +14,7 @@ title = 'Peripherals, Ports, GPIO, Multiplexing'
 - GPIO
 - Multiplexing
 
-## Admin
-
-- Video
-- Notebook due COB
-- Lab
-    - What did you think of the encryption lab?
-    - Issues from lab
-        - `.text` vs `.data`
-        - Modularity
-            - think about how you break your program into subroutines
-            - just because it works doesn't mean your code is good
-    - Bonus and weaknesses
-        - Weakness: knowing that key is two bytes
-        - Techniques
-            - Weakness combined with guess and check
-            - Frequency analysis
-            - Slow brute force
-            - Fast brute force (personal favorite)
-                - Big O Notation
-                    - In computer science and algorithms, speed is crucial
-                    - Multiply for lab 1
-                        - O(n) technique
-                        - O(log n) technqiue
-
-
-So through that lab, we showed that the CPU on the MSP430 can be used to accomplish any type of general purpose programming task via its instruction set architecture (ISA).
+In Lab 2, we showed that the CPU on the MSP430 can be used to accomplish any type of general purpose programming task via its instruction set architecture (ISA).
 
 But the power of an MCU isn't in its ability to accomplish general-purpose computing. It's meant to be embedded in the real world, interacting with peripherals without human intervention - and MCU design is finely tuned for those functions. In that regard, there's a ton of built-in hardware support to make common embedded functions fast and easy for the programmer.
 
