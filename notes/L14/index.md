@@ -30,6 +30,12 @@ Videos of cool MSP430 projects:
 - Debouncing
 - Software Delay Routines
 
+## Example Code
+- [Count button press (not debounced)](code/Bounce.asm)
+- [SMCLK Exposed!](code/Clock.asm)
+- [Blink](code/sw_delay.asm)
+- [Count button press (debounced)](code/debounce_sw_delay.asm)
+
 
 ## Polling
 
@@ -48,6 +54,8 @@ But if the CPU doesn't need to be doing anything else, polling is a straightforw
 poll_button:
                     bit.b    #BIT3, &P1IN             
                     jnz      poll_button            ; button is active-low
+                    
+                    ; Do useful stuff after button press
 
 forever             jmp     forever                 ; set break here
 ```
