@@ -3,11 +3,12 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 # Lesson 15 Notes
 
 ## Readings
-
+- [MSP430 Family Users Guide](/382/datasheets/msp430_msp430x2xx_family_users_guide.pdf) Chapter 16 pgs 435 - 448 (BB pgs 68 - 74)
 - [Serial Communication](https://learn.sparkfun.com/tutorials/serial-communication)
 - [Serial Peripheral Interface (SPI)](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
-- [Lab 3](/382/labs/lab3/index.html)
 - More information on using the [Logic Analyzer is available here](/382/labs/lab3/logic_analyzer.html).
+
+## Lesson Slides
 - [PPT Slides](Lsn15.pptx)
 - [Supplemental PPT Slides](Lsn15_Supp.pptx) giving examples of SPI phase and polarity.
 
@@ -15,11 +16,12 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 - [Lab 3 Mega Prelab](/382/labs/lab3/index.html)
 
 ## Lesson Outline
+- S/W Delay wrap up
 - Serial Comm Fundamentals
 - Serial Peripheral Interface (SPI)
 - SPI on the MSP430
 - [Lab 3](/382/labs/lab3/index.html) Introduction
-- Logic Analyzer Demo
+
 
 ## Admin
 
