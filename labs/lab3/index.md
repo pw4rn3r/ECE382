@@ -205,6 +205,7 @@ Be sure to label your signals on the logic analyzer and include screenshots (whi
 
 ## Functionality
 
+**All functionality must be demonstrated live to an instructor.**  You do not need to include pictures or videos of functionality in your report.
 
 
 ### Required functionality: 
@@ -228,7 +229,7 @@ Write your name or nickname of at least 5 characters to the screen on a solid ba
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Mega Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days | | 20 | | EOC L16 |
+| Mega Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days | | 20 | | BOC L16 |
 | Required Logic Analyzer | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L19 |
 | Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 20 | | COB L19 |
 | A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
