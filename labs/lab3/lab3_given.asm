@@ -75,6 +75,7 @@ gamma2:		.byte		0x00, 0x0E, 0x14, 0x03, 0x11, 0x07, 0x31, 0xC1
 RESET       mov.w   #__STACK_END,SP         ; Initialize stackpointer
 StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 
+
 ;-------------------------------------------------------------------------------
                                             ; Main loop here
 ;-------------------------------------------------------------------------------
@@ -112,6 +113,7 @@ poll_s1:
 vertFine:
 		jmp		move_line
 
+		
 ;-------------------------------------------------------------------------------
 ;	Name: initMSP
 ;	Inputs: none
@@ -141,6 +143,7 @@ initMSP:
 		bic.b	#UCSWRST, &UCB0CTL1
 		ret
 
+		
 ;-------------------------------------------------------------------------------
 ;	Name: initLCD
 ;	Inputs: none
@@ -290,6 +293,7 @@ NGammaCorr:
 
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: writeCommand
 ;	Inputs: command in r12
@@ -311,6 +315,7 @@ pollC:
 	pop		r12
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: writeData
 ;	Inputs: r12 - data to be written
@@ -332,6 +337,7 @@ pollD:
 	pop	r12
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: clearScreen
 ;	Inputs: none
@@ -379,6 +385,7 @@ paintPix:
 	pop		r6
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: setArea
 ;	Inputs: xStart in r12, yStart in r13, xEnd in r14, yEnd in r15
@@ -437,6 +444,7 @@ setArea:
 	pop		r10
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: splitColor
 ;	Inputs: desired  color in r12
@@ -449,6 +457,8 @@ splitColor:
 	swpb	r12
 	and		#0x00FF, r12	;clear upper byte of r12
 	ret
+
+	
 ;-------------------------------------------------------------------------------
 ;	Name: drawLine
 ;	Inputs: xStart in r12, yStart in r13, xEnd in r14, yEnd in r15
@@ -538,6 +548,7 @@ drawEnd:
 	pop		r4
 	ret
 
+	
 ;-------------------------------------------------------------------------------
 ;	Name: drawPixel
 ;	Inputs: x in r12, y in r13, where (x, y) is the coordinate of the pixel
