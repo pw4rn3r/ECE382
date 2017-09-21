@@ -23,8 +23,7 @@ title = 'Serial Comm Fundamentals. Serial Peripheral Interface. Lab 3 Introducti
 
 ## Admin
 
-- Class in Lab again!
-- Collect HW, then talk about it.
+- Next class in Lab again!
 - Talk about bonus overclocking stuff from L14?
 
 Two full lessons for Lab 3!  This doesn't mean that you've got some time to relax - this means that Lab 3 is a lot of work.  I'll discuss it more at the end of the lesson, but you'll be interfacing with external hardware for the first time in this lab.  To interface with the LCD, you need to use a protocol call SPI - the Serial Peripheral Interface.  That's what we'll talk about today.
