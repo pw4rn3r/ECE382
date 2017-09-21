@@ -14,7 +14,7 @@ title = 'Lab 3 - SPI - "I/O"'
 A hard copy of this Mega Prelab is required to be turned in as well as pushed to Bitbucket.  Answers should not be handwritten.  The timing diagram may be NEATLY drawn by hand with the assistance of a straightedge on engineering paper.
 
 ### Delay Subroutine
-In lab3_given.asm, you have the header for a subroutine (line 569), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
+In lab3_given.asm, you have the header for a subroutine (line 579), but there is no code.  Write a subroutine that will create a 160ms delay.  Show your analysis that proves the delay is indeed very close to 160 ms.  Note: the clock rate is set to 8 MHz (see the first two lines of initMSP).
 
 ### ILI9341 LCD BoosterPack 
 
@@ -53,7 +53,7 @@ Look at the initMSP subroutine in the lab3_given.asm file.  There are four pins 
 | MOSI |   |   |
 | DC |	| | |
 
-Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 134 - 141) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
+Below the pin configuration code are some lines of code from the lab3_given.asm file (lines 136 - 143) to properly configure the SPI subsystem.  Use this code to answer the next two questions.
 ```
 1:		bis.b	#UCSWRST, &UCB0CTL1
 2:		mov 	#UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
@@ -84,7 +84,7 @@ Line 7: <br>
 Line 8: <br>
 
 ### Communicate with the LCD
-The following code (lines 293 - 333) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
+The following code (lines 297 - 338) sends one byte (either data or command) to the TM022HDH26 display using its 8-bit protocol.  
 
 ```
 ;-------------------------------------------------------------------------------
@@ -134,7 +134,7 @@ Use this code to draw two timing diagrams (one for each subroutine) of the expec
 
 
 ### Draw a pixel
-The following code (lines 541 - 565) draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
+The following code (lines 552 - 576) draws a pixel of a predetermined color at the coordinate (R12, R13).  However, four subroutines are called to execute this seemingly simple task.  Explain the purpose of each of the four subroutine calls:
 
 |Subroutine| Purpose|
 |:-:|:-:|
@@ -182,7 +182,7 @@ Create a project around the lab3_given.asm file.  Be sure to include your Delay1
 
 After you insert your subroutine into the code, run the program and observe the output on the LCD every time you press the S1 button.  
 <br>
-When S1 is detected as being pressed and released (lines 100 - 102), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. **Find the three calls to writeCommand and eight calls to writeData that generate these packets.** In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
+When S1 is detected as being pressed and released (lines 103 - 105), the drawLine subroutine is called.  The MSP430 generates several packets of data that are sent to the LCD, causing a horizontal bar to be drawn. **Find the three calls to writeCommand and eight calls to writeData that generate these packets.** In addition, scan the nearby code to determine the parameters being passed into these subroutines. 
 
 Configure the logic analyzer to capture the waveform generated when the S1 button is pressed and released. Decode the data bits of each 8-bit waveform.  Explain how the packet contents correspond to what was drawn on the display.  Be specific with the relationship between the values sent and what and where the pixels are drawn. Is the packet of information being sent actual data or is it a command?  The "Line" column refers to the line of code from which the call to write something to the LCD originated.
 
