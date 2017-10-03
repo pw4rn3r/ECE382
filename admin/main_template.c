@@ -34,14 +34,8 @@
  **********************************************************************/
 
 #include <msp430.h> 
-
-#ifndef TRUE
-#define TRUE 1
-#endif
-
-#ifndef FALSE
-#define FALSE 0
-#endif
+#include <stdint.h>	 // provides std data types (e.g., uint8_t)
+#include <stdbool.h> // provides bool type for true and false
 
 
   /************************************************************************************/
@@ -64,5 +58,5 @@
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 	
-	while(TRUE);
+	while(true);	// CPU trap
 }
