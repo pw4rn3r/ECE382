@@ -12,6 +12,9 @@ title = 'Compilers. Introduction to C.'
 ## Assignment
 - [Assignment 6 - C Basics](L19_C_basics.html)
 
+## C Header Template
+- [main_template.c](/382/admin/main_template.c)
+
 ## Lesson Outline
 - Compilers
 - Introduction to C
