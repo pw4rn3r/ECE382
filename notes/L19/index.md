@@ -16,21 +16,9 @@ title = 'Compilers. Introduction to C.'
 - Compilers
 - Introduction to C
 
-## Admin
-- Talk about GRs
-    - Overall, pretty rough
-        - Some of that is on me
-            - GR was a bit long
-            - A couple of questions a little unclear
-        - Some of that is on you
-            - Not enough to just get something working on a lab or survive a HW
-            - You need to **understand** what's going on
-            - I have high expectations for you and that's not going to change
-- Give me some time on the Labs
+## Introduction
 
-Ok, so we're through the first big block.  In previous years, assembly was all we did during this class.  But this year we're expecting you to learn even more and move even faster.  These next 4 lessons used to be the first 5 lessons of ECE383. 
-
-We've learned about the MSP430 and its instruction set.  We've learned some assembly programming constructs and implemented a few programs.  We've learned about some of the subsystems on our chip and used SPI.
+At this point in the course we have learned about the MSP430 and its instruction set.  We've learned some assembly programming constructs and implemented a few programs.  We've learned about some of the subsystems on our chip and used SPI.
 
 But most engineers and developers don't program in assembly.
 
