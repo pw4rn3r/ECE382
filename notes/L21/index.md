@@ -9,7 +9,6 @@ title = 'C Programming - Pointers and Arrays'
 - [PPT Slides](Lsn21.pptx)
 
 ## Assignment
-- [Assignment 8](/382/notes/L21/L21_moving_average.html)
 - **(OPTIONAL, but kind of fun)** [KSplice pointer challenge](https://blogs.oracle.com/ksplice/entry/the_ksplice_pointer_challenge)
 
 ## Lesson Outline
