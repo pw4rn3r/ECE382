@@ -237,3 +237,87 @@ Write your name or nickname of at least 5 characters to the screen on a solid ba
 | Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L19 |
 | **Total** | | | **100** | | | |
 
+
+## Lab 3 Deliverables
+
+#### Functionality (30 + 5 bonus pts) - *Demonstrated* NLT COB Lesson 19
+
+**Required (20 pts)**
+
+-   10 x 10 box is shown on LCD screen with no other artifacts (painted pixels)
+    shown
+
+**A Functionality (10 pts)**
+
+-   10 x 10 box moves UP, DOWN, LEFT, RIGHT by 10 pixels upon each corresponding
+    button press
+
+-   Box shall not leave artifacts on screen as you move it
+
+-   Box should move *quickly.*
+
+    -   Do NOT clear the entire screen during a move. Clear only the box.
+
+    -   Make sure you are only painting the pixels required for the box.
+
+    -   setArea should be used with the box dimensions. Do not setArea to one
+        pixel.
+
+-   Box should move across *entire* screen to within 10 pixels of edges
+
+    -   No requirement to do anything specific once edge is reached
+
+**Bonus Functionality (5 pts)**
+
+-   Upon pressing the S1 button, your name or nickname of at least 5 characters
+    is shown on the LCD screen on a solid background.
+
+
+#### Required Logic Analyzer (40 pts) – Due NLT TAPS Lesson 19
+
+1.  **(3 pts) Brief overview** of what is going on in setArea (pictures help!)
+
+2.  **(5 pts) Overview screenshot** from logic analyzer with 11 setArea packets
+    you captured clearly identified
+ 
+    1.  Include all signal labels (SCLK, CS, DC, MOSI)
+
+    2.  Placing label at position when CS goes low is fine
+
+3.  **(20 pts) Table** of 11 setArea packets captured
+
+    1.  Using hex to represent 8-bit packet values preferred
+
+4.  **(5 pts ea) Two packet screenshots** from logic analyzer
+
+    1.  One **command** packet example and one **data** packet example
+
+    2.  Include all signal labels (SCLK, CS, DC, MOSI)
+
+    3.  Label the data with its value
+
+5.  **(2 pts) Brief analysis**
+
+    1.  Why do the values (SC, EC, command bytes, etc) that you captured make
+        sense?
+
+
+#### Lab Notebook (10 pts) – Due NLT TAPS Lesson 19
+
+1.  Title and Author
+
+2.  *Corrected* Prelab
+
+3.  Screenshot of *measured* 160ms (within 1 ms) delay from logic analyzer
+
+    1.  Include any necessary explanation. How does it compare to your
+        calculated results? What is your actual clock frequency (not 8 MHz)?
+
+4.  Logic Analyzer section – setArea capture and explanation (see above)
+
+
+#### Code
+
+- **While no points are associated with code this lab, you should still push it
+with your other lab files.**
+
