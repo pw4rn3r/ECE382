@@ -12,21 +12,27 @@ Write a C program that implements a subset of the functionality of the video "po
     - When it hits an edge, you flip the sign on the x or y velocity to make the ball move a different direction.
     - This function should call four other "collision detection" functions; one for each of the screen edges.
     - The "collision detection" functions return a `char` (1 for true, 0 for false - `#define` these values) to indicate whether or not there is a collision.
+    - You may consolidate collision detection to one function if you choose.
 - You must create three separate files: header, implementation, and your `main.c`.
 
 ## Turn-In Requirements (Bitbucket)
 
 - Source code files (`main.c`, header, and implementation).
-- Simulator screenshots.
+- Simulator screenshots (show pictures before and after collisions for all four walls)
+- Explain what you are showing the reader in the screenshots.
 - Answers to the following questions in readme.md file:
     - How did you verify your code functions correctly?
     - How could you make the "collision detection" helper functions only visible to your implementation file (i.e. your `main.c` could not call those functions directly)?
 
 ## Hints
 
-I don't expect you to implement an actual pong game!  The way you verify functionality should be by creating code that moves your ball and monitoring how the variables change after each move to ensure functionality.  Don't forget edge cases (i.e. when your ball hits the well, etc.)!
+I don't expect you to implement an actual pong game!  The way you verify functionality should be by creating code that moves your ball and monitoring how the variables change after each move to ensure functionality.  Don't forget edge cases (i.e. when your ball hits the wall, etc.)!
 
-**[Here is my pong.h!](pong_h.html)**
+**If you know how to use pointers, use them.**  However, pointers are not required for this assignment.
+
+Enumerated types can be used to define x and y direction if desired.
+
+**[Example pong.h (no pointers)](pong_h.html)**
 
 ### Initializing a struct
 
