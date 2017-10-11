@@ -151,17 +151,11 @@ Each bonus functionality can be achieved in conjunction with either A or B funct
 **Note:**  The maximum lab grade cannot exceed 105.
 
 
-## Notes
-
-Read the [guidance on Labs / Lab Notebooks / Coding standards](/382/admin/labs.html) thoroughly and follow it.
-
-Mind your code style!  
-
-As you are writing your lab notebook (DURING the coding process; not after it is over), be sure to include discussion of the various algorithms you use for each program and bonus functionality.
-
 
 ## Grading - Lab 4
+
 [Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf)
+
 
 #### Turn-ins for Lab 4
 
@@ -183,7 +177,7 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 
 You will be performing a live demo to prove that your code works.  Videos may be accepted at instructor discretion.
 
-If the instructor who verifies your demo does not teach your section, it is recommended that you print and provide a copy of the Printable Lab 4 Cutsheet to the instructor evaluating your code functionality. Provide this cutsheet to your instructor NLT when the lab is due.
+If the instructor who verifies your demo does not teach your section, it is recommended that you print and provide a copy of the [Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf) to the instructor evaluating your code functionality. Provide this cutsheet to your instructor NLT when the lab is due.
 
 **For full credit your demo must meet the following requirements:**
 
@@ -214,12 +208,16 @@ If the instructor who verifies your demo does not teach your section, it is reco
 
 <br>
 
-| Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days  | | 10 | | BOC L23 |
-| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 30 | | COB L24 |
-| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L24 |
-| A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L24 |
-| Bonus Functionality |  ------- Circle ------- Background ------- Score ------- Other -------| | 5 each | | COB L24 |
-| Lab Notebook | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L25 |
-| **Total** | | | **100** | | | |
+#### Cutsheet
+
+[Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf)
+
+| **Item**                   | **Grade**                                                                                                           | **Points** | **Out of** | **Date** | **Due**       |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------|------------|------------|----------|---------------|
+| **Prelab**                 | **On-Time** ------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | BOC L23       |
+| **Required Functionality** | **On-Time** ------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 30         |          | COB 19/20 Oct |
+| **Bouncing Block**         | **On-Time** ------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 25         |          | COB 19/20 Oct |
+| **Pong**                   | **On-Time** ------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 25         |          | COB 19/20 Oct |
+| **Bonus Functionality**    | \------ Circle ------ Background ------ Score ------ Other ------                                                   |            | 5 each     |          | COB 19/20 Oct |
+| **Code**                   | **On-Time** ------------------------------------------------------ **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | COB 19/20 Oct |
+| **Total**                  | **Max of 105 points**                                                                                               |            | **100**    |          | M/T           |
