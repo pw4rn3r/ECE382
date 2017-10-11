@@ -13,25 +13,26 @@ You've spent the last few lessons transitioning from programming in assembly lan
 - Each team member will place a link at the top of a readme in your personal repo in a Lab 4 folder
 - Both partners must make contributions to the Lab and document contributions in commit messages
 - Most likely you will have to switch your CCS workspace to a new folder to separate your repo from your private repo
-- Don't forget to give you instructor access to the repo
+- **Don't forget to give you instructor access to the repo**
 - The expectation is that if you have twice the team members that you will have a better product
-- Remember you **commit** to you own local copy of the repo, you **push** your to the cloud, and you **pull** the cloud copy to your local copy
-- You may want to review merging and branching allow for better collaboration [merge a file](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html) or [git merge](https://git-scm.com/docs/git-merge)
+- Remember you **commit** to you own local copy of the repo, you **push** your to the Bitbucket cloud, and you **pull** the Bitbucket cloud copy to your local copy
+- You may want to review how merging and branching allow for better collaboration [merge a file](https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html) or [git merge](https://git-scm.com/docs/git-merge)
 
 ## Details
 
 ### Given Code
-- [lab4.c](lab4.c)
-- [LCD_given.asm](LCD_given.asm)
-- [simpleLab4.c](simpleLab4.c)
-- [fonts.h](fonts.h)
+- [simpleLab4.c](simpleLab4.c) - Example code for **Prelab**
+- [lab4.c](lab4.c) - A starter file for your main code
+- [LCD_given.asm](LCD_given.asm) - Called by your main C file.
+- [color.h](color.h) - Contains constants for colors
+- [fonts.h](fonts.h) - May be useful for advanced displays (bonus)
 
 ### Prelab
 
 
 ### Data types
 
-Go to page 76 of the [C Compiler User's Guide](../../datasheets/msp430_optimizing_c_compiler_v4-3.pdf) to complete the following table. For the type, fill in data type that produces a variable of the given size. For max/min values, write in the maximum and minimum values that can be represented with the data type in that row.  Two examples have been given.
+Go to Table 5-2 (page 76) of the [C Compiler User's Guide](../../datasheets/msp430_optimizing_c_compiler_v4-3.pdf) to complete the following table. For the type, fill in data type that produces a variable of the given size. For max/min values, write in the maximum and minimum values that can be represented with the data type in that row.  Two examples have been given.
 
 | Size | Signed/Unsigned | Type | Min value | Max value |
 | :---: | :---: | :---: | :---: | :---: |
