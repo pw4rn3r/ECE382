@@ -60,7 +60,7 @@ In this lab you will be using a library called `stdint` that provides type defin
 
 ### Calling/Return Convention
 
-Make a project around `simpleLab4.c`. While the functioning of the program is not really that important, let's first take some time to understand what is going on in this program before we look at the underlying assembly language. Use CCS to step through the program and examine the a, b, c, d, e variables in main, just after the call to the function func in line 18.  Fill in the values for each variable in the table below for the first five iterations of the while loop.
+Make a test project named **Lab4_Prelab** and use [simpleLab4.c](simpleLab4.c) as the main file. While the functioning of the program is not really that important, let's first take some time to understand what is going on in this program before we look at the underlying assembly language. Use CCS to step through the program and examine the a, b, c, d, e variables in main, just *after* the call to the function `func` in line 18.  Fill in the values for each variable in the table below for the first five iterations of the while loop.
 
 | Iteration | a | b | c | d | e |
 | :---: | :---: | :---: | :---: | :---:| :---: |
