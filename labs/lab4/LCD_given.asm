@@ -3,7 +3,7 @@
 ; This is copied from LCD_move_block file LCD_ori_main_read.asm
 ; Then it was modified.  Muahahahahaha.
 ; Now there is no main loop.   This is meant to be called from C.
-; TO DO: delete main loop.
+
 ;-------------------------------------------------------------------------------
             .cdecls C,LIST,"msp430.h"       ; Include device header file
 
@@ -81,10 +81,12 @@ RESET       mov.w   #__STACK_END,SP         ; Initialize stackpointer
 ;	Registers: none
 ;-------------------------------------------------------------------------------
 initMSP:
-		mov	#CALBC1_8MHZ, &BCSCTL1		;now we can use the 8MHz clock signal
-		mov	#CALDCO_8MHZ, &DCOCTL
+		mov.b	#CALBC1_8MHZ, &BCSCTL1		;now we can use the 8MHz clock signal
+		mov.b	#CALDCO_8MHZ, &DCOCTL
 
-		; let's set up the movement - initialize buttons P2.0, 2.1, 2.2, 2.3 - input, resistor enabled and it is pull up ; buttons active low
+		; let's set up the movement
+		;  - initialize buttons P2.0, 2.1, 2.2, 2.3 for input
+		;  - resistor enabled and it is pull up ; buttons active low
 	    bic.b  #BIT0, &P2DIR	;S2 = left
         bis.b  #BIT0, &P2REN
         bis.b  #BIT0, &P2OUT
@@ -114,13 +116,15 @@ initMSP:
 		bis	#LCD_DC_PIN, &P1OUT
 		bis #LCD_DC_PIN, &P1DIR
 
-		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
-		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+		bis.b	#UCSWRST, &UCB0CTL1
 		mov #UCCKPH|UCMSB|UCMST|UCSYNC, &UCB0CTL0
 		bis #UCSSEL_2, &UCB0CTL1
 		bis #BIT0, &UCB0BR0
 		clr	&UCB0BR1
-		bic	#UCSWRST, &UCB0CTL1
+		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL
+		bis	#LCD_SCLK_PIN|LCD_MOSI_PIN|LCD_MISO_PIN, &P1SEL2
+		bic.b	#UCSWRST, &UCB0CTL1
+		
 		ret
 
 ;-------------------------------------------------------------------------------
@@ -263,9 +267,7 @@ NGammaCorr:
 
 	mov.b	#SLEEPOUT, r12
 	call	#writeCommand
-
-	;need 120ms afterSLEEPOUT command
-	call	#Delay160ms
+	call	#Delay160ms			;need 120ms afterSLEEPOUT command
 
 	mov.b	#DISPON, r12
 	call	#writeCommand
@@ -276,10 +278,10 @@ NGammaCorr:
 
 ;-------------------------------------------------------------------------------
 ;	Name: writeCommand
-;	Inputs: command
+;	Inputs: command in r12
 ;	Outputs: none
-;	Purpose:
-;	Registers: r12 contains the command
+;	Purpose: send a command to the LCD
+;	Registers: r12 preserved
 ;-------------------------------------------------------------------------------
 writeCommand:
 	push	r12
@@ -299,7 +301,7 @@ pollC:
 ;	Name: writeData
 ;	Inputs: r12 - data to be written
 ;	Outputs: none
-;	Purpose:
+;	Purpose:  send data to the LCD
 ;	Registers: r12 preserved
 ;-------------------------------------------------------------------------------
 writeData:
@@ -367,8 +369,8 @@ paintPix:
 ;	Name: setArea
 ;	Inputs: xStart in r12, yStart in r13, xEnd in r14, yEnd in r15
 ;	Outputs: none
-;	Purpose:
-;	Registers: r10, r12, 13, 14, 15 preserved
+;	Purpose:  defines the area you are about to write to for LCD
+;	Registers: r10, r12, 13, 14, 15 used and preserved
 ;-------------------------------------------------------------------------------
 setArea:
 	push 	r10
@@ -425,7 +427,7 @@ setArea:
 ;	Name: splitColor
 ;	Inputs: desired  color in r12
 ;	Outputs: color MSB in r12, bkgd color LSB in r13
-;	Purpose:
+;	Purpose:  splits the color word into color bytes
 ;	Registers: r12, r13 modified
 ;-------------------------------------------------------------------------------
 splitColor:
@@ -444,6 +446,10 @@ splitColor:
 ;-------------------------------------------------------------------------------
 
 ;your subroutine goes here
+
+
+
+
 
 
 ;-------------------------------------------------------------------------------
