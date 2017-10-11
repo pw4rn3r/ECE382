@@ -168,12 +168,52 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 ## Grading - Lab 4
 [Printable Lab 4 Cutsheet](Lab_4_Cutsheet.pdf)
 
-**Name:**<br>
-<br>
-**Section:**
-<br>
-<br>
-**Documentation:**<br>
+#### Turn-ins for Lab 4
+
+1. Prelab
+2. Proof of functionality (live demo)
+3. Code
+
+
+#### 1. Prelab
+
+- Must be pushed to Bitbucket
+- Writing pseudocode or flowcharts for how you plan on implementing your functionalities is still recommended, but not required
+
+
+#### 2. Proof of functionality (live demo)
+
+You will be performing a live demo to prove that your code works.  Videos may be accepted at instructor discretion.
+
+If the instructor who verifies your demo does not teach your section, it is recommended that you print and provide a copy of the Printable Lab 4 Cutsheet to the instructor evaluating your code functionality. Provide this cutsheet to your instructor NLT when the lab is due.
+
+**For full credit your demo must meet the following requirements:**
+
+1. **One program demo** shall provide all graded functionalities.
+ - *Hint:*  After Pong game ends, wait for button press to clear screen and start Etch-a-Sketch functionality.
+
+2. Boxes must be well formed (i.e., have homogenous number of pixels on a side)
+ - *Hint:* Paint correct number of pixels for your box size
+
+3. Controls and movement must be responsive
+ - *Hint:* Draw only the pixels you need
+ - *Hint:* Use only the length and number of delays you need
+
+4. Speed of ball (and paddle) shall be consistent (e.g., ball should not slow down when it collides with an edge or when the paddle is moved)
+ - *Hint:* Draw only the pixels you need
+ - *Hint:* Use only the length and number of delays you need
+
+5. Ball / box shall be able to traverse across the screen to within one pixel of each edge
+
+6. No part of the ball / box shall leave the screen
+
+
+#### 3. Code
+
+- Must be pushed to Bitbucket
+- Follow the [guidance on Coding standards](/382/admin/labs.html).
+- You must document in the headers what functionalities are implemented.
+
 <br>
 
 | Item | Grade | Points | Out of | Date | Due |
