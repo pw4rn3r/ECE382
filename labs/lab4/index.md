@@ -42,26 +42,21 @@ Go to Table 5-2 (page 76) of the [C Compiler User's Guide](../../datasheets/msp4
 | 16-bit | signed | | | |
 | 32-bit | unsigned | | | |
 | 32-bit | signed | | -2,147,483,648 | |
-| 64-bit | unsigned | | | |
-| 64-bit | signed | | | | |
+
 
 When writing embedded C code, it is always a good idea to separate your code from the architecture as much as possible because to make the code easier to change. This is why it is better to use the peripheral register names in your code (e.g. P2IN) rather than their address (e.g. 0x28), and to use peripheral register field names in your code 
 
 
 Because space is limited on microcontrollers, it is a common practice to use variables with a range suitable for the task at hand. Unfortunately, there is no standard among C compilers between the basic data types like char, short, long and the number of bits in the underlying data representation. Furthermore, when writing and reading code, it is not readily apparent how many bits are in a short or long variable. Consequently, we will write our programs using typed definitions that provide an obvious connection between the data type and the number of bits in the representation. 
 
-Start by consulting the [Typedef Wikipedia page](http://en.wikipedia.org/wiki/Typedef). Next, fill in the following chart with the appropriate C code definitions.
+In this lab you will be using a library called `stdint` that provides type definitions that clearly indicate the data size and if it is signed or unsigned.  The following is an excerpt from the library:
 
-| Type | Meaning | C typedef declaration |
-| :---: | :---: | :---: |
-| int8 | unsigned 8-bit value |  |
-| sint8 | signed 8-bit value |  |
-| int16 | unsigned 16-bit value | typedef unsigned short int16;|
-| sint16 | signed 16-bit value |  |
-| int32 | unsigned 32-bit value |  |
-| sint32 | signed 32-bit value |  |
-| int64 | unsigned 64-bit value |  |
-| sint64 | signed 64-bit value |  | |
+    typedef   signed char    int8_t;
+    typedef unsigned char   uint8_t;
+    typedef          int    int16_t;
+    typedef unsigned int   uint16_t;
+    typedef          long   int32_t;
+    typedef unsigned long  uint32_t;
 
 ### Calling/Return Convention
 
@@ -178,6 +173,9 @@ As you are writing your lab notebook (DURING the coding process; not after it is
 #### 1. Prelab
 
 - Must be pushed to Bitbucket
+- Data type table filled out
+- Calling/Return Convention tables filled out (two tables)
+- Cross language build contstructs questions answered (two questions)
 - Writing pseudocode or flowcharts for how you plan on implementing your functionalities is still recommended, but not required
 
 
