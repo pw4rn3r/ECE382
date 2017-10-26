@@ -34,9 +34,9 @@ title = 'Intro to Embedded Systems with the MSP430'
 | [L26](notes/L26/index.html)| Timer_A: Interval Timing.  Introduction to Interrupts. | [Assignment 9](notes/L26/L26_timer_interrupt_lab4.html) |  |
 | [L27](notes/L27/index.html) | Interrupts and ISRs. MSP430 Interrupt System.  [Lab 5](labs/lab5/index.html) Introduction. | Read [Lab 5](labs/lab5/index.html) | [Assignment 9](notes/L26/L26_timer_interrupt_lab4.html) |
 | L28 | [Lab 5](labs/lab5/index.html) - Interrupts | [Lab 5](labs/lab5/index.html) |  |
-| L29 | [Lab 5](labs/lab5/index.html) - Interrupts | [Lab 5](labs/lab5/index.html) | Day 1 activities  |
-| L30 | [Lab 5](labs/lab5/index.html) - Interrupts | [Lab 5](labs/lab5/index.html) Documentation | [Lab 5](labs/lab5/index.html) Functionality |
-| L31 | [GR #2](admin/gr2_resources) |  | [Lab 5](labs/lab5/index.html) Documentation |
+| L29 | [Lab 5](labs/lab5/index.html) - Interrupts | [Lab 5](labs/lab5/index.html) | [Lab 5](labs/lab5/index.html) Day 1 activities  |
+| L30 | [Lab 5](labs/lab5/index.html) - Interrupts | [Lab 5](labs/lab5/index.html) Documentation | [Lab 5](labs/lab5/index.html) |
+| L31 | [GR #2](admin/gr2_resources) |  |  |
 | [L32](notes/L31/index.html) | Timer_A: Capture / Compare, Pulse Width Modulation.  Lab 6 Introduction. | [Lab 6](labs/lab6/index.html) Prelab | |
 | L33 | [Lab 6](labs/lab6/index.html) - Robot Motion | [Lab 6](labs/lab6/index.html) | [Lab 6](labs/lab6/index.html) Prelab |
 | L34 | [Lab 6](labs/lab6/index.html) - Robot Motion | | |
