@@ -4,7 +4,7 @@ title = 'GR2 Resources'
 
 ## Past GR
 
-![GR2 Fall 2016](GR2_v3.pdf)
+[GR2 Fall 2016](GR2_v3.pdf)
 
 ## Timer_A
 
