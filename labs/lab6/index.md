@@ -25,33 +25,56 @@ Our mobile robots have DC motors to drive the wheels.  The amount of torque prov
 
 Figure 1: The PWM signal creates a certain duty cycle which will provide an "average" voltage to the motor.  This average voltage is proportional to the motor's output torque.
 
-The motor can move in two directions.  If you ground one terminal of the motor and connect the PWM signal to the other side of the terminal, then the motor shaft moves in one direction.  If you swap the terminals, the motor will move in the opposite direction.
+The motor can move in two directions.  If you ground one terminal of the motor and connect the PWM signal to the other side of the terminal, then the motor shaft moves in one direction.  **If you swap the terminals, the motor will move in the opposite direction.**
 
 You might want to program your robot so it turns like a tank; one wheel moves forward while the other one reverses.  You will have to experiment with your robot to find out how long the PWM signal needs to be provided to turn an appropriate amount.
 
-## Required Functionality
+## Required Functionality (50 pts)
 
 Demonstrate movement forward, backward, a small (< 45 degree) turn left and right, and a large (> 45 dgree) turn left and right.  The robot should perform these movements sequentially, completely disconnected from a computer (no USB cord).
 
-## A Functionality
+## Remote Functionality (15 pts)
 
 Control your robot with your remote!  You should use at least four different buttons on the remote: one each to indicate motion directions of forward, backward, left, and right.
 
-## Prelab
+## Prelab (25 pts)
 
-Include whatever information from this lab you think will be useful in creating your program.
+You need to provide the following:
 
-**Note that the prelab is worth 15pts on this lab - allocate your efforts accordingly!**
+1. Answers to all **bulleted** questions below
+2. Completed [Lab 6 schematic](Lab6_schematic.pdf)
+3. Software flowchart and/or pseudo-code
 
-Consider your hardware (timer subsystems, chip pinout, etc.) and how you will use it to achieve robot control.  Which pins will output which signals you need?  Which side of the motor will you attach these signals to?  How will you use these signals to achieve forward / back / left / right movement?  **Spend some time here, as these decisions will dictate much of how difficult this lab is for you.**
 
-Consider how you will setup the PWM subsytem to achieve this control.  What are the registers you'll need to use?  Which bits in those registers are important?  What's the initialization sequence you'll need?
+Consider your hardware (timer subsystems, chip pinout, etc.) and how you will use it to achieve robot control.
+
+- Which pins will output which signals you need?
+- Which side of the motor will you attach these signals to?
+- How will you use these signals to achieve forward / back / left / right movement?
+
+**Spend some time here, as these decisions will dictate much of how difficult this lab is for you.**
+
+
+Consider how you will setup the PWM subsytem to achieve this control.
+
+- What are the registers you'll need to use?
+- Which bits in those registers are important?
+- What's the initialization sequence you'll need?
+
 
 Consider what additional hardware you'll need (regulator, motor driver chip, decoupling capacitor, etc.) and how you'll configure / connect it.
 
-Consider the interface you'll want to create to your motors.  Do you want to move each motor invidiually (`moveLeftMotorForward()`)?  Or do you want to move them together (`moveRobotForward()`)?
+Complete the [Lab 6 schematic](Lab6_schematic.pdf).  Include a neat picture in your README.
 
-When you create your schematic, you can use MS Paint, fritzing.org, or any other such drawing program of your choice.  
+- You can optionally use [Fritzing](fritzing.org) or another program to create pysical and schematic layouts
+
+
+Consider the software interface you'll want to create to your motors.
+
+- Do you want to move each motor invidiually (`moveLeftMotorForward()`)?  Or do you want to move them together (`moveRobotForward()`)?
+
+Include whatever other information from this lab you think will be useful in creating your program.
+
 
 ## Notes
 
@@ -135,9 +158,8 @@ To test whether a fuse is burned, use the ohmmeter - a working fuse should have 
 
 | Item | Grade | Points | Out of | Date | Due |
 |:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- | | 15 | | BOC L33 |
-| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 35 | | COB L35 |
-| A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L35 |
-| Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L36 |
-| README | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 25 | | COB L36 |
+| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- | | 25 | | BOC L33 |
+| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 50 | | COB L35 |
+| Remote Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L35 |
+| Code | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L35 |
 | **Total** | | | **100** | | | |
