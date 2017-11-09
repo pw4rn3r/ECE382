@@ -143,61 +143,72 @@ This is the code I used to light the LED at four different levels of brightness:
 ```
 #include <msp430.h>
 
+#define DELAY_CYCLES 500000
+
 void main(void)
 {
-    WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
+    	WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
 
-    	P2DIR |= BIT1;                // TA1CCR1 on P2.1
-        P2SEL |= BIT1;                // TA1CCR1 on P2.1
-        P2OUT &= ~BIT1;
-
-        TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
-        P1DIR |= BIT0;            //use LED to indicate duty cycle has toggled
-        P1REN |= BIT3;
+        // I/O setup
+        P1DIR |= BIT0;           	 //use LED to indicate duty cycle has toggled
+        P1REN |= BIT3;				// Button S2 used to change duty cycle of PWM
         P1OUT |= BIT3;
 
-        TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
-        TA1CCR1 = 250;                // set duty cycle to 250/1000 (25%)
-        TA1CCTL0 |= CCIE;        		// enable CC interrupts
-        TA1CCTL1 |= OUTMOD_7|CCIE;        // set TACCTL1 to Set / Reset mode//enable CC interrupts
-        TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
-    	_enable_interrupt();
+    	// TA1CCR1 on P2.1
+    	P2DIR |= BIT1;
+        P2SEL |= BIT1;
+        P2OUT &= ~BIT1;
 
-    	while (1) {
+        TA1CTL |= TASSEL_2|MC_1|ID_0; // configure Timer 1 (SMCLK, UP mode)
+
+        // PWM setup
+        TA1CCR0 = 1000;               // set signal period to 1000 clock cycles (~1 millisecond)
+        TA1CCTL0 |= CCIE;            // enable CC interrupts
+
+        TA1CCR1 = 250;               // set duty cycle to 250/1000 (25%)
+        TA1CCTL1 |= OUTMOD_7|CCIE;  // set TACCTL1 to Reset / Set mode//enable CC interrupts
+
+        //clear capture compare interrupt flags
+        TA1CCTL0 &= ~CCIFG;
+        TA1CCTL1 &= ~CCIFG;
+
+        _enable_interrupt();
+
+        while (1) {
 
             while (P1IN & BIT3);     //every time the button is pushed, toggle the duty cycle
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 1000;            // set duty cycle to 1000/1000 (100%)
             TA1CTL |= MC_1;
 
             while (P1IN & BIT3);
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 750;            // set duty cycle to 750/1000 (75%)
             TA1CTL |= MC_1;
 
             while (P1IN & BIT3);
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 500;            // set duty cycle to 500/1000 (50%)
             TA1CTL |= MC_1;
 
             while (P1IN & BIT3);
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 250;            // set duty cycle to 250/1000 (25%)
             TA1CTL |= MC_1;
 
             while (P1IN & BIT3);
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 100;            // set duty cycle to 100/1000 (10%)
             TA1CTL |= MC_1;
 
             while (P1IN & BIT3);
-            __delay_cycles(1000000);
-            TA1CTL &= ~MC0;
+            __delay_cycles(DELAY_CYCLES);
+            TA1CTL &= ~MC_1;
             TA1CCR1 = 20;            // set duty cycle to 20/1000 (2%)
             TA1CTL |= MC_1;
 
@@ -205,83 +216,106 @@ void main(void)
 }
 
 
-#pragma vector = TIMER1_A0_VECTOR			// This is from the MSP430G2553.h file
-__interrupt void captureCompareInt (void) {
-    P1OUT |= BIT0;						//Turn on LED
-	// Disable Timer A Interrupt
-    TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
-//	TACTL &= ~TAIFG;
+#pragma vector = TIMER1_A0_VECTOR            // TA1CCR0 CCIFG vector
+__interrupt void TA1captureCompare0_ISR (void) {
+    P1OUT |= BIT0;                        //Turn on LED
+    TA1CCTL1 &= ~CCIFG;                  //clear capture compare interrupt flag
 }
 
-#pragma vector = TIMER1_A1_VECTOR			// This is from the MSP430G2553.h file
-__interrupt void captureCompareInt2 (void) {
-    P1OUT &= ~BIT0;						//Turn off LED
-	// Disable Timer A Interrupt
-    TA1CCTL1 &= ~CCIFG;				//clear capture compare interrupt flag
-//	TACTL &= ~TAIFG;
+#pragma vector = TIMER1_A1_VECTOR            // TA1 CCR2 and CCR1 CCIFG, TAIFG vector
+__interrupt void TA1captureCompare1_ISR (void) {
+    P1OUT &= ~BIT0;                        //Turn off LED
+    TA1CCTL1 &= ~CCIFG;                   //clear capture compare interrupt flag
+
+    /* You might have other interrupt sources to deal with as well
+       TAIV tells you which specific interrupt flags are set
+
+       if(TA1IV == TA1IV_TAIFG)
+       {
+         do stuff for TA overflow
+         TA1CTL &= ~TAIFG;
+       }
+    */
 }
 ```
 
 
 
 
-This is the code I used to show the PWM signals on the oscilloscope:
+Below is the code I used to show the PWM signals on the oscilloscope (notice no ISRs needed).  Modify the code so that you can output TWO PWM signals that are opposites.  Remember, one timer can generate up to THREE PWM signals!
 
 ```
 #include <msp430.h>
+
+#define DELAY_CYCLES 500000
 
 void main(void)
 {
     WDTCTL = WDTPW|WDTHOLD;                 // stop the watchdog timer
 
-	  P2DIR |= BIT1;                // TA1CCR1 on P2.1
-        P2SEL |= BIT1;                // TA1CCR1 on P2.1
-        P2OUT &= ~BIT1;
-        TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
-        P1DIR |= BIT0;			//use LED to indicate duty cycle has toggled
-        P1REN |= BIT3;
-        P1OUT |= BIT3;
+	BCSCTL1 = CALBC1_8MHZ;
+	DCOCTL = CALDCO_8MHZ;
 
-        TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
-        TA1CCR1 = 250;                // set duty cycle to 250/1000 (25%)
-        TA1CCTL1 |= OUTMOD_3;        // set TACCTL1 to Set / Reset mode
+    P2DIR |= BIT1;                // TA1CCR1 on P2.1
+	P2SEL |= BIT1;
+	P2OUT &= ~BIT1;
 
-        while (1) {
+	TA1CTL |= TASSEL_2|MC_1|ID_0;           // configure for SMCLK
 
-        	while (P1IN & BIT3);	//every time the button is pushed, toggle the duty cycle
-        	__delay_cycles(1000000);
-        	TA1CTL &= ~MC0;
-	        TA1CCR1 = 500;            // set duty cycle to 500/1000 (50%)
-	        TA1CTL |= MC_1;
-	        P1OUT ^= BIT0;
+	//use LED (P1.0) to indicate duty cycle has toggled and button (P1.3) to toggle
+	P1DIR = BIT0;
+	P1REN = BIT3;
+	P1OUT = BIT3;
 
-	        while (P1IN & BIT3);
-	    	__delay_cycles(1000000);
-	    	TA1CTL &= ~MC0;
-            TA1CCR1 = 750;            // set duty cycle to 750/1000 (75%)
-            TA1CTL |= MC_1;
-            P1OUT ^= BIT0;
+	TA1CCR0 = 1000;                // set signal period to 1000 clock cycles (~1 millisecond)
+	TA1CCR1 = 250;                // set duty cycle to 250/1000 (75% for set/reset)
+	TA1CCTL1 |= OUTMOD_3;        // set TACCTL1 to Set / Reset mode
 
-        	while (P1IN & BIT3);
-        	__delay_cycles(1000000);
-        	TA1CTL &= ~MC0;
-            TA1CCR1 = 1000;            // set duty cycle to 1000/1000 (100%)
-            TA1CTL |= MC_1;
-            P1OUT ^= BIT0;
 
-        	while (P1IN & BIT3);
-        	__delay_cycles(1000000);
-        	TA1CTL &= ~MC0;
-            TA1CCR1 = 250;            // set duty cycle to 250/1000 (25%)
-            TA1CTL |= MC_1;
-            P1OUT ^= BIT0;
+	while (1) {
 
-        	while (P1IN & BIT3);
-        	__delay_cycles(1000000);
-        	TA1CTL &= ~MC0;
-            TA1CCR1 = 10;            // set duty cycle to 10/1000 (1%)
-            TA1CTL |= MC_1;
-            P1OUT ^= BIT0;
+		while (P1IN & BIT3);    //every time the button is pushed, toggle the duty cycle
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 500;            // set duty cycle to 500/1000 (50%)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+
+		while (P1IN & BIT3);
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 750;            // set duty cycle to 750/1000 (25%)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+
+		while (P1IN & BIT3);
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 1000;            // set duty cycle to 1000/1000 (0%)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+
+		while (P1IN & BIT3);
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 0;            // set duty cycle to 0/1000 (100%)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+
+		while (P1IN & BIT3);
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 100;            // set duty cycle to 100/1000 (90%)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+
+		while (P1IN & BIT3);
+		__delay_cycles(DELAY_CYCLES);
+		TA1CTL &= ~MC_1;
+		TA1CCR1 = 250;            // set duty cycle to 250/1000 (75% for set/reset)
+		TA1CTL |= MC_1;
+		P1OUT ^= BIT0;
+	}
 }
 ```
 
