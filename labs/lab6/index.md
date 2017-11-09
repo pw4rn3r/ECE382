@@ -66,7 +66,7 @@ Consider what additional hardware you'll need (regulator, motor driver chip, dec
 
 Complete the [Lab 6 schematic](Lab6_schematic.pdf).  Include a neat picture in your README.
 
-- You can optionally use [Fritzing](fritzing.org) or another program to create pysical and schematic layouts
+- You can optionally use [Fritzing](fritzing.org) or another program to create physical and schematic layouts
 
 
 Consider the software interface you'll want to create to your motors.
