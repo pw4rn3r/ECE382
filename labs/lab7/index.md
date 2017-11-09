@@ -52,6 +52,9 @@ Answer the following questions in your report and be able to explain during the 
 ## Lab Hints
 
 - Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
+- Only use the ultrasonic sensor when you are NOT moving the servo
+- Realize that it may take longer (more PWM pulses) to move the servo than you think.  Be CONSERVATIVE
+- Moving the servo from the left side to the right side takes a lot longer than from the left side to the center
 
 ## Grading - Lab 7
 [Printable Combined Lab 7&8 Cutsheet](Lab_7-8_Cutsheet.pdf)
