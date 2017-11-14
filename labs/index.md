@@ -9,7 +9,7 @@ title = 'Labs'
 - [Lab 4 - C - "An LCD Device Driver"](/382/labs/lab4/index.html)
 - [Lab 5 - Interrupts - "A Simple Game"](/382/labs/lab5/index.html)
 - [Lab 6 - PWM - "Robot Motion"](/382/labs/lab6/index.html)
-- [Lab 7 - A/D Conversion - "Robot Sensing"](/382/labs/lab7/index.html)
+- [Lab 7 - "Robot Sensing"](/382/labs/lab7/index.html)
 - [Lab 8 - Robot Maze Competition](/382/labs/lab8/index.html)
 
 ## Demos

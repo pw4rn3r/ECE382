@@ -1,4 +1,4 @@
-title = 'Lab 7 - A/D Conversion - "Robot Sensing"'
+title = 'Lab 7 - "Robot Sensing"'
 
 # Lab 7 - "Robot Sensing"
 
