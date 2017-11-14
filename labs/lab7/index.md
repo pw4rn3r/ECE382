@@ -18,27 +18,27 @@ Each robot has one rangefinder/servo pair.  By using the headers available to yo
 
 For more information on servos, see the Seattle Robotics Society page on ["What is a Servo?"](http://www.seattlerobotics.org/guide/servos.html)
 
-## Prelab
+## Prelab (20 pts)
 
 See the following [Prelab page](Prelab.html).
 
-## Required Functionality
+## Required Functionality (40 pts)
 
 Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The presence of a wall on the left side of the robot should light LED1 on your Launchpad board.  The presence of a wall next to the right side should light LED2 on your Launchpad board.  A wall in front should light both LEDs.  Demonstrate that the LEDs do not light until the sensor comes into close proximity with a wall.
 
-## B Functionality
+## Sensor Characterization (15 pts)
 
 You need to fully characterize the sensor for your robot.  Create a table and graphical plot with at least three data points that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph should be generated for only **one servo position**.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.  **How do these experimental values compare to the timing values that you calculated in the Prelab?**
 
-## A Functionality
+## Remote Functionality (15 pts)
 
 Control your servo position with your remote!  Use remote buttons other than those you have used for the motors.  Note: you still need to be able to get readings from the ultrasonic sensor after changing your servo position with the remote.
 
-## Bonus Functionality 1
+## Ultrasonic Library Bonus (5 pts)
 
-Create a standalone library for your ultrasonic code and release it on Bitbucket.  This should be separate folder from your lab code.  It should have a thoughtful interface and README, capable of being reused in the robot maze laboratory.  This particular repository will remain private.
+Create a standalone library for your ultrasonic code and release it to your instructor on a private Bitbucket repository.  This should be separate folder from your lab code.  It should have a thoughtful interface and README, and **you must use it in the robot maze laboratory (Lab 8)**.
 
-## Bonus Functionality 2
+## Servo Tester Bonus (10 pts)
 
 Use a potentiometer to create an analog servo position selector input to your MSP430.  The analog value on this input will translate to a corresponding PWM value for your servo and allow you to sweep your servo position from side to side and anywhere in between.  This will operate similar to the servo tester demoed in class.
 Answer the following questions in your report and be able to explain during the demo. 
@@ -57,7 +57,7 @@ Answer the following questions in your report and be able to explain during the 
 - Moving the servo from the left side to the right side takes a lot longer than from the left side to the center
 
 ## Grading - Lab 7
-[Printable Combined Lab 7&8 Cutsheet](Lab_7-8_Cutsheet.pdf)
+[Printable Lab 7 Cutsheet](Lab_7_Cutsheet.pdf)
 
 **Name:**<br>
 <br>
@@ -67,15 +67,13 @@ Answer the following questions in your report and be able to explain during the 
 **Documentation:**<br>
 <br>
 
-| Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus | | 15 | | BOC L37 |
-| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L38 |
-| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L38 |
-| Bonus Functionality 1 | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days | | 5 | | COB L38 |
-| Bonus Functionality 2 | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days | | 5 | | COB L38 |
-| Use of Git | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L40 |
-| Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| README | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| **Total** | | | **100** | | | |
+| **Item**                     | **Grade**                                                                                                          | **Points** | **Out of** | **Date** | **Due** |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------|------------|------------|----------|---------|
+| **Prelab**                   | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 20         |          | BOC L37 |
+| **Required Functionality**   | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 40         |          | COB L38 |
+| **Sensor Characterization**  | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | COB L38 |
+| **Remote Functionality**     | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | COB L38 |
+| *Ultrasonic Library (Bonus)* | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *5*        |          | COB L38 |
+| *Servo Tester (Bonus)*       | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *10*       |          | COB L38 |
+| **Code**                     | **On-Time** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | COB L38 |
+| **Total**                    |                                                                                                                    |            | **100**    |          |         |

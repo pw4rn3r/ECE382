@@ -45,4 +45,4 @@ title = 'Intro to Embedded Systems with the MSP430'
 | L37 | [Lab 7](labs/lab7/index.html) - Robot Sensing | [Lab 7](labs/lab7/index.html), [Lab 8](labs/lab8/index.html) Prelab | [Lab 7](labs/lab7/index.html) Prelab |
 | L38 | [Lab 8](labs/lab8/index.html) - Robot Maze | [Lab 8](labs/lab8/index.html) | [Lab 8](labs/lab8/index.html) Prelab, [Lab 7](labs/lab7/index.html) Functionality |
 | L39 | [Lab 8](labs/lab8/index.html) - Robot Maze | | [Temp Sensor Bonus](notes/L36/Lsn36_in_class_exercise.docx)  |
-| L40 | [Lab 8](labs/lab8/index.html) - Robot Maze / Competition | | [Lab 8](labs/lab8/index.html) Functionality, [Lab 7](labs/lab7/index.html)/ [Lab 8](labs/lab8/index.html) Documentation |
+| L40 | [Lab 8](labs/lab8/index.html) - Robot Maze / Competition | | [Lab 8](labs/lab8/index.html) Functionality |
