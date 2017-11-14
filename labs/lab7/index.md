@@ -24,11 +24,11 @@ See the following [Prelab page](Prelab.html).
 
 ## Required Functionality (40 pts)
 
-Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The presence of a wall on the left side of the robot should light LED1 on your Launchpad board.  The presence of a wall next to the right side should light LED2 on your Launchpad board.  A wall in front should light both LEDs.  Demonstrate that the LEDs do not light until the sensor comes into close proximity with a wall.
+Use the Timer_A subsystem to light LEDs based on the presence of a wall.  The presence of a wall on the left side of the robot should light LED1 on your Launchpad board.  The presence of a wall next to the right side should light LED2 on your Launchpad board.  A wall in front should light both LEDs.  Demonstrate that the LEDs do not light until the sensor comes into close proximity with a wall.  Practically, what "close proximity" means depends on how fast you expect your robot to be moving.
 
 ## Sensor Characterization (15 pts)
 
-You need to fully characterize the sensor for your robot.  Create a table and graphical plot with at least three data points that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  This table/graph should be generated for only **one servo position**.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.  **How do these experimental values compare to the timing values that you calculated in the Prelab?**
+You need to fully characterize the sensor for your robot.  Create a table and graphical plot with *at least* three data points that shows the rangefinder pulse lengths for a variety of distances from a maze wall to the front/side of your robot.  You should see a linear relationship between the points.  This table/graph should be generated for only **one servo position**.  Use these values to determine how your sensor works so you can properly use it with the servo to solve the maze.  **How do these experimental values compare to the timing values that you calculated in the Prelab?**
 
 ## Remote Functionality (15 pts)
 
@@ -40,8 +40,8 @@ Create a standalone library for your ultrasonic code and release it to your inst
 
 ## Servo Tester Bonus (10 pts)
 
-Use a potentiometer to create an analog servo position selector input to your MSP430.  The analog value on this input will translate to a corresponding PWM value for your servo and allow you to sweep your servo position from side to side and anywhere in between.  This will operate similar to the servo tester demoed in class.
-Answer the following questions in your report and be able to explain during the demo. 
+Use a potentiometer to create an analog servo position selector input to your MSP430.  The analog value on this input will translate to a corresponding PWM value for your servo and allow you to sweep your servo position from side to side and anywhere in between.  This will operate similar to the servo tester demonstrated in class.
+Answer the following questions in your main servo tester code file and be able to explain during a demo you provide to an instructor. 
 
 1.  What voltage range did you select for your potentiometer analog servo position selector input and why?
 
@@ -51,10 +51,22 @@ Answer the following questions in your report and be able to explain during the 
 
 ## Lab Hints
 
-- Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
+- The ultrasonic sensor does not require the trigger pulse to be exactly 10us.  Thus, you can simply delay a few clock cycles instead of using a timer.
+- Test your ultrasonic sensor in one servo position first
+- Verify ultrasonic signal in logic analyzer
+  - Does the return pulse width change consistently as expected based on the actual distance?
+  - Do the counts match as expected?
+  - Make sure you are not reading the distance to the metal stand off post
+- You can use port interrupts to detect the ultrasonic sensor echo (like Lab 5)
+- Are you properly handling longer distances?  For instance, if the maze door is open will your robot think it sees a distance that is out of range or simply a wall?
+  - Your timer rollover period and what you do when a rollover occurs matters here.
 - Only use the ultrasonic sensor when you are NOT moving the servo
-- Realize that it may take longer (more PWM pulses) to move the servo than you think.  Be CONSERVATIVE
-- Moving the servo from the left side to the right side takes a lot longer than from the left side to the center
+  - Realize that it may take longer (more PWM pulses) to move the servo than you think.  Be CONSERVATIVE
+  - Moving the servo from the left side to the right side takes a lot longer than from the left side to the center
+  - Make sure you are not reading the distance to the metal stand off post
+- Verify the PWM signal you send to the servo using an o-scope
+- Be sure you write a quality header/implementation file so you can easily import this code for the maze competition.
+
 
 ## Grading - Lab 7
 [Printable Lab 7 Cutsheet](Lab_7_Cutsheet.pdf)
