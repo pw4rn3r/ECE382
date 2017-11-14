@@ -16,16 +16,17 @@ You must write a program that autonomously navigates your robot through a maze (
 
 1. Your robot must always start at the home position.
 2. Your robot is considered successful only if it finds one of the three exits and moves partially out of the maze.
-3. A large portion of your grade depends on which door you exit.
-  1. Door 1 - Required Functionality
-  2. Door 2 - B Functionality
-  3. Door 3 - A Functionality
-    1. **You cannot hit a wall!**
-  4. Bonus!  Navigate from the A door back to the entrance using the same algorithm.
-    1. **You cannot hit a wall!**
-4. Your robot must solve the maze in less than three minutes.
-5. Your robot will be stopped if it touches the wall more than twice.
-6. Your robot must use the ultrasonic sensor to find its path through the maze.
+3. A large portion of your grade depends on which door you exit (see Figure 1 below):
+  1. Door 1 Required Functionality (50 pts)
+  2. Door 2 Functionality (15 pts)
+  3. Door 3 Functionality (15 pts)
+    - **You cannot hit a wall!**
+  4. Bonus!  Navigate from Door 3 back to the entrance using the same algorithm.
+    - **You cannot hit a wall!**
+4. Provide a [cutsheet](Lab_8_Cutsheet.pdf) if another instructor checks your functionality
+5. Your robot must solve the maze in less than three minutes.
+6. Your robot will be stopped if it touches the wall more than twice.
+7. You cannot hard code the path through the maze.  You must use your sense and avoid algorithms, along with your ultrasonic sensor, to navigate through the maze.
 
 **Do not step onto the maze since the floor will not support your weight.  You will notice the maze floor is cracked from cadets who ignored this advice.**
 
@@ -33,16 +34,23 @@ You must write a program that autonomously navigates your robot through a maze (
 
 **Figure 1: Diagram of the maze your robot must navigate.  Your demonstration grade depends on which door you go through.**
 
+
+## Competition Bonus
+
+- Finisher - 5 pts
+- Section Winner - 10 pts
+- Course Winner - 15 pts
+
 ## Competition Requirements
 
-All the laboratory requirements above are required to be met for the maze, with the following additional requirements:
+All the laboratory requirements above are required to be met for the maze, with the following differences:
 
-1. Each robot will get only three official attempts to complete the maze.  The best time will be used for your score.
-2. You must notify a referee/instructor before you make an official attempt.
-3. Your robot must find and exit through Door 3.
-4. The robot with a lowest adjusted time will be the winner.
-5. Each collision with a wall will add an additional 20 seconds to your total time.
-6. You cannot hard code the path through the maze.  You must use your sense and avoid algorithms to navigate through the maze.  
+1. Each robot will get *only* three official attempts to complete the maze.  The best time will be used for your score.
+2. You must notify a referee/instructor *before* you make an official attempt.
+3. The robot with a lowest *adjusted* time will be the winner.
+4. Each collision with a wall will add an additional 20 seconds to your total time.
+5. Exiting Door 1 or Door 2 incurs a two or one minute penalty, respectively.
+
 
 ## Prelab
 
@@ -80,6 +88,8 @@ Additional hints are on the [Notes](notes.html) page.
 
 ## Grading - Lab 8
 
+Provide a printable [Lab 8 Cutsheet](Lab_8_Cutsheet.pdf) if another instructor checks your functionality.
+
 **Name:**<br>
 <br>
 **Section:**
@@ -88,14 +98,17 @@ Additional hints are on the [Notes](notes.html) page.
 **Documentation:**<br>
 <br>
 
-| Item | Grade | Points | Out of | Date | Due |
-|:-: | :-: | :-: | :-: | :-: |
-| Prelab | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus | | 10 | | BOC L38 |
-| Required Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 40 | | COB L40 |
-| B Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| A Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| Bonus Functionality | **On-Time:** -------------------------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| Use of Git / Github | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 5 | | COB L40 |
-| Code Style | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 15 | | COB L40 |
-| README | **On-Time:** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days| | 10 | | COB L40 |
-| **Total** | | | **100** | | | |
+| **Item**                   | **Points** | **Out of** | **Verified by** | **Due** |
+|----------------------------|------------|------------|-----------------|---------|
+| **Prelab**                 |            | 10         |                 | BOC L38 |
+| **Required Functionality** |            | 50         |                 | COB L40 |
+| **Door 2 Functionality**   |            | 15         |                 | COB L40 |
+| **Door 3 Functionality**   |            | 15         |                 | COB L40 |
+| *Bonus Functionality*      |            | *5*        |                 | COB L40 |
+| *Competition Bonus*        |            | *15*       |                 | EOC L40 |
+| **Code (Required)**        |            | 10         |                 | COB L40 |
+| **Total**                  |            | **100**    |                 |         |
+
+
+**All Required lab work must be completed NLT COB Lesson 40. Otherwise a final
+course grade of “Incomplete – Controllable” (IC) will be assigned.**
