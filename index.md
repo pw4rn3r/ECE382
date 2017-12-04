@@ -28,8 +28,8 @@ title = 'Intro to Embedded Systems with the MSP430'
 | [L20](notes/L20/index.html) | C Programming - Structs, Functions, and Headers. | [Assignment 7](notes/L20/L20_pong.html)| [Assignment 6](notes/L19/L19_C_basics.html) |
 | [L21](notes/L21/index.html) | C Programming - Pointers and Arrays |  |  |
 | [L22](notes/L22/index.html) | C Programming - Writing Clean Code.  Revision Control. Mapping C to Assembly. | [Lab 4](labs/lab4/index.html) Prelab| [Assignment 7](notes/L20/L20_pong.html) |
-| [L23](notes/L23/index.html) | [Lab 4](labs/lab4/index.html) Introduction. Polling and SPI in C.  |  | [Lab 4](labs/lab4/index.html) Prelab |
-| L24 | [Lab 4](labs/lab4/index.html) - Polling and SPI in C. | [Lab 4](labs/lab4/index.html)| [Lab 4](labs/lab4/index.html) (COB 19 Oct M day / 20 Oct T day)|
+| [L23](notes/L23/index.html) | [Lab 4](labs/lab4/index.html) Introduction. Polling and SPI in C.  | [Lab 4](labs/lab4/index.html) | [Lab 4](labs/lab4/index.html) Prelab |
+| L24 | [Lab 4](labs/lab4/index.html) - Polling and SPI in C. | | [Lab 4](labs/lab4/index.html) (COB 19 Oct M day / 20 Oct T day)|
 | [L25](notes/L25/index.html) |  Timers |  |  |
 | [L26](notes/L26/index.html)| Timer_A: Interval Timing.  Introduction to Interrupts. | [Assignment 9](notes/L26/L26_timer_interrupt_lab4.html) |  |
 | [L27](notes/L27/index.html) | Interrupts and ISRs. MSP430 Interrupt System.  [Lab 5](labs/lab5/index.html) Introduction. | Read [Lab 5](labs/lab5/index.html) | [Assignment 9](notes/L26/L26_timer_interrupt_lab4.html) |
@@ -43,6 +43,6 @@ title = 'Intro to Embedded Systems with the MSP430'
 | L35 | [Lab 6](labs/lab6/index.html) - Robot Motion | | [Lab 6](labs/lab6/index.html) Functionality |
 | [L36](notes/L36/index.html) | Analog-to-Digital and Digital-to-Analog Conversion. [Lab 7](labs/lab7/index.html) / [Lab 8](labs/lab8/index.html) Intro. | [Lab 7](labs/lab7/index.html) Prelab, [Temp Sensor Bonus](notes/L36/Lsn36_in_class_exercise.docx) |  |
 | L37 | [Lab 7](labs/lab7/index.html) - Robot Sensing | [Lab 7](labs/lab7/index.html), [Lab 8](labs/lab8/index.html) Prelab | [Lab 7](labs/lab7/index.html) Prelab |
-| L38 | [Lab 8](labs/lab8/index.html) - Robot Maze | [Lab 8](labs/lab8/index.html) | [Lab 8](labs/lab8/index.html) Prelab, [Lab 7](labs/lab7/index.html) Functionality |
-| L39 | [Lab 8](labs/lab8/index.html) - Robot Maze | | [Temp Sensor Bonus](notes/L36/Lsn36_in_class_exercise.docx)  |
+| L38 | [Lab 7](labs/lab7/index.html) - Robot Sensing | | |
+| L39 | [Lab 8](labs/lab8/index.html) - Robot Maze | [Lab 8](labs/lab8/index.html) | [Temp Sensor Bonus](notes/L36/Lsn36_in_class_exercise.docx), [Lab 7](labs/lab7/index.html), [Lab 8](labs/lab8/index.html) Prelab (ALL BOC!) |
 | L40 | [Lab 8](labs/lab8/index.html) - Robot Maze / Competition | | [Lab 8](labs/lab8/index.html) Functionality |
