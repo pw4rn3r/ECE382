@@ -100,7 +100,7 @@ Provide a printable [Lab 8 Cutsheet](Lab_8_Cutsheet.pdf) if another instructor c
 
 | **Item**                   | **Points** | **Out of** | **Verified by** | **Due** |
 |----------------------------|------------|------------|-----------------|---------|
-| **Prelab**                 |            | 10         |                 | BOC L38 |
+| **Prelab**                 |            | 10         |                 | BOC L39 |
 | **Required Functionality** |            | 50         |                 | COB L40 |
 | **Door 2 Functionality**   |            | 15         |                 | COB L40 |
 | **Door 3 Functionality**   |            | 15         |                 | COB L40 |

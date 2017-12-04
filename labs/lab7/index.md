@@ -82,10 +82,10 @@ Answer the following questions in your main servo tester code file and be able t
 | **Item**                     | **Grade**                                                                                                          | **Points** | **Out of** | **Date** | **Due** |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------|------------|------------|----------|---------|
 | **Prelab**                   | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 20         |          | BOC L37 |
-| **Required Functionality**   | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 40         |          | COB L38 |
-| **Sensor Characterization**  | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | COB L38 |
-| **Remote Functionality**     | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | COB L38 |
-| *Ultrasonic Library (Bonus)* | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *5*        |          | COB L38 |
-| *Servo Tester (Bonus)*       | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *10*       |          | COB L38 |
-| **Code**                     | **On-Time** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | COB L38 |
+| **Required Functionality**   | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 40         |          | BOC L39 |
+| **Sensor Characterization**  | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | BOC L39 |
+| **Remote Functionality**     | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 15         |          | BOC L39 |
+| *Ultrasonic Library (Bonus)* | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *5*        |          | BOC L39 |
+| *Servo Tester (Bonus)*       | **On-Time** ----------------------------------------------------- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | *10*       |          | BOC L39 |
+| **Code**                     | **On-Time** Zero ---- Check Minus ---- Check ---- Check Plus ---- **Late:** 1Day ---- 2Days ---- 3Days ---- 4+Days |            | 10         |          | BOC L39 |
 | **Total**                    |                                                                                                                    |            | **100**    |          |         |
